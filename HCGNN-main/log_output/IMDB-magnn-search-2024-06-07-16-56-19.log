@@ -1,0 +1,68 @@
+2024-06-07 16:56:19,611:INFO::=============== Search Args:
+Namespace(dataset='IMDB', feats_type=6, gnn_model='magnn', valid_attributed_type=0, hidden_dim=64, num_heads=8, attn_vec_dim=128, patience=5, batch_size=16, batch_size_test=2, lr=0.0005, lr_rate_min=3e-05, num_layers=6, dropout=0.5, weight_decay=0.0001, slope=0.1, grad_clip=5, repeat=5, save_postfix='IMDB', feats_opt='0111', cuda=True, l2norm=False, time_line='2024-06-07-16-56-19', edge_feats=64, rnn_type='RotatE0', seed=123, use_adamw=False, num_epochs=1, complete_epochs=1, retrain_epoch=2, samples=100, att_comp_dim=64, use_norm=False, max_features_len=64, max_num_views=2, alpha_0=1.5, beta_1=2, schedule_step_retrain=7, patience_retrain=7, is_use_type_linear='False', is_use_SGD='False', is_use_dropout='False', momentum=0.9, inner_epoch=1, use_minibatch=False, useSGD=False, useTypeLinear=False, usedropout=False, usebn=False, use_5seeds=False, cur_repeat=False, no_use_fixseeds=False, last_hidden_dim=512, logger=<Logger log_output (INFO)>)
+2024-06-07 16:56:31,215:INFO::node_type_num: 4
+2024-06-07 18:27:14,929:INFO::=============== Prepare basic data stage finish, use 5455.31773018837 time.
+2024-06-07 18:27:27,129:INFO::meta path 1 done
+2024-06-07 18:27:28,211:INFO::meta path 2 done
+2024-06-07 18:27:28,808:INFO::meta path 3 done
+2024-06-07 18:27:30,129:INFO::meta path 4 done
+2024-06-07 18:27:31,020:INFO::meta path 5 done
+2024-06-07 18:27:34,597:INFO::meta path 6 done
+2024-06-07 20:22:09,555:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:22:40,280:INFO::############### Search Stage Ends! ###############
+2024-06-07 20:22:40,483:INFO::=============== Retrain Stage Starts:
+2024-06-07 20:23:34,617:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7134 | Val_Loss 0.6810 | Time(s) 54.1113
+2024-06-07 20:24:28,690:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6916 | Val_Loss 0.6646 | Time(s) 54.0584
+2024-06-07 20:24:28,702:INFO::Validation loss decreased (inf --> 0.664623).  Saving model ...
+2024-06-07 20:24:28,736:INFO::
+testing...
+2024-06-07 20:24:29,151:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:24:29,152:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:24:29,152:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:24:33,746:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:24:33,950:INFO::{'micro-f1': 0.5084121536787478, 'macro-f1': 0.2568567196726721}
+2024-06-07 20:24:34,853:INFO::############### Retrain Stage Ends! #################
+2024-06-07 20:24:34,854:INFO::=============== Retrain Stage Starts:
+2024-06-07 20:25:29,413:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.6739 | Val_Loss 0.6468 | Time(s) 54.5361
+2024-06-07 20:26:23,811:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6581 | Val_Loss 0.6384 | Time(s) 54.3795
+2024-06-07 20:26:23,828:INFO::Validation loss decreased (inf --> 0.638363).  Saving model ...
+2024-06-07 20:26:23,855:INFO::
+testing...
+2024-06-07 20:26:23,881:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:26:23,882:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:26:28,543:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:26:28,681:INFO::{'micro-f1': 0.1811217510259918, 'macro-f1': 0.0863102998696219}
+2024-06-07 20:26:29,549:INFO::############### Retrain Stage Ends! #################
+2024-06-07 20:26:29,551:INFO::=============== Retrain Stage Starts:
+2024-06-07 20:27:24,292:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7767 | Val_Loss 0.7305 | Time(s) 54.7176
+2024-06-07 20:28:20,447:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.7440 | Val_Loss 0.7030 | Time(s) 56.1358
+2024-06-07 20:28:20,460:INFO::Validation loss decreased (inf --> 0.703048).  Saving model ...
+2024-06-07 20:28:20,490:INFO::
+testing...
+2024-06-07 20:28:20,518:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:28:20,519:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:28:25,430:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:28:25,532:INFO::{'micro-f1': 0.20205173951828723, 'macro-f1': 0.1104207706508937}
+2024-06-07 20:28:26,481:INFO::############### Retrain Stage Ends! #################
+2024-06-07 20:28:26,482:INFO::=============== Retrain Stage Starts:
+2024-06-07 20:29:21,619:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7180 | Val_Loss 0.6877 | Time(s) 55.1106
+2024-06-07 20:30:16,364:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6967 | Val_Loss 0.6713 | Time(s) 54.7316
+2024-06-07 20:30:16,376:INFO::Validation loss decreased (inf --> 0.671265).  Saving model ...
+2024-06-07 20:30:16,406:INFO::
+testing...
+2024-06-07 20:30:16,435:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:30:16,435:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:30:21,075:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:30:21,190:INFO::{'micro-f1': 0.5082108902333621, 'macro-f1': 0.33683302728348}
+2024-06-07 20:30:22,012:INFO::############### Retrain Stage Ends! #################
+2024-06-07 20:30:22,013:INFO::=============== Retrain Stage Starts:
+2024-06-07 20:31:16,889:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.6838 | Val_Loss 0.6589 | Time(s) 54.8493
+2024-06-07 20:32:17,195:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6630 | Val_Loss 0.6467 | Time(s) 60.2887
+2024-06-07 20:32:17,207:INFO::Validation loss decreased (inf --> 0.646731).  Saving model ...
+2024-06-07 20:32:17,232:INFO::
+testing...
+2024-06-07 20:32:17,254:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:32:17,255:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:32:21,785:INFO::save_dir_name: magnn_lr0.0005_wd0.0001
+2024-06-07 20:32:21,901:INFO::{'micro-f1': 0.39981691269023917, 'macro-f1': 0.1412002424732269}
+2024-06-07 20:32:22,726:INFO::############### Retrain Stage Ends! #################

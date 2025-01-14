@@ -1,0 +1,71 @@
+2024-06-23 14:17:55,813:INFO::=============== Search Args:
+Namespace(dataset='IMDB', feats_type=6, gnn_model='gat', valid_attributed_type=0, cluster_num=8, cluster_eps=1e-05, att_comp_dim=64, hidden_dim=64, num_heads=8, attn_vec_dim=128, search_epoch=2, retrain_epoch=2, inner_epoch=1, patience_search=8, patience_retrain=30, batch_size=2, batch_size_test=2, momentum=0.9, lr=0.0005, lr_rate_min=3e-05, num_layers=3, dropout=0.5, weight_decay=0.0001, slope=0.05, grad_clip=5, network_momentum=0.9, arch_learning_rate=0.005, arch_weight_decay=1e-05, repeat=5, cluster_epoch=4, save_postfix='DBLP', feats_opt='0111', cuda=True, unrolled=False, useSGD=False, useTypeLinear=False, l2norm=False, cluster_norm=False, usedropout=False, is_unrolled='False', is_use_type_linear='False', is_use_SGD='False', is_use_dropout='False', time_line='2024-06-23-14-17-53', edge_feats=64, warmup_epoch=0, clusterupdate_round=1, searcher_name='darts', rnn_type='RotatE0', neighbor_samples=100, use_minibatch=False, shared_ops=True, e_greedy=0, usebn=False, seed=123, use_5seeds=True, no_use_fixseeds=False, use_dmon=True, collapse_regularization=0.1, dmon_loss_alpha=0.4, tau=1.0, schedule_step=350, schedule_step_retrain=500, use_norm=False, use_adamw=False, use_skip=False, cur_repeat=0, last_hidden_dim=512, logger=<Logger log_output (INFO)>)
+2024-06-23 14:18:07,740:INFO::node_type_num: 4
+2024-06-23 14:18:08,925:INFO::=============== Prepare basic data stage finish, use 13.111979722976685 time.
+2024-06-23 14:18:11,054:INFO::save_dir_name: gat_darts_C8_useDmon_coef0.4_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_014_64_shared_ops_lr0.0005_wd0.0001_use5seeds_use_fixseeds_use_adam_patience-8_30
+2024-06-23 14:18:17,183:INFO::Epoch: 0
+tensor([[0.2502, 0.2499, 0.2500, 0.2499],
+        [0.2499, 0.2501, 0.2502, 0.2498],
+        [0.2501, 0.2502, 0.2500, 0.2497],
+        [0.2502, 0.2501, 0.2497, 0.2501],
+        [0.2501, 0.2501, 0.2498, 0.2500],
+        [0.2500, 0.2501, 0.2499, 0.2499],
+        [0.2501, 0.2501, 0.2500, 0.2498],
+        [0.2497, 0.2500, 0.2501, 0.2502]], device='cuda:0',
+       grad_fn=<SoftmaxBackward0>)
+2024-06-23 14:18:30,337:INFO::save_dir_name: gat_darts_C8_useDmon_coef0.4_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_014_64_shared_ops_lr0.0005_wd0.0001_use5seeds_use_fixseeds_use_adam_patience-8_30
+2024-06-23 14:18:30,341:INFO::Epoch 00000 | lr 0.00050 | Train_Loss 0.6976 | Train_Classification_Loss 0.7110 | Dmon_Loss -0.0334 | Val_Loss 0.6605 | Search Time(s) 6.7771 | Infer Time(s) 6.3815 | Time(s) 13.1586 
+2024-06-23 14:18:34,789:INFO::cluster info:
+0: -1;	1: -1;	2: -1;	3: -1;	4: -1;	5: -1;	6: -1;	7: -1;	8: -1;	9: -1;	10: -1;	11: -1;	12: -1;	13: -1;	14: -1;	15: -1;	16: -1;	17: -1;	18: -1;	19: -1;	20: -1;	21: -1;	22: -1;	23: -1;	24: -1;	25: -1;	26: -1;	27: -1;	28: -1;	29: -1;	30: -1;	31: -1;	32: -1;	33: -1;	34: -1;	35: -1;	36: -1;	37: -1;	38: -1
+21390: 6;	21391: 7;	21392: 6;	21393: 0;	21394: 1;	21395: 7;	21396: 3;	21397: 2;	21398: 5;	21399: 0;	21400: 1;	21401: 1;	21402: 4;	21403: 6;	21404: 3;	21405: 0;	21406: 5;	21407: 6;	21408: 1;	21409: 3;	21410: 1;	21411: 7;	21412: 0;	21413: 2;	21414: 6;	21415: 5;	21416: 1;	21417: 5;	21418: 4;	21419: 4;	
+2024-06-23 14:18:34,797:INFO::Epoch: 1
+tensor([[0.2496, 0.2493, 0.2519, 0.2493],
+        [0.2486, 0.2514, 0.2514, 0.2486],
+        [0.2488, 0.2514, 0.2488, 0.2510],
+        [0.2514, 0.2513, 0.2485, 0.2488],
+        [0.2495, 0.2519, 0.2492, 0.2493],
+        [0.2494, 0.2495, 0.2518, 0.2493],
+        [0.2488, 0.2513, 0.2513, 0.2486],
+        [0.2484, 0.2513, 0.2488, 0.2514]], device='cuda:0',
+       grad_fn=<SoftmaxBackward0>)
+2024-06-23 14:18:44,039:INFO::save_dir_name: gat_darts_C8_useDmon_coef0.4_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_014_64_shared_ops_lr0.0005_wd0.0001_use5seeds_use_fixseeds_use_adam_patience-8_30
+2024-06-23 14:18:44,042:INFO::Epoch 00001 | lr 0.00050 | Train_Loss 0.6530 | Train_Classification_Loss 0.6663 | Dmon_Loss -0.0334 | Val_Loss 0.6373 | Search Time(s) 9.0453 | Infer Time(s) 0.2025 | Time(s) 9.2478 
+2024-06-23 14:18:48,555:INFO::cluster info:
+0: -1;	1: -1;	2: -1;	3: -1;	4: -1;	5: -1;	6: -1;	7: -1;	8: -1;	9: -1;	10: -1;	11: -1;	12: -1;	13: -1;	14: -1;	15: -1;	16: -1;	17: -1;	18: -1;	19: -1;	20: -1;	21: -1;	22: -1;	23: -1;	24: -1;	25: -1;	26: -1;	27: -1;	28: -1;	29: -1;	30: -1;	31: -1;	32: -1;	33: -1;	34: -1;	35: -1;	36: -1;	37: -1;	38: -1
+21390: 7;	21391: 2;	21392: 7;	21393: 2;	21394: 5;	21395: 2;	21396: 3;	21397: 2;	21398: 1;	21399: 5;	21400: 5;	21401: 3;	21402: 1;	21403: 2;	21404: 2;	21405: 2;	21406: 6;	21407: 3;	21408: 7;	21409: 6;	21410: 1;	21411: 6;	21412: 7;	21413: 2;	21414: 0;	21415: 0;	21416: 0;	21417: 5;	21418: 1;	21419: 7;	
+2024-06-23 14:18:48,558:INFO::Validation loss decreased (inf --> 0.637275).  Saving model ...
+2024-06-23 14:18:48,691:INFO::############### Search Stage Ends! ###############
+2024-06-23 14:18:48,691:INFO::=============== Retrain Stage Starts:
+2024-06-23 14:18:59,139:INFO::save_dir_name: gat_darts_C8_useDmon_coef0.4_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_014_64_shared_ops_lr0.0005_wd0.0001_use5seeds_use_fixseeds_use_adam_patience-8_30
+2024-06-23 14:19:04,233:INFO::node_assign_Counter:
+Counter({-1: 4932, 1: 2993, 3: 2181, 2: 2177, 5: 2147, 6: 2074, 7: 2003, 0: 1517, 4: 1396})
+2024-06-23 14:19:39,912:INFO::save_dir_name: gat_darts_C8_useDmon_coef0.4_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_014_64_shared_ops_lr0.0005_wd0.0001_use5seeds_use_fixseeds_use_adam_patience-8_30
+2024-06-23 14:19:41,971:INFO::============= repeat round: 0; seed: 123
+2024-06-23 14:19:48,957:INFO::arch_weights:
+[[-0.00890694 -0.01018159  0.00975228 -0.00818083]
+ [-0.00480705  0.00384818  0.01030107 -0.01143511]
+ [-0.01004586  0.0033239  -0.00043926  0.00904232]
+ [ 0.00921736  0.00242192 -0.00109319 -0.0092193 ]
+ [-0.0017507   0.00606355 -0.01035976 -0.00882309]
+ [-0.00296341 -0.01000864  0.00503329 -0.00244657]
+ [-0.00957829  0.00612938  0.01005127 -0.01028768]
+ [-0.01131329  0.00563388 -0.00301271  0.00648731]]
+2024-06-23 14:19:48,958:INFO::arch_weights_softmax:
+[[0.24886227 0.24854524 0.25354943 0.24904303]
+ [0.24892281 0.25108665 0.25271213 0.2472784 ]
+ [0.2473788  0.25070837 0.2497667  0.25214615]
+ [0.25222576 0.25051758 0.24963853 0.24761815]
+ [0.25048688 0.25245193 0.24833967 0.24872158]
+ [0.2499047  0.24815024 0.25191113 0.25003392]
+ [0.24783479 0.25175843 0.25274774 0.24765906]
+ [0.24731742 0.25154448 0.24937885 0.25175923]]
+2024-06-23 14:19:48,958:INFO::genotype choice:
+['mean', 'mean', 'one-hot', 'gcn', 'ppnp', 'mean', 'mean', 'one-hot']
+2024-06-23 14:25:29,396:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7055 | Val_Loss 0.6566 | Time(s) 317.0589
+2024-06-23 14:26:19,283:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6629 | Val_Loss 0.6341 | Time(s) 35.7286
+2024-06-23 14:26:19,321:INFO::Validation loss decreased (inf --> 0.634139).  Saving model ...
+2024-06-23 14:26:19,323:INFO::
+testing...
+2024-06-23 14:26:28,951:INFO::submit dir: submit/submit_gat_darts_C8_useDmon_coef0.4_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_014_64_shared_ops_lr0.0005_wd0.0001_use5seeds_use_fixseeds_use_adam_patience-8_30
+2024-06-23 14:26:47,098:INFO::{'micro-f1': 0.3993131081854608, 'macro-f1': 0.1428734184281219}
+2024-06-23 14:26:47,217:INFO::############### Retrain Stage Ends! #################

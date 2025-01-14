@@ -1,0 +1,1212 @@
+nohup: ignoring input
+2024-11-21 05:23:12,847:INFO::=============== Search Args:
+Namespace(dataset='DBLP', feats_type=6, gnn_model='simpleHGN', valid_attributed_type=1, hidden_dim=64, num_heads=8, attn_vec_dim=128, patience=30, batch_size=8, batch_size_test=64, repeat=5, save_postfix='IMDB', feats_opt='1011', cuda=True, l2norm=False, time_line='2024-11-21-05-23-12', edge_feats=64, rnn_type='RotatE0', seed=123, use_adamw=False, neighbor_samples=100, att_comp_dim=64, use_norm=False, schedule_step_retrain=500, patience_search=30, patience_retrain=30, is_use_type_linear='False', is_use_SGD='False', is_use_dropout='False', momentum=0.9, inner_epoch=1, use_minibatch=False, useSGD=False, useTypeLinear=False, usedropout=False, usebn=False, use_bn=False, use_5seeds=True, cur_repeat=False, no_use_fixseeds=False, lr_rate_min=3e-05, beta_1=0.7, lr=0.0005, num_layers=2, complete_num_layers=2, dropout=0.5, weight_decay=0.0001, slope=0.05, grad_clip=5.0, max_num_views=2, complete_epochs=1, search_epoch=350, retrain_epoch=500, intralayers=2, last_hidden_dim=512, logger=<Logger log_output (INFO)>)
+2024-11-21 05:23:22,746:INFO::node_type_num: 4
+/home/yyj/miniconda3/envs/yyj_mdnnac/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+2024-11-21 05:23:37,571:INFO::=============== Prepare basic data stage finish, use 24.724151611328125 time.
+2024-11-21 05:23:45,352:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:23:46,513:INFO::Epoch_batch_00000 | lr 0.0005 |Train_Loss 1.4896 |  total_loss_consistency1 0.0288 | Loss 1.5098 | Val_Loss 1.3441| Train Time(s) 1.0551| Val Time(s) 0.0497 | Time(s) 1.1048
+2024-11-21 05:23:46,907:INFO::Epoch_batch_00001 | lr 0.0005 |Train_Loss 1.3739 |  total_loss_consistency1 0.0288 | Loss 1.3941 | Val_Loss 1.3204| Train Time(s) 0.2156| Val Time(s) 0.0504 | Time(s) 0.2660
+2024-11-21 05:23:46,907:INFO::Validation loss decreased (inf --> 1.320357).  Saving model ...
+2024-11-21 05:23:47,292:INFO::Epoch_batch_00002 | lr 0.0005 |Train_Loss 1.3609 |  total_loss_consistency1 0.0299 | Loss 1.3818 | Val_Loss 1.2933| Train Time(s) 0.2149| Val Time(s) 0.0502 | Time(s) 0.2651
+2024-11-21 05:23:47,293:INFO::Validation loss decreased (1.320357 --> 1.293253).  Saving model ...
+2024-11-21 05:23:47,680:INFO::Epoch_batch_00003 | lr 0.0005 |Train_Loss 1.3291 |  total_loss_consistency1 0.0307 | Loss 1.3506 | Val_Loss 1.2455| Train Time(s) 0.2167| Val Time(s) 0.0503 | Time(s) 0.2669
+2024-11-21 05:23:47,681:INFO::Validation loss decreased (1.293253 --> 1.245537).  Saving model ...
+2024-11-21 05:23:48,068:INFO::Epoch_batch_00004 | lr 0.0005 |Train_Loss 1.3125 |  total_loss_consistency1 0.0301 | Loss 1.3335 | Val_Loss 1.1920| Train Time(s) 0.2166| Val Time(s) 0.0503 | Time(s) 0.2670
+2024-11-21 05:23:48,069:INFO::Validation loss decreased (1.245537 --> 1.191973).  Saving model ...
+2024-11-21 05:23:48,455:INFO::Epoch_batch_00005 | lr 0.0005 |Train_Loss 1.2833 |  total_loss_consistency1 0.0298 | Loss 1.3042 | Val_Loss 1.1396| Train Time(s) 0.2164| Val Time(s) 0.0501 | Time(s) 0.2665
+2024-11-21 05:23:48,455:INFO::Validation loss decreased (1.191973 --> 1.139560).  Saving model ...
+2024-11-21 05:23:48,842:INFO::Epoch_batch_00006 | lr 0.0005 |Train_Loss 1.2390 |  total_loss_consistency1 0.0301 | Loss 1.2600 | Val_Loss 1.0682| Train Time(s) 0.2164| Val Time(s) 0.0505 | Time(s) 0.2669
+2024-11-21 05:23:48,843:INFO::Validation loss decreased (1.139560 --> 1.068236).  Saving model ...
+2024-11-21 05:23:49,229:INFO::Epoch_batch_00007 | lr 0.0005 |Train_Loss 1.1972 |  total_loss_consistency1 0.0308 | Loss 1.2188 | Val_Loss 0.9600| Train Time(s) 0.2164| Val Time(s) 0.0502 | Time(s) 0.2666
+2024-11-21 05:23:49,230:INFO::Validation loss decreased (1.068236 --> 0.960040).  Saving model ...
+2024-11-21 05:23:49,618:INFO::Epoch_batch_00008 | lr 0.0005 |Train_Loss 1.1186 |  total_loss_consistency1 0.0323 | Loss 1.1412 | Val_Loss 0.8623| Train Time(s) 0.2159| Val Time(s) 0.0502 | Time(s) 0.2661
+2024-11-21 05:23:49,619:INFO::Validation loss decreased (0.960040 --> 0.862320).  Saving model ...
+2024-11-21 05:23:50,008:INFO::Epoch_batch_00009 | lr 0.0005 |Train_Loss 1.0645 |  total_loss_consistency1 0.0351 | Loss 1.0891 | Val_Loss 0.8219| Train Time(s) 0.2173| Val Time(s) 0.0504 | Time(s) 0.2677
+2024-11-21 05:23:50,009:INFO::Validation loss decreased (0.862320 --> 0.821872).  Saving model ...
+2024-11-21 05:23:50,275:INFO::Epoch_batch_00010 | lr 0.0005 |Train_Loss 1.0161 |  total_loss_consistency1 0.0378 | Loss 1.0426 | Val_Loss 0.8264| Train Time(s) 0.2161| Val Time(s) 0.0502 | Time(s) 0.2663
+2024-11-21 05:23:50,276:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:23:50,543:INFO::Epoch_batch_00011 | lr 0.0005 |Train_Loss 0.9907 |  total_loss_consistency1 0.0401 | Loss 1.0188 | Val_Loss 0.8298| Train Time(s) 0.2164| Val Time(s) 0.0503 | Time(s) 0.2667
+2024-11-21 05:23:50,543:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:23:50,928:INFO::Epoch_batch_00012 | lr 0.0005 |Train_Loss 0.9542 |  total_loss_consistency1 0.0418 | Loss 0.9835 | Val_Loss 0.8103| Train Time(s) 0.2151| Val Time(s) 0.0502 | Time(s) 0.2652
+2024-11-21 05:23:50,929:INFO::Validation loss decreased (0.821872 --> 0.810293).  Saving model ...
+2024-11-21 05:23:51,317:INFO::Epoch_batch_00013 | lr 0.0005 |Train_Loss 0.9185 |  total_loss_consistency1 0.0468 | Loss 0.9512 | Val_Loss 0.8007| Train Time(s) 0.2169| Val Time(s) 0.0504 | Time(s) 0.2673
+2024-11-21 05:23:51,317:INFO::Validation loss decreased (0.810293 --> 0.800677).  Saving model ...
+2024-11-21 05:23:51,705:INFO::Epoch_batch_00014 | lr 0.0005 |Train_Loss 0.9027 |  total_loss_consistency1 0.0477 | Loss 0.9361 | Val_Loss 0.7919| Train Time(s) 0.2177| Val Time(s) 0.0504 | Time(s) 0.2681
+2024-11-21 05:23:51,706:INFO::Validation loss decreased (0.800677 --> 0.791900).  Saving model ...
+2024-11-21 05:23:52,094:INFO::Epoch_batch_00015 | lr 0.0005 |Train_Loss 0.8945 |  total_loss_consistency1 0.0514 | Loss 0.9305 | Val_Loss 0.7857| Train Time(s) 0.2175| Val Time(s) 0.0504 | Time(s) 0.2679
+2024-11-21 05:23:52,094:INFO::Validation loss decreased (0.791900 --> 0.785689).  Saving model ...
+2024-11-21 05:23:52,479:INFO::Epoch_batch_00016 | lr 0.0005 |Train_Loss 0.8708 |  total_loss_consistency1 0.0499 | Loss 0.9057 | Val_Loss 0.7809| Train Time(s) 0.2158| Val Time(s) 0.0502 | Time(s) 0.2660
+2024-11-21 05:23:52,479:INFO::Validation loss decreased (0.785689 --> 0.780925).  Saving model ...
+2024-11-21 05:23:52,866:INFO::Epoch_batch_00017 | lr 0.0005 |Train_Loss 0.8535 |  total_loss_consistency1 0.0470 | Loss 0.8864 | Val_Loss 0.7728| Train Time(s) 0.2161| Val Time(s) 0.0502 | Time(s) 0.2663
+2024-11-21 05:23:52,867:INFO::Validation loss decreased (0.780925 --> 0.772835).  Saving model ...
+2024-11-21 05:23:53,254:INFO::Epoch_batch_00018 | lr 0.0005 |Train_Loss 0.8424 |  total_loss_consistency1 0.0450 | Loss 0.8739 | Val_Loss 0.7614| Train Time(s) 0.2163| Val Time(s) 0.0502 | Time(s) 0.2665
+2024-11-21 05:23:53,255:INFO::Validation loss decreased (0.772835 --> 0.761404).  Saving model ...
+2024-11-21 05:23:53,642:INFO::Epoch_batch_00019 | lr 0.0005 |Train_Loss 0.8311 |  total_loss_consistency1 0.0419 | Loss 0.8604 | Val_Loss 0.7495| Train Time(s) 0.2173| Val Time(s) 0.0503 | Time(s) 0.2676
+2024-11-21 05:23:53,643:INFO::Validation loss decreased (0.761404 --> 0.749474).  Saving model ...
+2024-11-21 05:23:54,031:INFO::Epoch_batch_00020 | lr 0.0005 |Train_Loss 0.8190 |  total_loss_consistency1 0.0391 | Loss 0.8464 | Val_Loss 0.7411| Train Time(s) 0.2175| Val Time(s) 0.0501 | Time(s) 0.2676
+2024-11-21 05:23:54,032:INFO::Validation loss decreased (0.749474 --> 0.741055).  Saving model ...
+2024-11-21 05:23:54,421:INFO::Epoch_batch_00021 | lr 0.0005 |Train_Loss 0.7996 |  total_loss_consistency1 0.0378 | Loss 0.8260 | Val_Loss 0.7357| Train Time(s) 0.2170| Val Time(s) 0.0504 | Time(s) 0.2674
+2024-11-21 05:23:54,422:INFO::Validation loss decreased (0.741055 --> 0.735694).  Saving model ...
+2024-11-21 05:23:54,808:INFO::Epoch_batch_00022 | lr 0.0005 |Train_Loss 0.7989 |  total_loss_consistency1 0.0369 | Loss 0.8248 | Val_Loss 0.7321| Train Time(s) 0.2160| Val Time(s) 0.0502 | Time(s) 0.2663
+2024-11-21 05:23:54,809:INFO::Validation loss decreased (0.735694 --> 0.732056).  Saving model ...
+2024-11-21 05:23:55,194:INFO::Epoch_batch_00023 | lr 0.0005 |Train_Loss 0.7882 |  total_loss_consistency1 0.0352 | Loss 0.8129 | Val_Loss 0.7316| Train Time(s) 0.2162| Val Time(s) 0.0502 | Time(s) 0.2663
+2024-11-21 05:23:55,195:INFO::Validation loss decreased (0.732056 --> 0.731594).  Saving model ...
+2024-11-21 05:23:55,462:INFO::Epoch_batch_00024 | lr 0.0005 |Train_Loss 0.7813 |  total_loss_consistency1 0.0356 | Loss 0.8062 | Val_Loss 0.7324| Train Time(s) 0.2165| Val Time(s) 0.0502 | Time(s) 0.2667
+2024-11-21 05:23:55,462:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:23:55,728:INFO::Epoch_batch_00025 | lr 0.0005 |Train_Loss 0.7769 |  total_loss_consistency1 0.0342 | Loss 0.8008 | Val_Loss 0.7338| Train Time(s) 0.2157| Val Time(s) 0.0504 | Time(s) 0.2660
+2024-11-21 05:23:55,728:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:23:55,995:INFO::Epoch_batch_00026 | lr 0.0005 |Train_Loss 0.7728 |  total_loss_consistency1 0.0341 | Loss 0.7967 | Val_Loss 0.7343| Train Time(s) 0.2159| Val Time(s) 0.0503 | Time(s) 0.2663
+2024-11-21 05:23:55,995:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:23:56,262:INFO::Epoch_batch_00027 | lr 0.0005 |Train_Loss 0.7679 |  total_loss_consistency1 0.0332 | Loss 0.7912 | Val_Loss 0.7318| Train Time(s) 0.2160| Val Time(s) 0.0502 | Time(s) 0.2662
+2024-11-21 05:23:56,262:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:23:56,654:INFO::Epoch_batch_00028 | lr 0.0005 |Train_Loss 0.7657 |  total_loss_consistency1 0.0321 | Loss 0.7881 | Val_Loss 0.7285| Train Time(s) 0.2151| Val Time(s) 0.0503 | Time(s) 0.2653
+2024-11-21 05:23:56,655:INFO::Validation loss decreased (0.731594 --> 0.728461).  Saving model ...
+2024-11-21 05:23:57,039:INFO::Epoch_batch_00029 | lr 0.0005 |Train_Loss 0.7618 |  total_loss_consistency1 0.0310 | Loss 0.7835 | Val_Loss 0.7254| Train Time(s) 0.2158| Val Time(s) 0.0503 | Time(s) 0.2661
+2024-11-21 05:23:57,040:INFO::Validation loss decreased (0.728461 --> 0.725448).  Saving model ...
+2024-11-21 05:23:57,427:INFO::Epoch_batch_00030 | lr 0.0005 |Train_Loss 0.7622 |  total_loss_consistency1 0.0302 | Loss 0.7833 | Val_Loss 0.7238| Train Time(s) 0.2173| Val Time(s) 0.0503 | Time(s) 0.2676
+2024-11-21 05:23:57,428:INFO::Validation loss decreased (0.725448 --> 0.723803).  Saving model ...
+2024-11-21 05:23:57,815:INFO::Epoch_batch_00031 | lr 0.0005 |Train_Loss 0.7588 |  total_loss_consistency1 0.0279 | Loss 0.7783 | Val_Loss 0.7230| Train Time(s) 0.2174| Val Time(s) 0.0503 | Time(s) 0.2677
+2024-11-21 05:23:57,816:INFO::Validation loss decreased (0.723803 --> 0.723041).  Saving model ...
+2024-11-21 05:23:58,084:INFO::Epoch_batch_00032 | lr 0.0005 |Train_Loss 0.7477 |  total_loss_consistency1 0.0275 | Loss 0.7670 | Val_Loss 0.7232| Train Time(s) 0.2170| Val Time(s) 0.0508 | Time(s) 0.2678
+2024-11-21 05:23:58,084:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:23:58,350:INFO::Epoch_batch_00033 | lr 0.0005 |Train_Loss 0.7478 |  total_loss_consistency1 0.0262 | Loss 0.7661 | Val_Loss 0.7243| Train Time(s) 0.2155| Val Time(s) 0.0503 | Time(s) 0.2658
+2024-11-21 05:23:58,351:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:23:58,616:INFO::Epoch_batch_00034 | lr 0.0005 |Train_Loss 0.7503 |  total_loss_consistency1 0.0249 | Loss 0.7678 | Val_Loss 0.7255| Train Time(s) 0.2148| Val Time(s) 0.0502 | Time(s) 0.2650
+2024-11-21 05:23:58,616:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:23:58,882:INFO::Epoch_batch_00035 | lr 0.0005 |Train_Loss 0.7448 |  total_loss_consistency1 0.0247 | Loss 0.7621 | Val_Loss 0.7262| Train Time(s) 0.2157| Val Time(s) 0.0503 | Time(s) 0.2660
+2024-11-21 05:23:58,883:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:23:59,149:INFO::Epoch_batch_00036 | lr 0.0005 |Train_Loss 0.7424 |  total_loss_consistency1 0.0236 | Loss 0.7589 | Val_Loss 0.7260| Train Time(s) 0.2160| Val Time(s) 0.0503 | Time(s) 0.2663
+2024-11-21 05:23:59,150:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:23:59,416:INFO::Epoch_batch_00037 | lr 0.0005 |Train_Loss 0.7361 |  total_loss_consistency1 0.0231 | Loss 0.7523 | Val_Loss 0.7256| Train Time(s) 0.2159| Val Time(s) 0.0503 | Time(s) 0.2662
+2024-11-21 05:23:59,416:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:23:59,682:INFO::Epoch_batch_00038 | lr 0.0005 |Train_Loss 0.7378 |  total_loss_consistency1 0.0219 | Loss 0.7531 | Val_Loss 0.7250| Train Time(s) 0.2149| Val Time(s) 0.0501 | Time(s) 0.2650
+2024-11-21 05:23:59,682:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:23:59,948:INFO::Epoch_batch_00039 | lr 0.0005 |Train_Loss 0.7380 |  total_loss_consistency1 0.0211 | Loss 0.7527 | Val_Loss 0.7246| Train Time(s) 0.2154| Val Time(s) 0.0502 | Time(s) 0.2657
+2024-11-21 05:23:59,948:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:24:00,213:INFO::Epoch_batch_00040 | lr 0.0005 |Train_Loss 0.7335 |  total_loss_consistency1 0.0207 | Loss 0.7480 | Val_Loss 0.7242| Train Time(s) 0.2148| Val Time(s) 0.0502 | Time(s) 0.2650
+2024-11-21 05:24:00,214:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:24:00,480:INFO::Epoch_batch_00041 | lr 0.0005 |Train_Loss 0.7355 |  total_loss_consistency1 0.0195 | Loss 0.7491 | Val_Loss 0.7242| Train Time(s) 0.2160| Val Time(s) 0.0504 | Time(s) 0.2663
+2024-11-21 05:24:00,481:INFO::EarlyStopping counter: 10 out of 30
+2024-11-21 05:24:00,747:INFO::Epoch_batch_00042 | lr 0.0005 |Train_Loss 0.7301 |  total_loss_consistency1 0.0190 | Loss 0.7433 | Val_Loss 0.7240| Train Time(s) 0.2159| Val Time(s) 0.0504 | Time(s) 0.2663
+2024-11-21 05:24:00,747:INFO::EarlyStopping counter: 11 out of 30
+2024-11-21 05:24:01,014:INFO::Epoch_batch_00043 | lr 0.0005 |Train_Loss 0.7290 |  total_loss_consistency1 0.0187 | Loss 0.7421 | Val_Loss 0.7239| Train Time(s) 0.2161| Val Time(s) 0.0503 | Time(s) 0.2663
+2024-11-21 05:24:01,014:INFO::EarlyStopping counter: 12 out of 30
+2024-11-21 05:24:01,280:INFO::Epoch_batch_00044 | lr 0.0005 |Train_Loss 0.7315 |  total_loss_consistency1 0.0183 | Loss 0.7444 | Val_Loss 0.7235| Train Time(s) 0.2151| Val Time(s) 0.0501 | Time(s) 0.2652
+2024-11-21 05:24:01,280:INFO::EarlyStopping counter: 13 out of 30
+2024-11-21 05:24:01,674:INFO::Epoch_batch_00045 | lr 0.0005 |Train_Loss 0.7283 |  total_loss_consistency1 0.0176 | Loss 0.7406 | Val_Loss 0.7230| Train Time(s) 0.2150| Val Time(s) 0.0502 | Time(s) 0.2652
+2024-11-21 05:24:01,675:INFO::Validation loss decreased (0.723041 --> 0.723041).  Saving model ...
+2024-11-21 05:24:02,062:INFO::Epoch_batch_00046 | lr 0.0005 |Train_Loss 0.7287 |  total_loss_consistency1 0.0173 | Loss 0.7408 | Val_Loss 0.7227| Train Time(s) 0.2162| Val Time(s) 0.0504 | Time(s) 0.2666
+2024-11-21 05:24:02,063:INFO::Validation loss decreased (0.723041 --> 0.722671).  Saving model ...
+2024-11-21 05:24:02,449:INFO::Epoch_batch_00047 | lr 0.0005 |Train_Loss 0.7263 |  total_loss_consistency1 0.0169 | Loss 0.7381 | Val_Loss 0.7225| Train Time(s) 0.2163| Val Time(s) 0.0502 | Time(s) 0.2665
+2024-11-21 05:24:02,450:INFO::Validation loss decreased (0.722671 --> 0.722540).  Saving model ...
+2024-11-21 05:24:02,716:INFO::Epoch_batch_00048 | lr 0.0005 |Train_Loss 0.7218 |  total_loss_consistency1 0.0161 | Loss 0.7331 | Val_Loss 0.7226| Train Time(s) 0.2162| Val Time(s) 0.0502 | Time(s) 0.2664
+2024-11-21 05:24:02,717:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:02,983:INFO::Epoch_batch_00049 | lr 0.0005 |Train_Loss 0.7235 |  total_loss_consistency1 0.0159 | Loss 0.7347 | Val_Loss 0.7232| Train Time(s) 0.2158| Val Time(s) 0.0504 | Time(s) 0.2661
+2024-11-21 05:24:02,983:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:24:03,250:INFO::Epoch_batch_00050 | lr 0.0005 |Train_Loss 0.7234 |  total_loss_consistency1 0.0154 | Loss 0.7342 | Val_Loss 0.7237| Train Time(s) 0.2158| Val Time(s) 0.0503 | Time(s) 0.2660
+2024-11-21 05:24:03,250:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:24:03,516:INFO::Epoch_batch_00051 | lr 0.0005 |Train_Loss 0.7184 |  total_loss_consistency1 0.0151 | Loss 0.7290 | Val_Loss 0.7242| Train Time(s) 0.2151| Val Time(s) 0.0504 | Time(s) 0.2655
+2024-11-21 05:24:03,516:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:24:03,782:INFO::Epoch_batch_00052 | lr 0.0005 |Train_Loss 0.7194 |  total_loss_consistency1 0.0150 | Loss 0.7299 | Val_Loss 0.7242| Train Time(s) 0.2156| Val Time(s) 0.0504 | Time(s) 0.2660
+2024-11-21 05:24:03,783:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:24:04,048:INFO::Epoch_batch_00053 | lr 0.0005 |Train_Loss 0.7202 |  total_loss_consistency1 0.0146 | Loss 0.7304 | Val_Loss 0.7236| Train Time(s) 0.2154| Val Time(s) 0.0503 | Time(s) 0.2657
+2024-11-21 05:24:04,049:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:24:04,315:INFO::Epoch_batch_00054 | lr 0.0005 |Train_Loss 0.7190 |  total_loss_consistency1 0.0138 | Loss 0.7287 | Val_Loss 0.7230| Train Time(s) 0.2159| Val Time(s) 0.0503 | Time(s) 0.2663
+2024-11-21 05:24:04,315:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:24:04,582:INFO::Epoch_batch_00055 | lr 0.0005 |Train_Loss 0.7160 |  total_loss_consistency1 0.0138 | Loss 0.7257 | Val_Loss 0.7226| Train Time(s) 0.2160| Val Time(s) 0.0503 | Time(s) 0.2663
+2024-11-21 05:24:04,582:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:24:04,976:INFO::Epoch_batch_00056 | lr 0.0005 |Train_Loss 0.7142 |  total_loss_consistency1 0.0138 | Loss 0.7238 | Val_Loss 0.7222| Train Time(s) 0.2159| Val Time(s) 0.0504 | Time(s) 0.2663
+2024-11-21 05:24:04,976:INFO::Validation loss decreased (0.722540 --> 0.722182).  Saving model ...
+2024-11-21 05:24:05,361:INFO::Epoch_batch_00057 | lr 0.0005 |Train_Loss 0.7164 |  total_loss_consistency1 0.0134 | Loss 0.7257 | Val_Loss 0.7217| Train Time(s) 0.2149| Val Time(s) 0.0503 | Time(s) 0.2652
+2024-11-21 05:24:05,362:INFO::Validation loss decreased (0.722182 --> 0.721715).  Saving model ...
+2024-11-21 05:24:05,747:INFO::Epoch_batch_00058 | lr 0.0005 |Train_Loss 0.7170 |  total_loss_consistency1 0.0130 | Loss 0.7261 | Val_Loss 0.7212| Train Time(s) 0.2168| Val Time(s) 0.0501 | Time(s) 0.2670
+2024-11-21 05:24:05,748:INFO::Validation loss decreased (0.721715 --> 0.721243).  Saving model ...
+2024-11-21 05:24:06,135:INFO::Epoch_batch_00059 | lr 0.0005 |Train_Loss 0.7171 |  total_loss_consistency1 0.0128 | Loss 0.7260 | Val_Loss 0.7208| Train Time(s) 0.2174| Val Time(s) 0.0503 | Time(s) 0.2677
+2024-11-21 05:24:06,136:INFO::Validation loss decreased (0.721243 --> 0.720775).  Saving model ...
+2024-11-21 05:24:06,523:INFO::Epoch_batch_00060 | lr 0.0005 |Train_Loss 0.7143 |  total_loss_consistency1 0.0129 | Loss 0.7233 | Val_Loss 0.7202| Train Time(s) 0.2175| Val Time(s) 0.0504 | Time(s) 0.2679
+2024-11-21 05:24:06,524:INFO::Validation loss decreased (0.720775 --> 0.720187).  Saving model ...
+2024-11-21 05:24:06,792:INFO::Epoch_batch_00061 | lr 0.0005 |Train_Loss 0.7143 |  total_loss_consistency1 0.0126 | Loss 0.7231 | Val_Loss 0.7208| Train Time(s) 0.2171| Val Time(s) 0.0502 | Time(s) 0.2674
+2024-11-21 05:24:06,792:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:07,058:INFO::Epoch_batch_00062 | lr 0.0005 |Train_Loss 0.7122 |  total_loss_consistency1 0.0123 | Loss 0.7208 | Val_Loss 0.7220| Train Time(s) 0.2153| Val Time(s) 0.0502 | Time(s) 0.2655
+2024-11-21 05:24:07,058:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:24:07,326:INFO::Epoch_batch_00063 | lr 0.0005 |Train_Loss 0.7130 |  total_loss_consistency1 0.0121 | Loss 0.7215 | Val_Loss 0.7233| Train Time(s) 0.2169| Val Time(s) 0.0504 | Time(s) 0.2674
+2024-11-21 05:24:07,326:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:24:07,592:INFO::Epoch_batch_00064 | lr 0.0005 |Train_Loss 0.7105 |  total_loss_consistency1 0.0117 | Loss 0.7188 | Val_Loss 0.7244| Train Time(s) 0.2159| Val Time(s) 0.0504 | Time(s) 0.2662
+2024-11-21 05:24:07,593:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:24:07,859:INFO::Epoch_batch_00065 | lr 0.0005 |Train_Loss 0.7118 |  total_loss_consistency1 0.0117 | Loss 0.7200 | Val_Loss 0.7241| Train Time(s) 0.2160| Val Time(s) 0.0503 | Time(s) 0.2663
+2024-11-21 05:24:07,859:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:24:08,125:INFO::Epoch_batch_00066 | lr 0.0005 |Train_Loss 0.7080 |  total_loss_consistency1 0.0114 | Loss 0.7160 | Val_Loss 0.7230| Train Time(s) 0.2155| Val Time(s) 0.0502 | Time(s) 0.2658
+2024-11-21 05:24:08,126:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:24:08,391:INFO::Epoch_batch_00067 | lr 0.0005 |Train_Loss 0.7103 |  total_loss_consistency1 0.0112 | Loss 0.7181 | Val_Loss 0.7216| Train Time(s) 0.2152| Val Time(s) 0.0502 | Time(s) 0.2654
+2024-11-21 05:24:08,392:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:24:08,657:INFO::Epoch_batch_00068 | lr 0.0005 |Train_Loss 0.7075 |  total_loss_consistency1 0.0112 | Loss 0.7153 | Val_Loss 0.7205| Train Time(s) 0.2150| Val Time(s) 0.0502 | Time(s) 0.2652
+2024-11-21 05:24:08,658:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:24:08,924:INFO::Epoch_batch_00069 | lr 0.0005 |Train_Loss 0.7060 |  total_loss_consistency1 0.0113 | Loss 0.7139 | Val_Loss 0.7203| Train Time(s) 0.2158| Val Time(s) 0.0503 | Time(s) 0.2661
+2024-11-21 05:24:08,924:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:24:09,191:INFO::Epoch_batch_00070 | lr 0.0005 |Train_Loss 0.7040 |  total_loss_consistency1 0.0110 | Loss 0.7118 | Val_Loss 0.7204| Train Time(s) 0.2161| Val Time(s) 0.0504 | Time(s) 0.2665
+2024-11-21 05:24:09,191:INFO::EarlyStopping counter: 10 out of 30
+2024-11-21 05:24:09,458:INFO::Epoch_batch_00071 | lr 0.0005 |Train_Loss 0.7017 |  total_loss_consistency1 0.0110 | Loss 0.7094 | Val_Loss 0.7212| Train Time(s) 0.2161| Val Time(s) 0.0504 | Time(s) 0.2665
+2024-11-21 05:24:09,458:INFO::EarlyStopping counter: 11 out of 30
+2024-11-21 05:24:09,724:INFO::Epoch_batch_00072 | lr 0.0005 |Train_Loss 0.7022 |  total_loss_consistency1 0.0107 | Loss 0.7097 | Val_Loss 0.7218| Train Time(s) 0.2153| Val Time(s) 0.0503 | Time(s) 0.2655
+2024-11-21 05:24:09,724:INFO::EarlyStopping counter: 12 out of 30
+2024-11-21 05:24:09,990:INFO::Epoch_batch_00073 | lr 0.0005 |Train_Loss 0.7033 |  total_loss_consistency1 0.0105 | Loss 0.7107 | Val_Loss 0.7222| Train Time(s) 0.2152| Val Time(s) 0.0502 | Time(s) 0.2654
+2024-11-21 05:24:09,990:INFO::EarlyStopping counter: 13 out of 30
+2024-11-21 05:24:10,257:INFO::Epoch_batch_00074 | lr 0.0005 |Train_Loss 0.7008 |  total_loss_consistency1 0.0102 | Loss 0.7079 | Val_Loss 0.7226| Train Time(s) 0.2159| Val Time(s) 0.0502 | Time(s) 0.2661
+2024-11-21 05:24:10,257:INFO::EarlyStopping counter: 14 out of 30
+2024-11-21 05:24:10,523:INFO::Epoch_batch_00075 | lr 0.0005 |Train_Loss 0.7031 |  total_loss_consistency1 0.0099 | Loss 0.7100 | Val_Loss 0.7219| Train Time(s) 0.2159| Val Time(s) 0.0503 | Time(s) 0.2662
+2024-11-21 05:24:10,524:INFO::EarlyStopping counter: 15 out of 30
+2024-11-21 05:24:10,790:INFO::Epoch_batch_00076 | lr 0.0005 |Train_Loss 0.7023 |  total_loss_consistency1 0.0098 | Loss 0.7092 | Val_Loss 0.7212| Train Time(s) 0.2161| Val Time(s) 0.0503 | Time(s) 0.2663
+2024-11-21 05:24:10,791:INFO::EarlyStopping counter: 16 out of 30
+2024-11-21 05:24:11,057:INFO::Epoch_batch_00077 | lr 0.0005 |Train_Loss 0.6990 |  total_loss_consistency1 0.0097 | Loss 0.7058 | Val_Loss 0.7205| Train Time(s) 0.2158| Val Time(s) 0.0503 | Time(s) 0.2661
+2024-11-21 05:24:11,057:INFO::EarlyStopping counter: 17 out of 30
+2024-11-21 05:24:11,450:INFO::Epoch_batch_00078 | lr 0.0005 |Train_Loss 0.6988 |  total_loss_consistency1 0.0095 | Loss 0.7054 | Val_Loss 0.7199| Train Time(s) 0.2153| Val Time(s) 0.0502 | Time(s) 0.2655
+2024-11-21 05:24:11,450:INFO::Validation loss decreased (0.720187 --> 0.719899).  Saving model ...
+2024-11-21 05:24:11,717:INFO::Epoch_batch_00079 | lr 0.0005 |Train_Loss 0.6980 |  total_loss_consistency1 0.0098 | Loss 0.7048 | Val_Loss 0.7201| Train Time(s) 0.2159| Val Time(s) 0.0503 | Time(s) 0.2662
+2024-11-21 05:24:11,717:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:11,984:INFO::Epoch_batch_00080 | lr 0.0005 |Train_Loss 0.6977 |  total_loss_consistency1 0.0097 | Loss 0.7045 | Val_Loss 0.7206| Train Time(s) 0.2159| Val Time(s) 0.0503 | Time(s) 0.2662
+2024-11-21 05:24:11,984:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:24:12,250:INFO::Epoch_batch_00081 | lr 0.0005 |Train_Loss 0.6987 |  total_loss_consistency1 0.0095 | Loss 0.7054 | Val_Loss 0.7210| Train Time(s) 0.2152| Val Time(s) 0.0504 | Time(s) 0.2656
+2024-11-21 05:24:12,250:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:24:12,517:INFO::Epoch_batch_00082 | lr 0.0005 |Train_Loss 0.6980 |  total_loss_consistency1 0.0093 | Loss 0.7045 | Val_Loss 0.7211| Train Time(s) 0.2159| Val Time(s) 0.0503 | Time(s) 0.2662
+2024-11-21 05:24:12,517:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:24:12,784:INFO::Epoch_batch_00083 | lr 0.0005 |Train_Loss 0.6952 |  total_loss_consistency1 0.0092 | Loss 0.7016 | Val_Loss 0.7215| Train Time(s) 0.2163| Val Time(s) 0.0503 | Time(s) 0.2666
+2024-11-21 05:24:12,784:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:24:13,051:INFO::Epoch_batch_00084 | lr 0.0005 |Train_Loss 0.6951 |  total_loss_consistency1 0.0094 | Loss 0.7017 | Val_Loss 0.7215| Train Time(s) 0.2162| Val Time(s) 0.0503 | Time(s) 0.2665
+2024-11-21 05:24:13,051:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:24:13,317:INFO::Epoch_batch_00085 | lr 0.0005 |Train_Loss 0.6953 |  total_loss_consistency1 0.0091 | Loss 0.7016 | Val_Loss 0.7214| Train Time(s) 0.2158| Val Time(s) 0.0503 | Time(s) 0.2661
+2024-11-21 05:24:13,318:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:24:13,584:INFO::Epoch_batch_00086 | lr 0.0005 |Train_Loss 0.6942 |  total_loss_consistency1 0.0088 | Loss 0.7004 | Val_Loss 0.7211| Train Time(s) 0.2154| Val Time(s) 0.0503 | Time(s) 0.2656
+2024-11-21 05:24:13,584:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:24:13,850:INFO::Epoch_batch_00087 | lr 0.0005 |Train_Loss 0.6946 |  total_loss_consistency1 0.0088 | Loss 0.7008 | Val_Loss 0.7208| Train Time(s) 0.2159| Val Time(s) 0.0502 | Time(s) 0.2661
+2024-11-21 05:24:13,850:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:24:14,117:INFO::Epoch_batch_00088 | lr 0.0005 |Train_Loss 0.6936 |  total_loss_consistency1 0.0086 | Loss 0.6996 | Val_Loss 0.7206| Train Time(s) 0.2163| Val Time(s) 0.0503 | Time(s) 0.2667
+2024-11-21 05:24:14,118:INFO::EarlyStopping counter: 10 out of 30
+2024-11-21 05:24:14,384:INFO::Epoch_batch_00089 | lr 0.0005 |Train_Loss 0.6912 |  total_loss_consistency1 0.0085 | Loss 0.6971 | Val_Loss 0.7205| Train Time(s) 0.2162| Val Time(s) 0.0503 | Time(s) 0.2665
+2024-11-21 05:24:14,385:INFO::EarlyStopping counter: 11 out of 30
+2024-11-21 05:24:14,651:INFO::Epoch_batch_00090 | lr 0.0005 |Train_Loss 0.6935 |  total_loss_consistency1 0.0083 | Loss 0.6993 | Val_Loss 0.7203| Train Time(s) 0.2164| Val Time(s) 0.0502 | Time(s) 0.2666
+2024-11-21 05:24:14,652:INFO::EarlyStopping counter: 12 out of 30
+2024-11-21 05:24:14,917:INFO::Epoch_batch_00091 | lr 0.0005 |Train_Loss 0.6937 |  total_loss_consistency1 0.0084 | Loss 0.6996 | Val_Loss 0.7202| Train Time(s) 0.2151| Val Time(s) 0.0502 | Time(s) 0.2653
+2024-11-21 05:24:14,918:INFO::EarlyStopping counter: 13 out of 30
+2024-11-21 05:24:15,184:INFO::Epoch_batch_00092 | lr 0.0005 |Train_Loss 0.6945 |  total_loss_consistency1 0.0082 | Loss 0.7003 | Val_Loss 0.7203| Train Time(s) 0.2159| Val Time(s) 0.0503 | Time(s) 0.2661
+2024-11-21 05:24:15,184:INFO::EarlyStopping counter: 14 out of 30
+2024-11-21 05:24:15,451:INFO::Epoch_batch_00093 | lr 0.0005 |Train_Loss 0.6925 |  total_loss_consistency1 0.0083 | Loss 0.6983 | Val_Loss 0.7202| Train Time(s) 0.2161| Val Time(s) 0.0502 | Time(s) 0.2663
+2024-11-21 05:24:15,451:INFO::EarlyStopping counter: 15 out of 30
+2024-11-21 05:24:15,717:INFO::Epoch_batch_00094 | lr 0.0005 |Train_Loss 0.6925 |  total_loss_consistency1 0.0083 | Loss 0.6983 | Val_Loss 0.7208| Train Time(s) 0.2159| Val Time(s) 0.0501 | Time(s) 0.2660
+2024-11-21 05:24:15,718:INFO::EarlyStopping counter: 16 out of 30
+2024-11-21 05:24:15,984:INFO::Epoch_batch_00095 | lr 0.0005 |Train_Loss 0.6885 |  total_loss_consistency1 0.0081 | Loss 0.6942 | Val_Loss 0.7217| Train Time(s) 0.2157| Val Time(s) 0.0503 | Time(s) 0.2660
+2024-11-21 05:24:15,984:INFO::EarlyStopping counter: 17 out of 30
+2024-11-21 05:24:16,250:INFO::Epoch_batch_00096 | lr 0.0005 |Train_Loss 0.6901 |  total_loss_consistency1 0.0081 | Loss 0.6958 | Val_Loss 0.7223| Train Time(s) 0.2150| Val Time(s) 0.0502 | Time(s) 0.2652
+2024-11-21 05:24:16,250:INFO::EarlyStopping counter: 18 out of 30
+2024-11-21 05:24:16,516:INFO::Epoch_batch_00097 | lr 0.0005 |Train_Loss 0.6877 |  total_loss_consistency1 0.0080 | Loss 0.6933 | Val_Loss 0.7225| Train Time(s) 0.2160| Val Time(s) 0.0503 | Time(s) 0.2663
+2024-11-21 05:24:16,517:INFO::EarlyStopping counter: 19 out of 30
+2024-11-21 05:24:16,783:INFO::Epoch_batch_00098 | lr 0.0005 |Train_Loss 0.6895 |  total_loss_consistency1 0.0078 | Loss 0.6950 | Val_Loss 0.7221| Train Time(s) 0.2160| Val Time(s) 0.0501 | Time(s) 0.2661
+2024-11-21 05:24:16,783:INFO::EarlyStopping counter: 20 out of 30
+2024-11-21 05:24:17,050:INFO::Epoch_batch_00099 | lr 0.0005 |Train_Loss 0.6882 |  total_loss_consistency1 0.0078 | Loss 0.6936 | Val_Loss 0.7218| Train Time(s) 0.2160| Val Time(s) 0.0503 | Time(s) 0.2662
+2024-11-21 05:24:17,050:INFO::EarlyStopping counter: 21 out of 30
+2024-11-21 05:24:17,317:INFO::Epoch_batch_00100 | lr 0.0005 |Train_Loss 0.6883 |  total_loss_consistency1 0.0078 | Loss 0.6938 | Val_Loss 0.7217| Train Time(s) 0.2161| Val Time(s) 0.0502 | Time(s) 0.2664
+2024-11-21 05:24:17,317:INFO::EarlyStopping counter: 22 out of 30
+2024-11-21 05:24:17,583:INFO::Epoch_batch_00101 | lr 0.0005 |Train_Loss 0.6893 |  total_loss_consistency1 0.0075 | Loss 0.6945 | Val_Loss 0.7215| Train Time(s) 0.2153| Val Time(s) 0.0503 | Time(s) 0.2655
+2024-11-21 05:24:17,583:INFO::EarlyStopping counter: 23 out of 30
+2024-11-21 05:24:17,850:INFO::Epoch_batch_00102 | lr 0.0005 |Train_Loss 0.6892 |  total_loss_consistency1 0.0075 | Loss 0.6944 | Val_Loss 0.7219| Train Time(s) 0.2164| Val Time(s) 0.0503 | Time(s) 0.2667
+2024-11-21 05:24:17,850:INFO::EarlyStopping counter: 24 out of 30
+2024-11-21 05:24:18,117:INFO::Epoch_batch_00103 | lr 0.0005 |Train_Loss 0.6866 |  total_loss_consistency1 0.0074 | Loss 0.6918 | Val_Loss 0.7221| Train Time(s) 0.2165| Val Time(s) 0.0504 | Time(s) 0.2669
+2024-11-21 05:24:18,118:INFO::EarlyStopping counter: 25 out of 30
+2024-11-21 05:24:18,384:INFO::Epoch_batch_00104 | lr 0.0005 |Train_Loss 0.6894 |  total_loss_consistency1 0.0073 | Loss 0.6945 | Val_Loss 0.7221| Train Time(s) 0.2159| Val Time(s) 0.0502 | Time(s) 0.2661
+2024-11-21 05:24:18,384:INFO::EarlyStopping counter: 26 out of 30
+2024-11-21 05:24:18,652:INFO::Epoch_batch_00105 | lr 0.0005 |Train_Loss 0.6862 |  total_loss_consistency1 0.0072 | Loss 0.6913 | Val_Loss 0.7216| Train Time(s) 0.2172| Val Time(s) 0.0502 | Time(s) 0.2674
+2024-11-21 05:24:18,652:INFO::EarlyStopping counter: 27 out of 30
+2024-11-21 05:24:18,919:INFO::Epoch_batch_00106 | lr 0.0005 |Train_Loss 0.6850 |  total_loss_consistency1 0.0072 | Loss 0.6901 | Val_Loss 0.7209| Train Time(s) 0.2159| Val Time(s) 0.0502 | Time(s) 0.2661
+2024-11-21 05:24:18,919:INFO::EarlyStopping counter: 28 out of 30
+2024-11-21 05:24:19,186:INFO::Epoch_batch_00107 | lr 0.0005 |Train_Loss 0.6838 |  total_loss_consistency1 0.0071 | Loss 0.6888 | Val_Loss 0.7202| Train Time(s) 0.2162| Val Time(s) 0.0503 | Time(s) 0.2665
+2024-11-21 05:24:19,186:INFO::EarlyStopping counter: 29 out of 30
+2024-11-21 05:24:19,453:INFO::Epoch_batch_00108 | lr 0.0005 |Train_Loss 0.6872 |  total_loss_consistency1 0.0069 | Loss 0.6920 | Val_Loss 0.7201| Train Time(s) 0.2166| Val Time(s) 0.0503 | Time(s) 0.2669
+2024-11-21 05:24:19,453:INFO::EarlyStopping counter: 30 out of 30
+2024-11-21 05:24:19,453:INFO::Eearly stopping!
+2024-11-21 05:24:19,529:INFO::
+testing...
+2024-11-21 05:24:19,570:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:24:19,571:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:24:19,571:INFO::submit dir: submit/submit_simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:24:19,620:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:24:19,629:INFO::{'micro-f1': 0.9566901408450704, 'macro-f1': 0.9535746590621701}
+2024-11-21 05:24:19,667:INFO::############### Experiments Stage Ends! ###############
+2024-11-21 05:24:19,667:INFO::=============== one experiment stage finish, use 42.095996618270874 time.
+2024-11-21 05:24:27,383:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:24:27,779:INFO::Epoch_batch_00000 | lr 0.0005 |Train_Loss 1.5068 |  total_loss_consistency1 0.0326 | Loss 1.5296 | Val_Loss 1.3584| Train Time(s) 0.2175| Val Time(s) 0.0497 | Time(s) 0.2672
+2024-11-21 05:24:28,166:INFO::Epoch_batch_00001 | lr 0.0005 |Train_Loss 1.4257 |  total_loss_consistency1 0.0315 | Loss 1.4478 | Val_Loss 1.3366| Train Time(s) 0.2165| Val Time(s) 0.0503 | Time(s) 0.2668
+2024-11-21 05:24:28,167:INFO::Validation loss decreased (inf --> 1.336557).  Saving model ...
+2024-11-21 05:24:28,554:INFO::Epoch_batch_00002 | lr 0.0005 |Train_Loss 1.3786 |  total_loss_consistency1 0.0318 | Loss 1.4008 | Val_Loss 1.3050| Train Time(s) 0.2167| Val Time(s) 0.0502 | Time(s) 0.2669
+2024-11-21 05:24:28,554:INFO::Validation loss decreased (1.336557 --> 1.305014).  Saving model ...
+2024-11-21 05:24:28,942:INFO::Epoch_batch_00003 | lr 0.0005 |Train_Loss 1.3520 |  total_loss_consistency1 0.0324 | Loss 1.3747 | Val_Loss 1.2666| Train Time(s) 0.2178| Val Time(s) 0.0503 | Time(s) 0.2681
+2024-11-21 05:24:28,943:INFO::Validation loss decreased (1.305014 --> 1.266609).  Saving model ...
+2024-11-21 05:24:29,330:INFO::Epoch_batch_00004 | lr 0.0005 |Train_Loss 1.3256 |  total_loss_consistency1 0.0327 | Loss 1.3484 | Val_Loss 1.2211| Train Time(s) 0.2177| Val Time(s) 0.0503 | Time(s) 0.2680
+2024-11-21 05:24:29,331:INFO::Validation loss decreased (1.266609 --> 1.221061).  Saving model ...
+2024-11-21 05:24:29,718:INFO::Epoch_batch_00005 | lr 0.0005 |Train_Loss 1.2957 |  total_loss_consistency1 0.0329 | Loss 1.3187 | Val_Loss 1.1668| Train Time(s) 0.2173| Val Time(s) 0.0502 | Time(s) 0.2675
+2024-11-21 05:24:29,719:INFO::Validation loss decreased (1.221061 --> 1.166784).  Saving model ...
+2024-11-21 05:24:30,107:INFO::Epoch_batch_00006 | lr 0.0005 |Train_Loss 1.2792 |  total_loss_consistency1 0.0328 | Loss 1.3022 | Val_Loss 1.1057| Train Time(s) 0.2172| Val Time(s) 0.0502 | Time(s) 0.2674
+2024-11-21 05:24:30,107:INFO::Validation loss decreased (1.166784 --> 1.105747).  Saving model ...
+2024-11-21 05:24:30,496:INFO::Epoch_batch_00007 | lr 0.0005 |Train_Loss 1.2382 |  total_loss_consistency1 0.0329 | Loss 1.2612 | Val_Loss 1.0374| Train Time(s) 0.2169| Val Time(s) 0.0503 | Time(s) 0.2672
+2024-11-21 05:24:30,497:INFO::Validation loss decreased (1.105747 --> 1.037363).  Saving model ...
+2024-11-21 05:24:30,885:INFO::Epoch_batch_00008 | lr 0.0005 |Train_Loss 1.1961 |  total_loss_consistency1 0.0336 | Loss 1.2196 | Val_Loss 0.9678| Train Time(s) 0.2181| Val Time(s) 0.0502 | Time(s) 0.2684
+2024-11-21 05:24:30,885:INFO::Validation loss decreased (1.037363 --> 0.967837).  Saving model ...
+2024-11-21 05:24:31,272:INFO::Epoch_batch_00009 | lr 0.0005 |Train_Loss 1.1273 |  total_loss_consistency1 0.0337 | Loss 1.1509 | Val_Loss 0.8983| Train Time(s) 0.2174| Val Time(s) 0.0501 | Time(s) 0.2674
+2024-11-21 05:24:31,272:INFO::Validation loss decreased (0.967837 --> 0.898339).  Saving model ...
+2024-11-21 05:24:31,657:INFO::Epoch_batch_00010 | lr 0.0005 |Train_Loss 1.0598 |  total_loss_consistency1 0.0368 | Loss 1.0855 | Val_Loss 0.8539| Train Time(s) 0.2170| Val Time(s) 0.0501 | Time(s) 0.2671
+2024-11-21 05:24:31,658:INFO::Validation loss decreased (0.898339 --> 0.853947).  Saving model ...
+2024-11-21 05:24:32,044:INFO::Epoch_batch_00011 | lr 0.0005 |Train_Loss 1.0063 |  total_loss_consistency1 0.0385 | Loss 1.0332 | Val_Loss 0.8472| Train Time(s) 0.2168| Val Time(s) 0.0502 | Time(s) 0.2670
+2024-11-21 05:24:32,045:INFO::Validation loss decreased (0.853947 --> 0.847229).  Saving model ...
+2024-11-21 05:24:32,314:INFO::Epoch_batch_00012 | lr 0.0005 |Train_Loss 0.9749 |  total_loss_consistency1 0.0389 | Loss 1.0022 | Val_Loss 0.8504| Train Time(s) 0.2180| Val Time(s) 0.0504 | Time(s) 0.2684
+2024-11-21 05:24:32,314:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:32,581:INFO::Epoch_batch_00013 | lr 0.0005 |Train_Loss 0.9706 |  total_loss_consistency1 0.0393 | Loss 0.9981 | Val_Loss 0.8506| Train Time(s) 0.2162| Val Time(s) 0.0501 | Time(s) 0.2663
+2024-11-21 05:24:32,581:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:24:32,969:INFO::Epoch_batch_00014 | lr 0.0005 |Train_Loss 0.9555 |  total_loss_consistency1 0.0382 | Loss 0.9822 | Val_Loss 0.8434| Train Time(s) 0.2167| Val Time(s) 0.0503 | Time(s) 0.2670
+2024-11-21 05:24:32,970:INFO::Validation loss decreased (0.847229 --> 0.843380).  Saving model ...
+2024-11-21 05:24:33,356:INFO::Epoch_batch_00015 | lr 0.0005 |Train_Loss 0.9395 |  total_loss_consistency1 0.0395 | Loss 0.9671 | Val_Loss 0.8280| Train Time(s) 0.2173| Val Time(s) 0.0503 | Time(s) 0.2676
+2024-11-21 05:24:33,357:INFO::Validation loss decreased (0.843380 --> 0.828015).  Saving model ...
+2024-11-21 05:24:33,743:INFO::Epoch_batch_00016 | lr 0.0005 |Train_Loss 0.9098 |  total_loss_consistency1 0.0379 | Loss 0.9363 | Val_Loss 0.8100| Train Time(s) 0.2178| Val Time(s) 0.0504 | Time(s) 0.2682
+2024-11-21 05:24:33,744:INFO::Validation loss decreased (0.828015 --> 0.809971).  Saving model ...
+2024-11-21 05:24:34,131:INFO::Epoch_batch_00017 | lr 0.0005 |Train_Loss 0.8928 |  total_loss_consistency1 0.0374 | Loss 0.9190 | Val_Loss 0.7958| Train Time(s) 0.2176| Val Time(s) 0.0501 | Time(s) 0.2677
+2024-11-21 05:24:34,131:INFO::Validation loss decreased (0.809971 --> 0.795773).  Saving model ...
+2024-11-21 05:24:34,519:INFO::Epoch_batch_00018 | lr 0.0005 |Train_Loss 0.8696 |  total_loss_consistency1 0.0389 | Loss 0.8968 | Val_Loss 0.7867| Train Time(s) 0.2182| Val Time(s) 0.0502 | Time(s) 0.2684
+2024-11-21 05:24:34,520:INFO::Validation loss decreased (0.795773 --> 0.786659).  Saving model ...
+2024-11-21 05:24:34,910:INFO::Epoch_batch_00019 | lr 0.0005 |Train_Loss 0.8482 |  total_loss_consistency1 0.0369 | Loss 0.8740 | Val_Loss 0.7777| Train Time(s) 0.2181| Val Time(s) 0.0503 | Time(s) 0.2683
+2024-11-21 05:24:34,911:INFO::Validation loss decreased (0.786659 --> 0.777731).  Saving model ...
+2024-11-21 05:24:35,296:INFO::Epoch_batch_00020 | lr 0.0005 |Train_Loss 0.8465 |  total_loss_consistency1 0.0376 | Loss 0.8728 | Val_Loss 0.7698| Train Time(s) 0.2174| Val Time(s) 0.0502 | Time(s) 0.2677
+2024-11-21 05:24:35,297:INFO::Validation loss decreased (0.777731 --> 0.769808).  Saving model ...
+2024-11-21 05:24:35,686:INFO::Epoch_batch_00021 | lr 0.0005 |Train_Loss 0.8297 |  total_loss_consistency1 0.0360 | Loss 0.8548 | Val_Loss 0.7643| Train Time(s) 0.2176| Val Time(s) 0.0502 | Time(s) 0.2678
+2024-11-21 05:24:35,687:INFO::Validation loss decreased (0.769808 --> 0.764270).  Saving model ...
+2024-11-21 05:24:36,077:INFO::Epoch_batch_00022 | lr 0.0005 |Train_Loss 0.8188 |  total_loss_consistency1 0.0363 | Loss 0.8442 | Val_Loss 0.7573| Train Time(s) 0.2203| Val Time(s) 0.0502 | Time(s) 0.2705
+2024-11-21 05:24:36,078:INFO::Validation loss decreased (0.764270 --> 0.757342).  Saving model ...
+2024-11-21 05:24:36,466:INFO::Epoch_batch_00023 | lr 0.0005 |Train_Loss 0.8037 |  total_loss_consistency1 0.0364 | Loss 0.8292 | Val_Loss 0.7506| Train Time(s) 0.2178| Val Time(s) 0.0502 | Time(s) 0.2680
+2024-11-21 05:24:36,466:INFO::Validation loss decreased (0.757342 --> 0.750625).  Saving model ...
+2024-11-21 05:24:36,851:INFO::Epoch_batch_00024 | lr 0.0005 |Train_Loss 0.7969 |  total_loss_consistency1 0.0358 | Loss 0.8220 | Val_Loss 0.7459| Train Time(s) 0.2175| Val Time(s) 0.0501 | Time(s) 0.2677
+2024-11-21 05:24:36,852:INFO::Validation loss decreased (0.750625 --> 0.745902).  Saving model ...
+2024-11-21 05:24:37,239:INFO::Epoch_batch_00025 | lr 0.0005 |Train_Loss 0.7881 |  total_loss_consistency1 0.0346 | Loss 0.8123 | Val_Loss 0.7418| Train Time(s) 0.2176| Val Time(s) 0.0503 | Time(s) 0.2679
+2024-11-21 05:24:37,240:INFO::Validation loss decreased (0.745902 --> 0.741849).  Saving model ...
+2024-11-21 05:24:37,627:INFO::Epoch_batch_00026 | lr 0.0005 |Train_Loss 0.7869 |  total_loss_consistency1 0.0347 | Loss 0.8112 | Val_Loss 0.7380| Train Time(s) 0.2180| Val Time(s) 0.0502 | Time(s) 0.2682
+2024-11-21 05:24:37,627:INFO::Validation loss decreased (0.741849 --> 0.737956).  Saving model ...
+2024-11-21 05:24:38,015:INFO::Epoch_batch_00027 | lr 0.0005 |Train_Loss 0.7803 |  total_loss_consistency1 0.0340 | Loss 0.8040 | Val_Loss 0.7361| Train Time(s) 0.2181| Val Time(s) 0.0501 | Time(s) 0.2683
+2024-11-21 05:24:38,016:INFO::Validation loss decreased (0.737956 --> 0.736063).  Saving model ...
+2024-11-21 05:24:38,412:INFO::Epoch_batch_00028 | lr 0.0005 |Train_Loss 0.7709 |  total_loss_consistency1 0.0327 | Loss 0.7937 | Val_Loss 0.7354| Train Time(s) 0.2177| Val Time(s) 0.0502 | Time(s) 0.2679
+2024-11-21 05:24:38,413:INFO::Validation loss decreased (0.736063 --> 0.735370).  Saving model ...
+2024-11-21 05:24:38,805:INFO::Epoch_batch_00029 | lr 0.0005 |Train_Loss 0.7716 |  total_loss_consistency1 0.0326 | Loss 0.7944 | Val_Loss 0.7345| Train Time(s) 0.2171| Val Time(s) 0.0500 | Time(s) 0.2671
+2024-11-21 05:24:38,806:INFO::Validation loss decreased (0.735370 --> 0.734452).  Saving model ...
+2024-11-21 05:24:39,203:INFO::Epoch_batch_00030 | lr 0.0005 |Train_Loss 0.7608 |  total_loss_consistency1 0.0313 | Loss 0.7827 | Val_Loss 0.7333| Train Time(s) 0.2178| Val Time(s) 0.0503 | Time(s) 0.2681
+2024-11-21 05:24:39,204:INFO::Validation loss decreased (0.734452 --> 0.733340).  Saving model ...
+2024-11-21 05:24:39,593:INFO::Epoch_batch_00031 | lr 0.0005 |Train_Loss 0.7651 |  total_loss_consistency1 0.0304 | Loss 0.7864 | Val_Loss 0.7324| Train Time(s) 0.2192| Val Time(s) 0.0509 | Time(s) 0.2701
+2024-11-21 05:24:39,594:INFO::Validation loss decreased (0.733340 --> 0.732427).  Saving model ...
+2024-11-21 05:24:39,981:INFO::Epoch_batch_00032 | lr 0.0005 |Train_Loss 0.7579 |  total_loss_consistency1 0.0299 | Loss 0.7788 | Val_Loss 0.7310| Train Time(s) 0.2176| Val Time(s) 0.0503 | Time(s) 0.2679
+2024-11-21 05:24:39,982:INFO::Validation loss decreased (0.732427 --> 0.730961).  Saving model ...
+2024-11-21 05:24:40,373:INFO::Epoch_batch_00033 | lr 0.0005 |Train_Loss 0.7543 |  total_loss_consistency1 0.0294 | Loss 0.7748 | Val_Loss 0.7295| Train Time(s) 0.2178| Val Time(s) 0.0503 | Time(s) 0.2680
+2024-11-21 05:24:40,374:INFO::Validation loss decreased (0.730961 --> 0.729537).  Saving model ...
+2024-11-21 05:24:40,763:INFO::Epoch_batch_00034 | lr 0.0005 |Train_Loss 0.7500 |  total_loss_consistency1 0.0280 | Loss 0.7696 | Val_Loss 0.7288| Train Time(s) 0.2179| Val Time(s) 0.0501 | Time(s) 0.2680
+2024-11-21 05:24:40,763:INFO::Validation loss decreased (0.729537 --> 0.728791).  Saving model ...
+2024-11-21 05:24:41,032:INFO::Epoch_batch_00035 | lr 0.0005 |Train_Loss 0.7502 |  total_loss_consistency1 0.0277 | Loss 0.7696 | Val_Loss 0.7288| Train Time(s) 0.2179| Val Time(s) 0.0503 | Time(s) 0.2682
+2024-11-21 05:24:41,032:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:41,299:INFO::Epoch_batch_00036 | lr 0.0005 |Train_Loss 0.7448 |  total_loss_consistency1 0.0261 | Loss 0.7631 | Val_Loss 0.7289| Train Time(s) 0.2163| Val Time(s) 0.0503 | Time(s) 0.2667
+2024-11-21 05:24:41,299:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:24:41,567:INFO::Epoch_batch_00037 | lr 0.0005 |Train_Loss 0.7412 |  total_loss_consistency1 0.0254 | Loss 0.7590 | Val_Loss 0.7289| Train Time(s) 0.2165| Val Time(s) 0.0503 | Time(s) 0.2669
+2024-11-21 05:24:41,567:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:24:41,964:INFO::Epoch_batch_00038 | lr 0.0005 |Train_Loss 0.7393 |  total_loss_consistency1 0.0239 | Loss 0.7560 | Val_Loss 0.7286| Train Time(s) 0.2168| Val Time(s) 0.0502 | Time(s) 0.2671
+2024-11-21 05:24:41,964:INFO::Validation loss decreased (0.728791 --> 0.728567).  Saving model ...
+2024-11-21 05:24:42,232:INFO::Epoch_batch_00039 | lr 0.0005 |Train_Loss 0.7419 |  total_loss_consistency1 0.0231 | Loss 0.7581 | Val_Loss 0.7289| Train Time(s) 0.2166| Val Time(s) 0.0502 | Time(s) 0.2668
+2024-11-21 05:24:42,232:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:42,499:INFO::Epoch_batch_00040 | lr 0.0005 |Train_Loss 0.7373 |  total_loss_consistency1 0.0220 | Loss 0.7527 | Val_Loss 0.7297| Train Time(s) 0.2167| Val Time(s) 0.0502 | Time(s) 0.2668
+2024-11-21 05:24:42,499:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:24:42,766:INFO::Epoch_batch_00041 | lr 0.0005 |Train_Loss 0.7398 |  total_loss_consistency1 0.0211 | Loss 0.7545 | Val_Loss 0.7297| Train Time(s) 0.2164| Val Time(s) 0.0503 | Time(s) 0.2667
+2024-11-21 05:24:42,766:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:24:43,034:INFO::Epoch_batch_00042 | lr 0.0005 |Train_Loss 0.7354 |  total_loss_consistency1 0.0205 | Loss 0.7498 | Val_Loss 0.7291| Train Time(s) 0.2168| Val Time(s) 0.0503 | Time(s) 0.2671
+2024-11-21 05:24:43,034:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:24:43,424:INFO::Epoch_batch_00043 | lr 0.0005 |Train_Loss 0.7377 |  total_loss_consistency1 0.0197 | Loss 0.7515 | Val_Loss 0.7280| Train Time(s) 0.2168| Val Time(s) 0.0505 | Time(s) 0.2673
+2024-11-21 05:24:43,425:INFO::Validation loss decreased (0.728567 --> 0.727975).  Saving model ...
+2024-11-21 05:24:43,816:INFO::Epoch_batch_00044 | lr 0.0005 |Train_Loss 0.7349 |  total_loss_consistency1 0.0191 | Loss 0.7483 | Val_Loss 0.7263| Train Time(s) 0.2178| Val Time(s) 0.0503 | Time(s) 0.2681
+2024-11-21 05:24:43,817:INFO::Validation loss decreased (0.727975 --> 0.726339).  Saving model ...
+2024-11-21 05:24:44,207:INFO::Epoch_batch_00045 | lr 0.0005 |Train_Loss 0.7316 |  total_loss_consistency1 0.0186 | Loss 0.7446 | Val_Loss 0.7247| Train Time(s) 0.2182| Val Time(s) 0.0503 | Time(s) 0.2685
+2024-11-21 05:24:44,208:INFO::Validation loss decreased (0.726339 --> 0.724660).  Saving model ...
+2024-11-21 05:24:44,595:INFO::Epoch_batch_00046 | lr 0.0005 |Train_Loss 0.7279 |  total_loss_consistency1 0.0180 | Loss 0.7406 | Val_Loss 0.7235| Train Time(s) 0.2179| Val Time(s) 0.0501 | Time(s) 0.2680
+2024-11-21 05:24:44,596:INFO::Validation loss decreased (0.724660 --> 0.723526).  Saving model ...
+2024-11-21 05:24:44,986:INFO::Epoch_batch_00047 | lr 0.0005 |Train_Loss 0.7279 |  total_loss_consistency1 0.0176 | Loss 0.7402 | Val_Loss 0.7229| Train Time(s) 0.2175| Val Time(s) 0.0502 | Time(s) 0.2677
+2024-11-21 05:24:44,987:INFO::Validation loss decreased (0.723526 --> 0.722941).  Saving model ...
+2024-11-21 05:24:45,375:INFO::Epoch_batch_00048 | lr 0.0005 |Train_Loss 0.7294 |  total_loss_consistency1 0.0170 | Loss 0.7413 | Val_Loss 0.7229| Train Time(s) 0.2178| Val Time(s) 0.0503 | Time(s) 0.2681
+2024-11-21 05:24:45,376:INFO::Validation loss decreased (0.722941 --> 0.722857).  Saving model ...
+2024-11-21 05:24:45,644:INFO::Epoch_batch_00049 | lr 0.0005 |Train_Loss 0.7249 |  total_loss_consistency1 0.0165 | Loss 0.7364 | Val_Loss 0.7233| Train Time(s) 0.2179| Val Time(s) 0.0504 | Time(s) 0.2683
+2024-11-21 05:24:45,645:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:45,912:INFO::Epoch_batch_00050 | lr 0.0005 |Train_Loss 0.7243 |  total_loss_consistency1 0.0160 | Loss 0.7355 | Val_Loss 0.7235| Train Time(s) 0.2170| Val Time(s) 0.0502 | Time(s) 0.2672
+2024-11-21 05:24:45,912:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:24:46,179:INFO::Epoch_batch_00051 | lr 0.0005 |Train_Loss 0.7227 |  total_loss_consistency1 0.0156 | Loss 0.7336 | Val_Loss 0.7235| Train Time(s) 0.2160| Val Time(s) 0.0502 | Time(s) 0.2663
+2024-11-21 05:24:46,179:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:24:46,447:INFO::Epoch_batch_00052 | lr 0.0005 |Train_Loss 0.7221 |  total_loss_consistency1 0.0156 | Loss 0.7330 | Val_Loss 0.7233| Train Time(s) 0.2169| Val Time(s) 0.0503 | Time(s) 0.2672
+2024-11-21 05:24:46,447:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:24:46,841:INFO::Epoch_batch_00053 | lr 0.0005 |Train_Loss 0.7212 |  total_loss_consistency1 0.0151 | Loss 0.7318 | Val_Loss 0.7227| Train Time(s) 0.2167| Val Time(s) 0.0504 | Time(s) 0.2671
+2024-11-21 05:24:46,841:INFO::Validation loss decreased (0.722857 --> 0.722712).  Saving model ...
+2024-11-21 05:24:47,226:INFO::Epoch_batch_00054 | lr 0.0005 |Train_Loss 0.7180 |  total_loss_consistency1 0.0147 | Loss 0.7283 | Val_Loss 0.7226| Train Time(s) 0.2167| Val Time(s) 0.0502 | Time(s) 0.2669
+2024-11-21 05:24:47,227:INFO::Validation loss decreased (0.722712 --> 0.722589).  Saving model ...
+2024-11-21 05:24:47,495:INFO::Epoch_batch_00055 | lr 0.0005 |Train_Loss 0.7197 |  total_loss_consistency1 0.0143 | Loss 0.7297 | Val_Loss 0.7228| Train Time(s) 0.2176| Val Time(s) 0.0502 | Time(s) 0.2678
+2024-11-21 05:24:47,495:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:47,884:INFO::Epoch_batch_00056 | lr 0.0005 |Train_Loss 0.7166 |  total_loss_consistency1 0.0140 | Loss 0.7264 | Val_Loss 0.7226| Train Time(s) 0.2166| Val Time(s) 0.0503 | Time(s) 0.2670
+2024-11-21 05:24:47,884:INFO::Validation loss decreased (0.722589 --> 0.722556).  Saving model ...
+2024-11-21 05:24:48,275:INFO::Epoch_batch_00057 | lr 0.0005 |Train_Loss 0.7149 |  total_loss_consistency1 0.0140 | Loss 0.7247 | Val_Loss 0.7220| Train Time(s) 0.2177| Val Time(s) 0.0503 | Time(s) 0.2680
+2024-11-21 05:24:48,275:INFO::Validation loss decreased (0.722556 --> 0.722000).  Saving model ...
+2024-11-21 05:24:48,665:INFO::Epoch_batch_00058 | lr 0.0005 |Train_Loss 0.7153 |  total_loss_consistency1 0.0136 | Loss 0.7248 | Val_Loss 0.7217| Train Time(s) 0.2176| Val Time(s) 0.0503 | Time(s) 0.2679
+2024-11-21 05:24:48,666:INFO::Validation loss decreased (0.722000 --> 0.721652).  Saving model ...
+2024-11-21 05:24:48,935:INFO::Epoch_batch_00059 | lr 0.0005 |Train_Loss 0.7161 |  total_loss_consistency1 0.0132 | Loss 0.7254 | Val_Loss 0.7218| Train Time(s) 0.2182| Val Time(s) 0.0502 | Time(s) 0.2684
+2024-11-21 05:24:48,935:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:49,202:INFO::Epoch_batch_00060 | lr 0.0005 |Train_Loss 0.7133 |  total_loss_consistency1 0.0126 | Loss 0.7221 | Val_Loss 0.7223| Train Time(s) 0.2163| Val Time(s) 0.0502 | Time(s) 0.2665
+2024-11-21 05:24:49,202:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:24:49,470:INFO::Epoch_batch_00061 | lr 0.0005 |Train_Loss 0.7161 |  total_loss_consistency1 0.0126 | Loss 0.7250 | Val_Loss 0.7225| Train Time(s) 0.2170| Val Time(s) 0.0503 | Time(s) 0.2673
+2024-11-21 05:24:49,470:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:24:49,857:INFO::Epoch_batch_00062 | lr 0.0005 |Train_Loss 0.7154 |  total_loss_consistency1 0.0124 | Loss 0.7241 | Val_Loss 0.7216| Train Time(s) 0.2163| Val Time(s) 0.0504 | Time(s) 0.2666
+2024-11-21 05:24:49,858:INFO::Validation loss decreased (0.721652 --> 0.721582).  Saving model ...
+2024-11-21 05:24:50,244:INFO::Epoch_batch_00063 | lr 0.0005 |Train_Loss 0.7155 |  total_loss_consistency1 0.0121 | Loss 0.7239 | Val_Loss 0.7207| Train Time(s) 0.2179| Val Time(s) 0.0502 | Time(s) 0.2680
+2024-11-21 05:24:50,245:INFO::Validation loss decreased (0.721582 --> 0.720700).  Saving model ...
+2024-11-21 05:24:50,635:INFO::Epoch_batch_00064 | lr 0.0005 |Train_Loss 0.7137 |  total_loss_consistency1 0.0119 | Loss 0.7221 | Val_Loss 0.7200| Train Time(s) 0.2174| Val Time(s) 0.0502 | Time(s) 0.2676
+2024-11-21 05:24:50,636:INFO::Validation loss decreased (0.720700 --> 0.720034).  Saving model ...
+2024-11-21 05:24:51,024:INFO::Epoch_batch_00065 | lr 0.0005 |Train_Loss 0.7095 |  total_loss_consistency1 0.0116 | Loss 0.7176 | Val_Loss 0.7197| Train Time(s) 0.2184| Val Time(s) 0.0502 | Time(s) 0.2686
+2024-11-21 05:24:51,025:INFO::Validation loss decreased (0.720034 --> 0.719667).  Saving model ...
+2024-11-21 05:24:51,418:INFO::Epoch_batch_00066 | lr 0.0005 |Train_Loss 0.7109 |  total_loss_consistency1 0.0115 | Loss 0.7190 | Val_Loss 0.7196| Train Time(s) 0.2183| Val Time(s) 0.0504 | Time(s) 0.2687
+2024-11-21 05:24:51,419:INFO::Validation loss decreased (0.719667 --> 0.719587).  Saving model ...
+2024-11-21 05:24:51,688:INFO::Epoch_batch_00067 | lr 0.0005 |Train_Loss 0.7109 |  total_loss_consistency1 0.0114 | Loss 0.7188 | Val_Loss 0.7199| Train Time(s) 0.2181| Val Time(s) 0.0504 | Time(s) 0.2685
+2024-11-21 05:24:51,688:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:51,956:INFO::Epoch_batch_00068 | lr 0.0005 |Train_Loss 0.7071 |  total_loss_consistency1 0.0112 | Loss 0.7149 | Val_Loss 0.7201| Train Time(s) 0.2169| Val Time(s) 0.0504 | Time(s) 0.2673
+2024-11-21 05:24:51,956:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:24:52,223:INFO::Epoch_batch_00069 | lr 0.0005 |Train_Loss 0.7075 |  total_loss_consistency1 0.0109 | Loss 0.7151 | Val_Loss 0.7203| Train Time(s) 0.2168| Val Time(s) 0.0503 | Time(s) 0.2671
+2024-11-21 05:24:52,224:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:24:52,491:INFO::Epoch_batch_00070 | lr 0.0005 |Train_Loss 0.7044 |  total_loss_consistency1 0.0106 | Loss 0.7119 | Val_Loss 0.7206| Train Time(s) 0.2169| Val Time(s) 0.0502 | Time(s) 0.2671
+2024-11-21 05:24:52,491:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:24:52,759:INFO::Epoch_batch_00071 | lr 0.0005 |Train_Loss 0.7075 |  total_loss_consistency1 0.0105 | Loss 0.7148 | Val_Loss 0.7208| Train Time(s) 0.2166| Val Time(s) 0.0504 | Time(s) 0.2670
+2024-11-21 05:24:52,759:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:24:53,027:INFO::Epoch_batch_00072 | lr 0.0005 |Train_Loss 0.7072 |  total_loss_consistency1 0.0103 | Loss 0.7144 | Val_Loss 0.7207| Train Time(s) 0.2171| Val Time(s) 0.0502 | Time(s) 0.2673
+2024-11-21 05:24:53,027:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:24:53,295:INFO::Epoch_batch_00073 | lr 0.0005 |Train_Loss 0.7081 |  total_loss_consistency1 0.0103 | Loss 0.7154 | Val_Loss 0.7210| Train Time(s) 0.2171| Val Time(s) 0.0503 | Time(s) 0.2674
+2024-11-21 05:24:53,295:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:24:53,562:INFO::Epoch_batch_00074 | lr 0.0005 |Train_Loss 0.7072 |  total_loss_consistency1 0.0101 | Loss 0.7143 | Val_Loss 0.7203| Train Time(s) 0.2170| Val Time(s) 0.0501 | Time(s) 0.2671
+2024-11-21 05:24:53,563:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:24:53,831:INFO::Epoch_batch_00075 | lr 0.0005 |Train_Loss 0.7039 |  total_loss_consistency1 0.0099 | Loss 0.7108 | Val_Loss 0.7207| Train Time(s) 0.2178| Val Time(s) 0.0504 | Time(s) 0.2682
+2024-11-21 05:24:53,831:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:24:54,100:INFO::Epoch_batch_00076 | lr 0.0005 |Train_Loss 0.7003 |  total_loss_consistency1 0.0096 | Loss 0.7070 | Val_Loss 0.7209| Train Time(s) 0.2177| Val Time(s) 0.0503 | Time(s) 0.2680
+2024-11-21 05:24:54,100:INFO::EarlyStopping counter: 10 out of 30
+2024-11-21 05:24:54,367:INFO::Epoch_batch_00077 | lr 0.0005 |Train_Loss 0.7007 |  total_loss_consistency1 0.0097 | Loss 0.7075 | Val_Loss 0.7207| Train Time(s) 0.2170| Val Time(s) 0.0503 | Time(s) 0.2674
+2024-11-21 05:24:54,368:INFO::EarlyStopping counter: 11 out of 30
+2024-11-21 05:24:54,635:INFO::Epoch_batch_00078 | lr 0.0005 |Train_Loss 0.7015 |  total_loss_consistency1 0.0095 | Loss 0.7081 | Val_Loss 0.7202| Train Time(s) 0.2166| Val Time(s) 0.0502 | Time(s) 0.2668
+2024-11-21 05:24:54,635:INFO::EarlyStopping counter: 12 out of 30
+2024-11-21 05:24:54,902:INFO::Epoch_batch_00079 | lr 0.0005 |Train_Loss 0.6990 |  total_loss_consistency1 0.0095 | Loss 0.7057 | Val_Loss 0.7197| Train Time(s) 0.2165| Val Time(s) 0.0503 | Time(s) 0.2669
+2024-11-21 05:24:54,903:INFO::EarlyStopping counter: 13 out of 30
+2024-11-21 05:24:55,300:INFO::Epoch_batch_00080 | lr 0.0005 |Train_Loss 0.6982 |  total_loss_consistency1 0.0092 | Loss 0.7046 | Val_Loss 0.7194| Train Time(s) 0.2174| Val Time(s) 0.0503 | Time(s) 0.2677
+2024-11-21 05:24:55,300:INFO::Validation loss decreased (0.719587 --> 0.719410).  Saving model ...
+2024-11-21 05:24:55,687:INFO::Epoch_batch_00081 | lr 0.0005 |Train_Loss 0.7002 |  total_loss_consistency1 0.0093 | Loss 0.7067 | Val_Loss 0.7188| Train Time(s) 0.2163| Val Time(s) 0.0503 | Time(s) 0.2667
+2024-11-21 05:24:55,687:INFO::Validation loss decreased (0.719410 --> 0.718821).  Saving model ...
+2024-11-21 05:24:56,079:INFO::Epoch_batch_00082 | lr 0.0005 |Train_Loss 0.6969 |  total_loss_consistency1 0.0090 | Loss 0.7032 | Val_Loss 0.7186| Train Time(s) 0.2183| Val Time(s) 0.0504 | Time(s) 0.2687
+2024-11-21 05:24:56,079:INFO::Validation loss decreased (0.718821 --> 0.718613).  Saving model ...
+2024-11-21 05:24:56,348:INFO::Epoch_batch_00083 | lr 0.0005 |Train_Loss 0.7010 |  total_loss_consistency1 0.0090 | Loss 0.7072 | Val_Loss 0.7197| Train Time(s) 0.2179| Val Time(s) 0.0507 | Time(s) 0.2686
+2024-11-21 05:24:56,349:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:56,616:INFO::Epoch_batch_00084 | lr 0.0005 |Train_Loss 0.6972 |  total_loss_consistency1 0.0088 | Loss 0.7034 | Val_Loss 0.7209| Train Time(s) 0.2167| Val Time(s) 0.0502 | Time(s) 0.2668
+2024-11-21 05:24:56,616:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:24:56,883:INFO::Epoch_batch_00085 | lr 0.0005 |Train_Loss 0.6976 |  total_loss_consistency1 0.0085 | Loss 0.7035 | Val_Loss 0.7214| Train Time(s) 0.2165| Val Time(s) 0.0503 | Time(s) 0.2669
+2024-11-21 05:24:56,883:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:24:57,152:INFO::Epoch_batch_00086 | lr 0.0005 |Train_Loss 0.6950 |  total_loss_consistency1 0.0085 | Loss 0.7009 | Val_Loss 0.7218| Train Time(s) 0.2179| Val Time(s) 0.0505 | Time(s) 0.2684
+2024-11-21 05:24:57,152:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:24:57,422:INFO::Epoch_batch_00087 | lr 0.0005 |Train_Loss 0.6953 |  total_loss_consistency1 0.0084 | Loss 0.7012 | Val_Loss 0.7214| Train Time(s) 0.2189| Val Time(s) 0.0502 | Time(s) 0.2692
+2024-11-21 05:24:57,422:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:24:57,689:INFO::Epoch_batch_00088 | lr 0.0005 |Train_Loss 0.6966 |  total_loss_consistency1 0.0083 | Loss 0.7024 | Val_Loss 0.7201| Train Time(s) 0.2165| Val Time(s) 0.0501 | Time(s) 0.2666
+2024-11-21 05:24:57,689:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:24:57,957:INFO::Epoch_batch_00089 | lr 0.0005 |Train_Loss 0.6957 |  total_loss_consistency1 0.0083 | Loss 0.7014 | Val_Loss 0.7188| Train Time(s) 0.2169| Val Time(s) 0.0503 | Time(s) 0.2671
+2024-11-21 05:24:57,957:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:24:58,348:INFO::Epoch_batch_00090 | lr 0.0005 |Train_Loss 0.6931 |  total_loss_consistency1 0.0082 | Loss 0.6988 | Val_Loss 0.7182| Train Time(s) 0.2166| Val Time(s) 0.0502 | Time(s) 0.2668
+2024-11-21 05:24:58,349:INFO::Validation loss decreased (0.718613 --> 0.718163).  Saving model ...
+2024-11-21 05:24:58,736:INFO::Epoch_batch_00091 | lr 0.0005 |Train_Loss 0.6971 |  total_loss_consistency1 0.0080 | Loss 0.7027 | Val_Loss 0.7178| Train Time(s) 0.2180| Val Time(s) 0.0503 | Time(s) 0.2683
+2024-11-21 05:24:58,737:INFO::Validation loss decreased (0.718163 --> 0.717818).  Saving model ...
+2024-11-21 05:24:59,005:INFO::Epoch_batch_00092 | lr 0.0005 |Train_Loss 0.6942 |  total_loss_consistency1 0.0079 | Loss 0.6997 | Val_Loss 0.7180| Train Time(s) 0.2180| Val Time(s) 0.0501 | Time(s) 0.2680
+2024-11-21 05:24:59,005:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:24:59,273:INFO::Epoch_batch_00093 | lr 0.0005 |Train_Loss 0.6937 |  total_loss_consistency1 0.0080 | Loss 0.6993 | Val_Loss 0.7183| Train Time(s) 0.2173| Val Time(s) 0.0503 | Time(s) 0.2676
+2024-11-21 05:24:59,273:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:24:59,540:INFO::Epoch_batch_00094 | lr 0.0005 |Train_Loss 0.6916 |  total_loss_consistency1 0.0078 | Loss 0.6970 | Val_Loss 0.7188| Train Time(s) 0.2168| Val Time(s) 0.0501 | Time(s) 0.2669
+2024-11-21 05:24:59,541:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:24:59,808:INFO::Epoch_batch_00095 | lr 0.0005 |Train_Loss 0.6940 |  total_loss_consistency1 0.0076 | Loss 0.6993 | Val_Loss 0.7192| Train Time(s) 0.2167| Val Time(s) 0.0502 | Time(s) 0.2669
+2024-11-21 05:24:59,808:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:25:00,075:INFO::Epoch_batch_00096 | lr 0.0005 |Train_Loss 0.6910 |  total_loss_consistency1 0.0075 | Loss 0.6963 | Val_Loss 0.7200| Train Time(s) 0.2164| Val Time(s) 0.0503 | Time(s) 0.2667
+2024-11-21 05:25:00,075:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:25:00,344:INFO::Epoch_batch_00097 | lr 0.0005 |Train_Loss 0.6908 |  total_loss_consistency1 0.0075 | Loss 0.6960 | Val_Loss 0.7210| Train Time(s) 0.2182| Val Time(s) 0.0503 | Time(s) 0.2685
+2024-11-21 05:25:00,345:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:25:00,612:INFO::Epoch_batch_00098 | lr 0.0005 |Train_Loss 0.6916 |  total_loss_consistency1 0.0073 | Loss 0.6967 | Val_Loss 0.7216| Train Time(s) 0.2169| Val Time(s) 0.0500 | Time(s) 0.2669
+2024-11-21 05:25:00,612:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:25:00,879:INFO::Epoch_batch_00099 | lr 0.0005 |Train_Loss 0.6919 |  total_loss_consistency1 0.0074 | Loss 0.6970 | Val_Loss 0.7216| Train Time(s) 0.2168| Val Time(s) 0.0501 | Time(s) 0.2668
+2024-11-21 05:25:00,879:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:25:01,147:INFO::Epoch_batch_00100 | lr 0.0005 |Train_Loss 0.6897 |  total_loss_consistency1 0.0073 | Loss 0.6948 | Val_Loss 0.7212| Train Time(s) 0.2171| Val Time(s) 0.0503 | Time(s) 0.2675
+2024-11-21 05:25:01,147:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:25:01,415:INFO::Epoch_batch_00101 | lr 0.0005 |Train_Loss 0.6913 |  total_loss_consistency1 0.0071 | Loss 0.6962 | Val_Loss 0.7205| Train Time(s) 0.2171| Val Time(s) 0.0502 | Time(s) 0.2673
+2024-11-21 05:25:01,415:INFO::EarlyStopping counter: 10 out of 30
+2024-11-21 05:25:01,682:INFO::Epoch_batch_00102 | lr 0.0005 |Train_Loss 0.6909 |  total_loss_consistency1 0.0070 | Loss 0.6958 | Val_Loss 0.7196| Train Time(s) 0.2169| Val Time(s) 0.0500 | Time(s) 0.2670
+2024-11-21 05:25:01,683:INFO::EarlyStopping counter: 11 out of 30
+2024-11-21 05:25:01,949:INFO::Epoch_batch_00103 | lr 0.0005 |Train_Loss 0.6871 |  total_loss_consistency1 0.0071 | Loss 0.6921 | Val_Loss 0.7190| Train Time(s) 0.2163| Val Time(s) 0.0501 | Time(s) 0.2664
+2024-11-21 05:25:01,950:INFO::EarlyStopping counter: 12 out of 30
+2024-11-21 05:25:02,217:INFO::Epoch_batch_00104 | lr 0.0005 |Train_Loss 0.6881 |  total_loss_consistency1 0.0069 | Loss 0.6929 | Val_Loss 0.7191| Train Time(s) 0.2171| Val Time(s) 0.0503 | Time(s) 0.2674
+2024-11-21 05:25:02,217:INFO::EarlyStopping counter: 13 out of 30
+2024-11-21 05:25:02,485:INFO::Epoch_batch_00105 | lr 0.0005 |Train_Loss 0.6912 |  total_loss_consistency1 0.0069 | Loss 0.6960 | Val_Loss 0.7201| Train Time(s) 0.2168| Val Time(s) 0.0503 | Time(s) 0.2671
+2024-11-21 05:25:02,485:INFO::EarlyStopping counter: 14 out of 30
+2024-11-21 05:25:02,753:INFO::Epoch_batch_00106 | lr 0.0005 |Train_Loss 0.6890 |  total_loss_consistency1 0.0067 | Loss 0.6937 | Val_Loss 0.7211| Train Time(s) 0.2172| Val Time(s) 0.0502 | Time(s) 0.2673
+2024-11-21 05:25:02,753:INFO::EarlyStopping counter: 15 out of 30
+2024-11-21 05:25:03,020:INFO::Epoch_batch_00107 | lr 0.0005 |Train_Loss 0.6880 |  total_loss_consistency1 0.0067 | Loss 0.6928 | Val_Loss 0.7217| Train Time(s) 0.2171| Val Time(s) 0.0501 | Time(s) 0.2671
+2024-11-21 05:25:03,021:INFO::EarlyStopping counter: 16 out of 30
+2024-11-21 05:25:03,288:INFO::Epoch_batch_00108 | lr 0.0005 |Train_Loss 0.6892 |  total_loss_consistency1 0.0066 | Loss 0.6939 | Val_Loss 0.7220| Train Time(s) 0.2166| Val Time(s) 0.0504 | Time(s) 0.2671
+2024-11-21 05:25:03,288:INFO::EarlyStopping counter: 17 out of 30
+2024-11-21 05:25:03,555:INFO::Epoch_batch_00109 | lr 0.0005 |Train_Loss 0.6860 |  total_loss_consistency1 0.0065 | Loss 0.6906 | Val_Loss 0.7219| Train Time(s) 0.2166| Val Time(s) 0.0503 | Time(s) 0.2669
+2024-11-21 05:25:03,556:INFO::EarlyStopping counter: 18 out of 30
+2024-11-21 05:25:03,823:INFO::Epoch_batch_00110 | lr 0.0005 |Train_Loss 0.6882 |  total_loss_consistency1 0.0064 | Loss 0.6927 | Val_Loss 0.7213| Train Time(s) 0.2172| Val Time(s) 0.0501 | Time(s) 0.2673
+2024-11-21 05:25:03,823:INFO::EarlyStopping counter: 19 out of 30
+2024-11-21 05:25:04,092:INFO::Epoch_batch_00111 | lr 0.0005 |Train_Loss 0.6860 |  total_loss_consistency1 0.0064 | Loss 0.6905 | Val_Loss 0.7209| Train Time(s) 0.2176| Val Time(s) 0.0502 | Time(s) 0.2679
+2024-11-21 05:25:04,092:INFO::EarlyStopping counter: 20 out of 30
+2024-11-21 05:25:04,360:INFO::Epoch_batch_00112 | lr 0.0005 |Train_Loss 0.6871 |  total_loss_consistency1 0.0065 | Loss 0.6916 | Val_Loss 0.7205| Train Time(s) 0.2178| Val Time(s) 0.0502 | Time(s) 0.2680
+2024-11-21 05:25:04,361:INFO::EarlyStopping counter: 21 out of 30
+2024-11-21 05:25:04,628:INFO::Epoch_batch_00113 | lr 0.0005 |Train_Loss 0.6870 |  total_loss_consistency1 0.0064 | Loss 0.6915 | Val_Loss 0.7201| Train Time(s) 0.2168| Val Time(s) 0.0503 | Time(s) 0.2671
+2024-11-21 05:25:04,628:INFO::EarlyStopping counter: 22 out of 30
+2024-11-21 05:25:04,896:INFO::Epoch_batch_00114 | lr 0.0005 |Train_Loss 0.6855 |  total_loss_consistency1 0.0063 | Loss 0.6899 | Val_Loss 0.7200| Train Time(s) 0.2178| Val Time(s) 0.0501 | Time(s) 0.2679
+2024-11-21 05:25:04,897:INFO::EarlyStopping counter: 23 out of 30
+2024-11-21 05:25:05,164:INFO::Epoch_batch_00115 | lr 0.0005 |Train_Loss 0.6856 |  total_loss_consistency1 0.0061 | Loss 0.6899 | Val_Loss 0.7204| Train Time(s) 0.2167| Val Time(s) 0.0501 | Time(s) 0.2669
+2024-11-21 05:25:05,164:INFO::EarlyStopping counter: 24 out of 30
+2024-11-21 05:25:05,431:INFO::Epoch_batch_00116 | lr 0.0005 |Train_Loss 0.6855 |  total_loss_consistency1 0.0060 | Loss 0.6897 | Val_Loss 0.7213| Train Time(s) 0.2168| Val Time(s) 0.0502 | Time(s) 0.2670
+2024-11-21 05:25:05,432:INFO::EarlyStopping counter: 25 out of 30
+2024-11-21 05:25:05,699:INFO::Epoch_batch_00117 | lr 0.0005 |Train_Loss 0.6846 |  total_loss_consistency1 0.0058 | Loss 0.6887 | Val_Loss 0.7220| Train Time(s) 0.2171| Val Time(s) 0.0504 | Time(s) 0.2675
+2024-11-21 05:25:05,700:INFO::EarlyStopping counter: 26 out of 30
+2024-11-21 05:25:05,967:INFO::Epoch_batch_00118 | lr 0.0005 |Train_Loss 0.6846 |  total_loss_consistency1 0.0059 | Loss 0.6888 | Val_Loss 0.7228| Train Time(s) 0.2172| Val Time(s) 0.0502 | Time(s) 0.2674
+2024-11-21 05:25:05,968:INFO::EarlyStopping counter: 27 out of 30
+2024-11-21 05:25:06,235:INFO::Epoch_batch_00119 | lr 0.0005 |Train_Loss 0.6842 |  total_loss_consistency1 0.0060 | Loss 0.6884 | Val_Loss 0.7232| Train Time(s) 0.2169| Val Time(s) 0.0502 | Time(s) 0.2671
+2024-11-21 05:25:06,235:INFO::EarlyStopping counter: 28 out of 30
+2024-11-21 05:25:06,503:INFO::Epoch_batch_00120 | lr 0.0005 |Train_Loss 0.6885 |  total_loss_consistency1 0.0059 | Loss 0.6926 | Val_Loss 0.7236| Train Time(s) 0.2171| Val Time(s) 0.0502 | Time(s) 0.2672
+2024-11-21 05:25:06,503:INFO::EarlyStopping counter: 29 out of 30
+2024-11-21 05:25:06,771:INFO::Epoch_batch_00121 | lr 0.0005 |Train_Loss 0.6845 |  total_loss_consistency1 0.0057 | Loss 0.6885 | Val_Loss 0.7241| Train Time(s) 0.2170| Val Time(s) 0.0502 | Time(s) 0.2672
+2024-11-21 05:25:06,771:INFO::EarlyStopping counter: 30 out of 30
+2024-11-21 05:25:06,771:INFO::Eearly stopping!
+2024-11-21 05:25:06,848:INFO::
+testing...
+2024-11-21 05:25:06,897:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:25:06,898:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:25:06,898:INFO::submit dir: submit/submit_simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:25:06,947:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:25:06,956:INFO::{'micro-f1': 0.951056338028169, 'macro-f1': 0.9478948247988556}
+2024-11-21 05:25:06,995:INFO::############### Experiments Stage Ends! ###############
+2024-11-21 05:25:06,996:INFO::=============== one experiment stage finish, use 89.4246232509613 time.
+2024-11-21 05:25:14,711:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:25:15,115:INFO::Epoch_batch_00000 | lr 0.0005 |Train_Loss 1.4750 |  total_loss_consistency1 0.0372 | Loss 1.5011 | Val_Loss 1.3561| Train Time(s) 0.2247| Val Time(s) 0.0497 | Time(s) 0.2743
+2024-11-21 05:25:15,504:INFO::Epoch_batch_00001 | lr 0.0005 |Train_Loss 1.3865 |  total_loss_consistency1 0.0378 | Loss 1.4129 | Val_Loss 1.3417| Train Time(s) 0.2180| Val Time(s) 0.0503 | Time(s) 0.2683
+2024-11-21 05:25:15,504:INFO::Validation loss decreased (inf --> 1.341716).  Saving model ...
+2024-11-21 05:25:15,892:INFO::Epoch_batch_00002 | lr 0.0005 |Train_Loss 1.3627 |  total_loss_consistency1 0.0369 | Loss 1.3886 | Val_Loss 1.3185| Train Time(s) 0.2185| Val Time(s) 0.0502 | Time(s) 0.2687
+2024-11-21 05:25:15,893:INFO::Validation loss decreased (1.341716 --> 1.318490).  Saving model ...
+2024-11-21 05:25:16,281:INFO::Epoch_batch_00003 | lr 0.0005 |Train_Loss 1.3555 |  total_loss_consistency1 0.0353 | Loss 1.3802 | Val_Loss 1.2879| Train Time(s) 0.2182| Val Time(s) 0.0503 | Time(s) 0.2685
+2024-11-21 05:25:16,282:INFO::Validation loss decreased (1.318490 --> 1.287880).  Saving model ...
+2024-11-21 05:25:16,672:INFO::Epoch_batch_00004 | lr 0.0005 |Train_Loss 1.3350 |  total_loss_consistency1 0.0347 | Loss 1.3592 | Val_Loss 1.2421| Train Time(s) 0.2180| Val Time(s) 0.0503 | Time(s) 0.2683
+2024-11-21 05:25:16,673:INFO::Validation loss decreased (1.287880 --> 1.242127).  Saving model ...
+2024-11-21 05:25:17,062:INFO::Epoch_batch_00005 | lr 0.0005 |Train_Loss 1.3136 |  total_loss_consistency1 0.0339 | Loss 1.3373 | Val_Loss 1.1718| Train Time(s) 0.2195| Val Time(s) 0.0502 | Time(s) 0.2697
+2024-11-21 05:25:17,063:INFO::Validation loss decreased (1.242127 --> 1.171756).  Saving model ...
+2024-11-21 05:25:17,451:INFO::Epoch_batch_00006 | lr 0.0005 |Train_Loss 1.2772 |  total_loss_consistency1 0.0340 | Loss 1.3009 | Val_Loss 1.0617| Train Time(s) 0.2181| Val Time(s) 0.0502 | Time(s) 0.2683
+2024-11-21 05:25:17,452:INFO::Validation loss decreased (1.171756 --> 1.061720).  Saving model ...
+2024-11-21 05:25:17,844:INFO::Epoch_batch_00007 | lr 0.0005 |Train_Loss 1.2145 |  total_loss_consistency1 0.0368 | Loss 1.2403 | Val_Loss 0.9243| Train Time(s) 0.2189| Val Time(s) 0.0503 | Time(s) 0.2692
+2024-11-21 05:25:17,845:INFO::Validation loss decreased (1.061720 --> 0.924304).  Saving model ...
+2024-11-21 05:25:18,233:INFO::Epoch_batch_00008 | lr 0.0005 |Train_Loss 1.1664 |  total_loss_consistency1 0.0370 | Loss 1.1922 | Val_Loss 0.8594| Train Time(s) 0.2193| Val Time(s) 0.0503 | Time(s) 0.2696
+2024-11-21 05:25:18,234:INFO::Validation loss decreased (0.924304 --> 0.859363).  Saving model ...
+2024-11-21 05:25:18,503:INFO::Epoch_batch_00009 | lr 0.0005 |Train_Loss 1.1053 |  total_loss_consistency1 0.0406 | Loss 1.1336 | Val_Loss 0.8628| Train Time(s) 0.2189| Val Time(s) 0.0502 | Time(s) 0.2691
+2024-11-21 05:25:18,504:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:25:18,889:INFO::Epoch_batch_00010 | lr 0.0005 |Train_Loss 1.0660 |  total_loss_consistency1 0.0412 | Loss 1.0948 | Val_Loss 0.8587| Train Time(s) 0.2167| Val Time(s) 0.0502 | Time(s) 0.2669
+2024-11-21 05:25:18,890:INFO::Validation loss decreased (0.859363 --> 0.858697).  Saving model ...
+2024-11-21 05:25:19,278:INFO::Epoch_batch_00011 | lr 0.0005 |Train_Loss 1.0296 |  total_loss_consistency1 0.0433 | Loss 1.0599 | Val_Loss 0.8377| Train Time(s) 0.2188| Val Time(s) 0.0503 | Time(s) 0.2690
+2024-11-21 05:25:19,278:INFO::Validation loss decreased (0.858697 --> 0.837683).  Saving model ...
+2024-11-21 05:25:19,667:INFO::Epoch_batch_00012 | lr 0.0005 |Train_Loss 1.0094 |  total_loss_consistency1 0.0472 | Loss 1.0424 | Val_Loss 0.8153| Train Time(s) 0.2182| Val Time(s) 0.0502 | Time(s) 0.2685
+2024-11-21 05:25:19,668:INFO::Validation loss decreased (0.837683 --> 0.815253).  Saving model ...
+2024-11-21 05:25:20,054:INFO::Epoch_batch_00013 | lr 0.0005 |Train_Loss 0.9545 |  total_loss_consistency1 0.0495 | Loss 0.9891 | Val_Loss 0.8022| Train Time(s) 0.2181| Val Time(s) 0.0502 | Time(s) 0.2683
+2024-11-21 05:25:20,055:INFO::Validation loss decreased (0.815253 --> 0.802220).  Saving model ...
+2024-11-21 05:25:20,445:INFO::Epoch_batch_00014 | lr 0.0005 |Train_Loss 0.9222 |  total_loss_consistency1 0.0504 | Loss 0.9574 | Val_Loss 0.7913| Train Time(s) 0.2185| Val Time(s) 0.0503 | Time(s) 0.2688
+2024-11-21 05:25:20,446:INFO::Validation loss decreased (0.802220 --> 0.791307).  Saving model ...
+2024-11-21 05:25:20,834:INFO::Epoch_batch_00015 | lr 0.0005 |Train_Loss 0.9046 |  total_loss_consistency1 0.0487 | Loss 0.9387 | Val_Loss 0.7797| Train Time(s) 0.2190| Val Time(s) 0.0502 | Time(s) 0.2692
+2024-11-21 05:25:20,835:INFO::Validation loss decreased (0.791307 --> 0.779717).  Saving model ...
+2024-11-21 05:25:21,223:INFO::Epoch_batch_00016 | lr 0.0005 |Train_Loss 0.8818 |  total_loss_consistency1 0.0505 | Loss 0.9171 | Val_Loss 0.7719| Train Time(s) 0.2180| Val Time(s) 0.0502 | Time(s) 0.2682
+2024-11-21 05:25:21,224:INFO::Validation loss decreased (0.779717 --> 0.771893).  Saving model ...
+2024-11-21 05:25:21,613:INFO::Epoch_batch_00017 | lr 0.0005 |Train_Loss 0.8612 |  total_loss_consistency1 0.0497 | Loss 0.8960 | Val_Loss 0.7635| Train Time(s) 0.2185| Val Time(s) 0.0502 | Time(s) 0.2687
+2024-11-21 05:25:21,614:INFO::Validation loss decreased (0.771893 --> 0.763467).  Saving model ...
+2024-11-21 05:25:22,001:INFO::Epoch_batch_00018 | lr 0.0005 |Train_Loss 0.8487 |  total_loss_consistency1 0.0469 | Loss 0.8816 | Val_Loss 0.7532| Train Time(s) 0.2186| Val Time(s) 0.0501 | Time(s) 0.2687
+2024-11-21 05:25:22,002:INFO::Validation loss decreased (0.763467 --> 0.753222).  Saving model ...
+2024-11-21 05:25:22,393:INFO::Epoch_batch_00019 | lr 0.0005 |Train_Loss 0.8330 |  total_loss_consistency1 0.0441 | Loss 0.8639 | Val_Loss 0.7458| Train Time(s) 0.2189| Val Time(s) 0.0501 | Time(s) 0.2690
+2024-11-21 05:25:22,394:INFO::Validation loss decreased (0.753222 --> 0.745841).  Saving model ...
+2024-11-21 05:25:22,784:INFO::Epoch_batch_00020 | lr 0.0005 |Train_Loss 0.8181 |  total_loss_consistency1 0.0410 | Loss 0.8467 | Val_Loss 0.7408| Train Time(s) 0.2191| Val Time(s) 0.0504 | Time(s) 0.2694
+2024-11-21 05:25:22,785:INFO::Validation loss decreased (0.745841 --> 0.740826).  Saving model ...
+2024-11-21 05:25:23,173:INFO::Epoch_batch_00021 | lr 0.0005 |Train_Loss 0.8072 |  total_loss_consistency1 0.0399 | Loss 0.8352 | Val_Loss 0.7378| Train Time(s) 0.2187| Val Time(s) 0.0504 | Time(s) 0.2691
+2024-11-21 05:25:23,174:INFO::Validation loss decreased (0.740826 --> 0.737776).  Saving model ...
+2024-11-21 05:25:23,566:INFO::Epoch_batch_00022 | lr 0.0005 |Train_Loss 0.7987 |  total_loss_consistency1 0.0380 | Loss 0.8253 | Val_Loss 0.7353| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2689
+2024-11-21 05:25:23,566:INFO::Validation loss decreased (0.737776 --> 0.735334).  Saving model ...
+2024-11-21 05:25:23,955:INFO::Epoch_batch_00023 | lr 0.0005 |Train_Loss 0.7903 |  total_loss_consistency1 0.0380 | Loss 0.8169 | Val_Loss 0.7336| Train Time(s) 0.2184| Val Time(s) 0.0501 | Time(s) 0.2685
+2024-11-21 05:25:23,956:INFO::Validation loss decreased (0.735334 --> 0.733561).  Saving model ...
+2024-11-21 05:25:24,345:INFO::Epoch_batch_00024 | lr 0.0005 |Train_Loss 0.7851 |  total_loss_consistency1 0.0375 | Loss 0.8114 | Val_Loss 0.7327| Train Time(s) 0.2185| Val Time(s) 0.0503 | Time(s) 0.2688
+2024-11-21 05:25:24,345:INFO::Validation loss decreased (0.733561 --> 0.732726).  Saving model ...
+2024-11-21 05:25:24,736:INFO::Epoch_batch_00025 | lr 0.0005 |Train_Loss 0.7825 |  total_loss_consistency1 0.0364 | Loss 0.8080 | Val_Loss 0.7321| Train Time(s) 0.2181| Val Time(s) 0.0502 | Time(s) 0.2684
+2024-11-21 05:25:24,737:INFO::Validation loss decreased (0.732726 --> 0.732119).  Saving model ...
+2024-11-21 05:25:25,125:INFO::Epoch_batch_00026 | lr 0.0005 |Train_Loss 0.7781 |  total_loss_consistency1 0.0358 | Loss 0.8032 | Val_Loss 0.7316| Train Time(s) 0.2182| Val Time(s) 0.0503 | Time(s) 0.2685
+2024-11-21 05:25:25,135:INFO::Validation loss decreased (0.732119 --> 0.731553).  Saving model ...
+2024-11-21 05:25:25,521:INFO::Epoch_batch_00027 | lr 0.0005 |Train_Loss 0.7704 |  total_loss_consistency1 0.0345 | Loss 0.7946 | Val_Loss 0.7302| Train Time(s) 0.2177| Val Time(s) 0.0502 | Time(s) 0.2678
+2024-11-21 05:25:25,522:INFO::Validation loss decreased (0.731553 --> 0.730221).  Saving model ...
+2024-11-21 05:25:25,908:INFO::Epoch_batch_00028 | lr 0.0005 |Train_Loss 0.7617 |  total_loss_consistency1 0.0348 | Loss 0.7861 | Val_Loss 0.7295| Train Time(s) 0.2184| Val Time(s) 0.0504 | Time(s) 0.2688
+2024-11-21 05:25:25,909:INFO::Validation loss decreased (0.730221 --> 0.729458).  Saving model ...
+2024-11-21 05:25:26,178:INFO::Epoch_batch_00029 | lr 0.0005 |Train_Loss 0.7658 |  total_loss_consistency1 0.0338 | Loss 0.7894 | Val_Loss 0.7298| Train Time(s) 0.2187| Val Time(s) 0.0504 | Time(s) 0.2690
+2024-11-21 05:25:26,179:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:25:26,447:INFO::Epoch_batch_00030 | lr 0.0005 |Train_Loss 0.7544 |  total_loss_consistency1 0.0330 | Loss 0.7775 | Val_Loss 0.7301| Train Time(s) 0.2176| Val Time(s) 0.0503 | Time(s) 0.2679
+2024-11-21 05:25:26,447:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:25:26,715:INFO::Epoch_batch_00031 | lr 0.0005 |Train_Loss 0.7555 |  total_loss_consistency1 0.0324 | Loss 0.7781 | Val_Loss 0.7303| Train Time(s) 0.2176| Val Time(s) 0.0504 | Time(s) 0.2680
+2024-11-21 05:25:26,716:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:25:26,983:INFO::Epoch_batch_00032 | lr 0.0005 |Train_Loss 0.7498 |  total_loss_consistency1 0.0308 | Loss 0.7714 | Val_Loss 0.7301| Train Time(s) 0.2171| Val Time(s) 0.0503 | Time(s) 0.2673
+2024-11-21 05:25:26,984:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:25:27,252:INFO::Epoch_batch_00033 | lr 0.0005 |Train_Loss 0.7515 |  total_loss_consistency1 0.0297 | Loss 0.7723 | Val_Loss 0.7304| Train Time(s) 0.2178| Val Time(s) 0.0503 | Time(s) 0.2681
+2024-11-21 05:25:27,252:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:25:27,521:INFO::Epoch_batch_00034 | lr 0.0005 |Train_Loss 0.7495 |  total_loss_consistency1 0.0279 | Loss 0.7690 | Val_Loss 0.7305| Train Time(s) 0.2176| Val Time(s) 0.0503 | Time(s) 0.2679
+2024-11-21 05:25:27,521:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:25:27,789:INFO::Epoch_batch_00035 | lr 0.0005 |Train_Loss 0.7468 |  total_loss_consistency1 0.0270 | Loss 0.7657 | Val_Loss 0.7299| Train Time(s) 0.2175| Val Time(s) 0.0504 | Time(s) 0.2680
+2024-11-21 05:25:27,789:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:25:28,185:INFO::Epoch_batch_00036 | lr 0.0005 |Train_Loss 0.7405 |  total_loss_consistency1 0.0256 | Loss 0.7584 | Val_Loss 0.7287| Train Time(s) 0.2173| Val Time(s) 0.0503 | Time(s) 0.2676
+2024-11-21 05:25:28,185:INFO::Validation loss decreased (0.729458 --> 0.728728).  Saving model ...
+2024-11-21 05:25:28,572:INFO::Epoch_batch_00037 | lr 0.0005 |Train_Loss 0.7397 |  total_loss_consistency1 0.0241 | Loss 0.7565 | Val_Loss 0.7280| Train Time(s) 0.2174| Val Time(s) 0.0503 | Time(s) 0.2677
+2024-11-21 05:25:28,573:INFO::Validation loss decreased (0.728728 --> 0.727973).  Saving model ...
+2024-11-21 05:25:28,960:INFO::Epoch_batch_00038 | lr 0.0005 |Train_Loss 0.7429 |  total_loss_consistency1 0.0237 | Loss 0.7595 | Val_Loss 0.7273| Train Time(s) 0.2174| Val Time(s) 0.0504 | Time(s) 0.2678
+2024-11-21 05:25:28,961:INFO::Validation loss decreased (0.727973 --> 0.727342).  Saving model ...
+2024-11-21 05:25:29,350:INFO::Epoch_batch_00039 | lr 0.0005 |Train_Loss 0.7441 |  total_loss_consistency1 0.0230 | Loss 0.7602 | Val_Loss 0.7264| Train Time(s) 0.2191| Val Time(s) 0.0502 | Time(s) 0.2693
+2024-11-21 05:25:29,350:INFO::Validation loss decreased (0.727342 --> 0.726381).  Saving model ...
+2024-11-21 05:25:29,740:INFO::Epoch_batch_00040 | lr 0.0005 |Train_Loss 0.7392 |  total_loss_consistency1 0.0220 | Loss 0.7546 | Val_Loss 0.7260| Train Time(s) 0.2190| Val Time(s) 0.0503 | Time(s) 0.2693
+2024-11-21 05:25:29,741:INFO::Validation loss decreased (0.726381 --> 0.726049).  Saving model ...
+2024-11-21 05:25:30,010:INFO::Epoch_batch_00041 | lr 0.0005 |Train_Loss 0.7343 |  total_loss_consistency1 0.0215 | Loss 0.7493 | Val_Loss 0.7264| Train Time(s) 0.2186| Val Time(s) 0.0502 | Time(s) 0.2688
+2024-11-21 05:25:30,010:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:25:30,278:INFO::Epoch_batch_00042 | lr 0.0005 |Train_Loss 0.7406 |  total_loss_consistency1 0.0211 | Loss 0.7554 | Val_Loss 0.7268| Train Time(s) 0.2173| Val Time(s) 0.0504 | Time(s) 0.2677
+2024-11-21 05:25:30,279:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:25:30,547:INFO::Epoch_batch_00043 | lr 0.0005 |Train_Loss 0.7381 |  total_loss_consistency1 0.0207 | Loss 0.7525 | Val_Loss 0.7269| Train Time(s) 0.2176| Val Time(s) 0.0502 | Time(s) 0.2677
+2024-11-21 05:25:30,547:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:25:30,814:INFO::Epoch_batch_00044 | lr 0.0005 |Train_Loss 0.7274 |  total_loss_consistency1 0.0204 | Loss 0.7417 | Val_Loss 0.7263| Train Time(s) 0.2171| Val Time(s) 0.0502 | Time(s) 0.2673
+2024-11-21 05:25:30,815:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:25:31,209:INFO::Epoch_batch_00045 | lr 0.0005 |Train_Loss 0.7326 |  total_loss_consistency1 0.0197 | Loss 0.7464 | Val_Loss 0.7257| Train Time(s) 0.2171| Val Time(s) 0.0504 | Time(s) 0.2675
+2024-11-21 05:25:31,209:INFO::Validation loss decreased (0.726049 --> 0.725665).  Saving model ...
+2024-11-21 05:25:31,596:INFO::Epoch_batch_00046 | lr 0.0005 |Train_Loss 0.7298 |  total_loss_consistency1 0.0189 | Loss 0.7430 | Val_Loss 0.7252| Train Time(s) 0.2174| Val Time(s) 0.0501 | Time(s) 0.2675
+2024-11-21 05:25:31,596:INFO::Validation loss decreased (0.725665 --> 0.725190).  Saving model ...
+2024-11-21 05:25:31,985:INFO::Epoch_batch_00047 | lr 0.0005 |Train_Loss 0.7298 |  total_loss_consistency1 0.0184 | Loss 0.7427 | Val_Loss 0.7250| Train Time(s) 0.2184| Val Time(s) 0.0502 | Time(s) 0.2686
+2024-11-21 05:25:31,985:INFO::Validation loss decreased (0.725190 --> 0.725036).  Saving model ...
+2024-11-21 05:25:32,374:INFO::Epoch_batch_00048 | lr 0.0005 |Train_Loss 0.7279 |  total_loss_consistency1 0.0179 | Loss 0.7405 | Val_Loss 0.7247| Train Time(s) 0.2180| Val Time(s) 0.0503 | Time(s) 0.2683
+2024-11-21 05:25:32,375:INFO::Validation loss decreased (0.725036 --> 0.724717).  Saving model ...
+2024-11-21 05:25:32,645:INFO::Epoch_batch_00049 | lr 0.0005 |Train_Loss 0.7285 |  total_loss_consistency1 0.0177 | Loss 0.7409 | Val_Loss 0.7248| Train Time(s) 0.2190| Val Time(s) 0.0503 | Time(s) 0.2694
+2024-11-21 05:25:32,645:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:25:32,913:INFO::Epoch_batch_00050 | lr 0.0005 |Train_Loss 0.7246 |  total_loss_consistency1 0.0169 | Loss 0.7364 | Val_Loss 0.7249| Train Time(s) 0.2173| Val Time(s) 0.0502 | Time(s) 0.2675
+2024-11-21 05:25:32,913:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:25:33,181:INFO::Epoch_batch_00051 | lr 0.0005 |Train_Loss 0.7247 |  total_loss_consistency1 0.0166 | Loss 0.7364 | Val_Loss 0.7249| Train Time(s) 0.2177| Val Time(s) 0.0502 | Time(s) 0.2679
+2024-11-21 05:25:33,182:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:25:33,450:INFO::Epoch_batch_00052 | lr 0.0005 |Train_Loss 0.7222 |  total_loss_consistency1 0.0161 | Loss 0.7334 | Val_Loss 0.7248| Train Time(s) 0.2178| Val Time(s) 0.0502 | Time(s) 0.2679
+2024-11-21 05:25:33,450:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:25:33,719:INFO::Epoch_batch_00053 | lr 0.0005 |Train_Loss 0.7246 |  total_loss_consistency1 0.0162 | Loss 0.7360 | Val_Loss 0.7247| Train Time(s) 0.2181| Val Time(s) 0.0502 | Time(s) 0.2683
+2024-11-21 05:25:33,719:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:25:34,114:INFO::Epoch_batch_00054 | lr 0.0005 |Train_Loss 0.7200 |  total_loss_consistency1 0.0153 | Loss 0.7307 | Val_Loss 0.7246| Train Time(s) 0.2168| Val Time(s) 0.0503 | Time(s) 0.2671
+2024-11-21 05:25:34,114:INFO::Validation loss decreased (0.724717 --> 0.724605).  Saving model ...
+2024-11-21 05:25:34,503:INFO::Epoch_batch_00055 | lr 0.0005 |Train_Loss 0.7169 |  total_loss_consistency1 0.0152 | Loss 0.7275 | Val_Loss 0.7245| Train Time(s) 0.2196| Val Time(s) 0.0503 | Time(s) 0.2699
+2024-11-21 05:25:34,504:INFO::Validation loss decreased (0.724605 --> 0.724518).  Saving model ...
+2024-11-21 05:25:34,892:INFO::Epoch_batch_00056 | lr 0.0005 |Train_Loss 0.7193 |  total_loss_consistency1 0.0146 | Loss 0.7296 | Val_Loss 0.7242| Train Time(s) 0.2189| Val Time(s) 0.0503 | Time(s) 0.2692
+2024-11-21 05:25:34,893:INFO::Validation loss decreased (0.724518 --> 0.724235).  Saving model ...
+2024-11-21 05:25:35,281:INFO::Epoch_batch_00057 | lr 0.0005 |Train_Loss 0.7181 |  total_loss_consistency1 0.0145 | Loss 0.7282 | Val_Loss 0.7240| Train Time(s) 0.2186| Val Time(s) 0.0502 | Time(s) 0.2687
+2024-11-21 05:25:35,282:INFO::Validation loss decreased (0.724235 --> 0.723982).  Saving model ...
+2024-11-21 05:25:35,674:INFO::Epoch_batch_00058 | lr 0.0005 |Train_Loss 0.7153 |  total_loss_consistency1 0.0142 | Loss 0.7253 | Val_Loss 0.7240| Train Time(s) 0.2186| Val Time(s) 0.0503 | Time(s) 0.2690
+2024-11-21 05:25:35,675:INFO::Validation loss decreased (0.723982 --> 0.723957).  Saving model ...
+2024-11-21 05:25:36,062:INFO::Epoch_batch_00059 | lr 0.0005 |Train_Loss 0.7207 |  total_loss_consistency1 0.0136 | Loss 0.7302 | Val_Loss 0.7237| Train Time(s) 0.2186| Val Time(s) 0.0503 | Time(s) 0.2689
+2024-11-21 05:25:36,063:INFO::Validation loss decreased (0.723957 --> 0.723750).  Saving model ...
+2024-11-21 05:25:36,450:INFO::Epoch_batch_00060 | lr 0.0005 |Train_Loss 0.7140 |  total_loss_consistency1 0.0132 | Loss 0.7233 | Val_Loss 0.7234| Train Time(s) 0.2185| Val Time(s) 0.0503 | Time(s) 0.2688
+2024-11-21 05:25:36,451:INFO::Validation loss decreased (0.723750 --> 0.723360).  Saving model ...
+2024-11-21 05:25:36,843:INFO::Epoch_batch_00061 | lr 0.0005 |Train_Loss 0.7141 |  total_loss_consistency1 0.0129 | Loss 0.7231 | Val_Loss 0.7222| Train Time(s) 0.2193| Val Time(s) 0.0502 | Time(s) 0.2695
+2024-11-21 05:25:36,844:INFO::Validation loss decreased (0.723360 --> 0.722185).  Saving model ...
+2024-11-21 05:25:37,231:INFO::Epoch_batch_00062 | lr 0.0005 |Train_Loss 0.7143 |  total_loss_consistency1 0.0126 | Loss 0.7231 | Val_Loss 0.7209| Train Time(s) 0.2184| Val Time(s) 0.0503 | Time(s) 0.2686
+2024-11-21 05:25:37,231:INFO::Validation loss decreased (0.722185 --> 0.720879).  Saving model ...
+2024-11-21 05:25:37,618:INFO::Epoch_batch_00063 | lr 0.0005 |Train_Loss 0.7141 |  total_loss_consistency1 0.0127 | Loss 0.7230 | Val_Loss 0.7200| Train Time(s) 0.2186| Val Time(s) 0.0503 | Time(s) 0.2689
+2024-11-21 05:25:37,619:INFO::Validation loss decreased (0.720879 --> 0.720013).  Saving model ...
+2024-11-21 05:25:38,006:INFO::Epoch_batch_00064 | lr 0.0005 |Train_Loss 0.7122 |  total_loss_consistency1 0.0122 | Loss 0.7207 | Val_Loss 0.7190| Train Time(s) 0.2182| Val Time(s) 0.0503 | Time(s) 0.2685
+2024-11-21 05:25:38,007:INFO::Validation loss decreased (0.720013 --> 0.719001).  Saving model ...
+2024-11-21 05:25:38,398:INFO::Epoch_batch_00065 | lr 0.0005 |Train_Loss 0.7119 |  total_loss_consistency1 0.0123 | Loss 0.7205 | Val_Loss 0.7189| Train Time(s) 0.2233| Val Time(s) 0.0502 | Time(s) 0.2735
+2024-11-21 05:25:38,399:INFO::Validation loss decreased (0.719001 --> 0.718864).  Saving model ...
+2024-11-21 05:25:38,668:INFO::Epoch_batch_00066 | lr 0.0005 |Train_Loss 0.7084 |  total_loss_consistency1 0.0119 | Loss 0.7167 | Val_Loss 0.7198| Train Time(s) 0.2184| Val Time(s) 0.0504 | Time(s) 0.2688
+2024-11-21 05:25:38,669:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:25:38,937:INFO::Epoch_batch_00067 | lr 0.0005 |Train_Loss 0.7138 |  total_loss_consistency1 0.0118 | Loss 0.7220 | Val_Loss 0.7211| Train Time(s) 0.2174| Val Time(s) 0.0503 | Time(s) 0.2677
+2024-11-21 05:25:38,937:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:25:39,205:INFO::Epoch_batch_00068 | lr 0.0005 |Train_Loss 0.7079 |  total_loss_consistency1 0.0112 | Loss 0.7158 | Val_Loss 0.7222| Train Time(s) 0.2179| Val Time(s) 0.0501 | Time(s) 0.2681
+2024-11-21 05:25:39,206:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:25:39,474:INFO::Epoch_batch_00069 | lr 0.0005 |Train_Loss 0.7080 |  total_loss_consistency1 0.0111 | Loss 0.7158 | Val_Loss 0.7228| Train Time(s) 0.2180| Val Time(s) 0.0502 | Time(s) 0.2682
+2024-11-21 05:25:39,474:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:25:39,742:INFO::Epoch_batch_00070 | lr 0.0005 |Train_Loss 0.7067 |  total_loss_consistency1 0.0111 | Loss 0.7144 | Val_Loss 0.7229| Train Time(s) 0.2176| Val Time(s) 0.0502 | Time(s) 0.2678
+2024-11-21 05:25:39,743:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:25:40,010:INFO::Epoch_batch_00071 | lr 0.0005 |Train_Loss 0.7066 |  total_loss_consistency1 0.0109 | Loss 0.7142 | Val_Loss 0.7219| Train Time(s) 0.2175| Val Time(s) 0.0502 | Time(s) 0.2677
+2024-11-21 05:25:40,011:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:25:40,280:INFO::Epoch_batch_00072 | lr 0.0005 |Train_Loss 0.7054 |  total_loss_consistency1 0.0106 | Loss 0.7129 | Val_Loss 0.7212| Train Time(s) 0.2182| Val Time(s) 0.0503 | Time(s) 0.2685
+2024-11-21 05:25:40,280:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:25:40,548:INFO::Epoch_batch_00073 | lr 0.0005 |Train_Loss 0.7077 |  total_loss_consistency1 0.0104 | Loss 0.7150 | Val_Loss 0.7208| Train Time(s) 0.2172| Val Time(s) 0.0502 | Time(s) 0.2674
+2024-11-21 05:25:40,548:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:25:40,816:INFO::Epoch_batch_00074 | lr 0.0005 |Train_Loss 0.7032 |  total_loss_consistency1 0.0102 | Loss 0.7103 | Val_Loss 0.7197| Train Time(s) 0.2175| Val Time(s) 0.0504 | Time(s) 0.2678
+2024-11-21 05:25:40,816:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:25:41,211:INFO::Epoch_batch_00075 | lr 0.0005 |Train_Loss 0.7049 |  total_loss_consistency1 0.0104 | Loss 0.7122 | Val_Loss 0.7181| Train Time(s) 0.2180| Val Time(s) 0.0503 | Time(s) 0.2683
+2024-11-21 05:25:41,212:INFO::Validation loss decreased (0.718864 --> 0.718100).  Saving model ...
+2024-11-21 05:25:41,599:INFO::Epoch_batch_00076 | lr 0.0005 |Train_Loss 0.7041 |  total_loss_consistency1 0.0101 | Loss 0.7112 | Val_Loss 0.7170| Train Time(s) 0.2173| Val Time(s) 0.0503 | Time(s) 0.2676
+2024-11-21 05:25:41,600:INFO::Validation loss decreased (0.718100 --> 0.717044).  Saving model ...
+2024-11-21 05:25:41,989:INFO::Epoch_batch_00077 | lr 0.0005 |Train_Loss 0.7024 |  total_loss_consistency1 0.0098 | Loss 0.7093 | Val_Loss 0.7165| Train Time(s) 0.2192| Val Time(s) 0.0502 | Time(s) 0.2694
+2024-11-21 05:25:41,990:INFO::Validation loss decreased (0.717044 --> 0.716520).  Saving model ...
+2024-11-21 05:25:42,261:INFO::Epoch_batch_00078 | lr 0.0005 |Train_Loss 0.7002 |  total_loss_consistency1 0.0097 | Loss 0.7070 | Val_Loss 0.7168| Train Time(s) 0.2201| Val Time(s) 0.0503 | Time(s) 0.2704
+2024-11-21 05:25:42,261:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:25:42,529:INFO::Epoch_batch_00079 | lr 0.0005 |Train_Loss 0.7039 |  total_loss_consistency1 0.0095 | Loss 0.7106 | Val_Loss 0.7173| Train Time(s) 0.2176| Val Time(s) 0.0503 | Time(s) 0.2678
+2024-11-21 05:25:42,529:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:25:42,797:INFO::Epoch_batch_00080 | lr 0.0005 |Train_Loss 0.7005 |  total_loss_consistency1 0.0093 | Loss 0.7070 | Val_Loss 0.7186| Train Time(s) 0.2169| Val Time(s) 0.0503 | Time(s) 0.2672
+2024-11-21 05:25:42,797:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:25:43,066:INFO::Epoch_batch_00081 | lr 0.0005 |Train_Loss 0.7017 |  total_loss_consistency1 0.0091 | Loss 0.7080 | Val_Loss 0.7190| Train Time(s) 0.2183| Val Time(s) 0.0503 | Time(s) 0.2686
+2024-11-21 05:25:43,066:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:25:43,335:INFO::Epoch_batch_00082 | lr 0.0005 |Train_Loss 0.6984 |  total_loss_consistency1 0.0089 | Loss 0.7046 | Val_Loss 0.7198| Train Time(s) 0.2180| Val Time(s) 0.0502 | Time(s) 0.2682
+2024-11-21 05:25:43,335:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:25:43,602:INFO::Epoch_batch_00083 | lr 0.0005 |Train_Loss 0.6990 |  total_loss_consistency1 0.0087 | Loss 0.7051 | Val_Loss 0.7195| Train Time(s) 0.2170| Val Time(s) 0.0502 | Time(s) 0.2673
+2024-11-21 05:25:43,603:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:25:43,871:INFO::Epoch_batch_00084 | lr 0.0005 |Train_Loss 0.6999 |  total_loss_consistency1 0.0087 | Loss 0.7059 | Val_Loss 0.7193| Train Time(s) 0.2177| Val Time(s) 0.0503 | Time(s) 0.2680
+2024-11-21 05:25:43,871:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:25:44,140:INFO::Epoch_batch_00085 | lr 0.0005 |Train_Loss 0.6981 |  total_loss_consistency1 0.0084 | Loss 0.7040 | Val_Loss 0.7187| Train Time(s) 0.2182| Val Time(s) 0.0504 | Time(s) 0.2685
+2024-11-21 05:25:44,140:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:25:44,408:INFO::Epoch_batch_00086 | lr 0.0005 |Train_Loss 0.6987 |  total_loss_consistency1 0.0083 | Loss 0.7045 | Val_Loss 0.7184| Train Time(s) 0.2174| Val Time(s) 0.0502 | Time(s) 0.2675
+2024-11-21 05:25:44,408:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:25:44,676:INFO::Epoch_batch_00087 | lr 0.0005 |Train_Loss 0.6977 |  total_loss_consistency1 0.0083 | Loss 0.7035 | Val_Loss 0.7177| Train Time(s) 0.2170| Val Time(s) 0.0503 | Time(s) 0.2673
+2024-11-21 05:25:44,676:INFO::EarlyStopping counter: 10 out of 30
+2024-11-21 05:25:44,944:INFO::Epoch_batch_00088 | lr 0.0005 |Train_Loss 0.6968 |  total_loss_consistency1 0.0082 | Loss 0.7026 | Val_Loss 0.7173| Train Time(s) 0.2175| Val Time(s) 0.0503 | Time(s) 0.2678
+2024-11-21 05:25:44,944:INFO::EarlyStopping counter: 11 out of 30
+2024-11-21 05:25:45,215:INFO::Epoch_batch_00089 | lr 0.0005 |Train_Loss 0.6975 |  total_loss_consistency1 0.0080 | Loss 0.7031 | Val_Loss 0.7172| Train Time(s) 0.2196| Val Time(s) 0.0504 | Time(s) 0.2700
+2024-11-21 05:25:45,215:INFO::EarlyStopping counter: 12 out of 30
+2024-11-21 05:25:45,483:INFO::Epoch_batch_00090 | lr 0.0005 |Train_Loss 0.6988 |  total_loss_consistency1 0.0082 | Loss 0.7046 | Val_Loss 0.7178| Train Time(s) 0.2174| Val Time(s) 0.0503 | Time(s) 0.2677
+2024-11-21 05:25:45,483:INFO::EarlyStopping counter: 13 out of 30
+2024-11-21 05:25:45,752:INFO::Epoch_batch_00091 | lr 0.0005 |Train_Loss 0.6938 |  total_loss_consistency1 0.0078 | Loss 0.6992 | Val_Loss 0.7178| Train Time(s) 0.2178| Val Time(s) 0.0502 | Time(s) 0.2680
+2024-11-21 05:25:45,752:INFO::EarlyStopping counter: 14 out of 30
+2024-11-21 05:25:46,020:INFO::Epoch_batch_00092 | lr 0.0005 |Train_Loss 0.6942 |  total_loss_consistency1 0.0076 | Loss 0.6995 | Val_Loss 0.7184| Train Time(s) 0.2174| Val Time(s) 0.0503 | Time(s) 0.2677
+2024-11-21 05:25:46,020:INFO::EarlyStopping counter: 15 out of 30
+2024-11-21 05:25:46,288:INFO::Epoch_batch_00093 | lr 0.0005 |Train_Loss 0.6945 |  total_loss_consistency1 0.0077 | Loss 0.6999 | Val_Loss 0.7182| Train Time(s) 0.2173| Val Time(s) 0.0504 | Time(s) 0.2677
+2024-11-21 05:25:46,288:INFO::EarlyStopping counter: 16 out of 30
+2024-11-21 05:25:46,556:INFO::Epoch_batch_00094 | lr 0.0005 |Train_Loss 0.6951 |  total_loss_consistency1 0.0076 | Loss 0.7003 | Val_Loss 0.7181| Train Time(s) 0.2177| Val Time(s) 0.0502 | Time(s) 0.2678
+2024-11-21 05:25:46,557:INFO::EarlyStopping counter: 17 out of 30
+2024-11-21 05:25:46,825:INFO::Epoch_batch_00095 | lr 0.0005 |Train_Loss 0.6939 |  total_loss_consistency1 0.0075 | Loss 0.6992 | Val_Loss 0.7180| Train Time(s) 0.2180| Val Time(s) 0.0502 | Time(s) 0.2682
+2024-11-21 05:25:46,826:INFO::EarlyStopping counter: 18 out of 30
+2024-11-21 05:25:47,094:INFO::Epoch_batch_00096 | lr 0.0005 |Train_Loss 0.6918 |  total_loss_consistency1 0.0074 | Loss 0.6969 | Val_Loss 0.7185| Train Time(s) 0.2181| Val Time(s) 0.0503 | Time(s) 0.2684
+2024-11-21 05:25:47,095:INFO::EarlyStopping counter: 19 out of 30
+2024-11-21 05:25:47,365:INFO::Epoch_batch_00097 | lr 0.0005 |Train_Loss 0.6928 |  total_loss_consistency1 0.0074 | Loss 0.6980 | Val_Loss 0.7186| Train Time(s) 0.2199| Val Time(s) 0.0501 | Time(s) 0.2700
+2024-11-21 05:25:47,365:INFO::EarlyStopping counter: 20 out of 30
+2024-11-21 05:25:47,634:INFO::Epoch_batch_00098 | lr 0.0005 |Train_Loss 0.6895 |  total_loss_consistency1 0.0073 | Loss 0.6946 | Val_Loss 0.7190| Train Time(s) 0.2183| Val Time(s) 0.0503 | Time(s) 0.2687
+2024-11-21 05:25:47,634:INFO::EarlyStopping counter: 21 out of 30
+2024-11-21 05:25:47,903:INFO::Epoch_batch_00099 | lr 0.0005 |Train_Loss 0.6904 |  total_loss_consistency1 0.0071 | Loss 0.6953 | Val_Loss 0.7195| Train Time(s) 0.2186| Val Time(s) 0.0503 | Time(s) 0.2689
+2024-11-21 05:25:47,904:INFO::EarlyStopping counter: 22 out of 30
+2024-11-21 05:25:48,173:INFO::Epoch_batch_00100 | lr 0.0005 |Train_Loss 0.6933 |  total_loss_consistency1 0.0069 | Loss 0.6982 | Val_Loss 0.7199| Train Time(s) 0.2190| Val Time(s) 0.0503 | Time(s) 0.2694
+2024-11-21 05:25:48,174:INFO::EarlyStopping counter: 23 out of 30
+2024-11-21 05:25:48,443:INFO::Epoch_batch_00101 | lr 0.0005 |Train_Loss 0.6924 |  total_loss_consistency1 0.0068 | Loss 0.6972 | Val_Loss 0.7199| Train Time(s) 0.2189| Val Time(s) 0.0503 | Time(s) 0.2692
+2024-11-21 05:25:48,443:INFO::EarlyStopping counter: 24 out of 30
+2024-11-21 05:25:48,712:INFO::Epoch_batch_00102 | lr 0.0005 |Train_Loss 0.6909 |  total_loss_consistency1 0.0069 | Loss 0.6957 | Val_Loss 0.7200| Train Time(s) 0.2186| Val Time(s) 0.0503 | Time(s) 0.2690
+2024-11-21 05:25:48,713:INFO::EarlyStopping counter: 25 out of 30
+2024-11-21 05:25:48,980:INFO::Epoch_batch_00103 | lr 0.0005 |Train_Loss 0.6904 |  total_loss_consistency1 0.0068 | Loss 0.6952 | Val_Loss 0.7192| Train Time(s) 0.2173| Val Time(s) 0.0502 | Time(s) 0.2675
+2024-11-21 05:25:48,981:INFO::EarlyStopping counter: 26 out of 30
+2024-11-21 05:25:49,250:INFO::Epoch_batch_00104 | lr 0.0005 |Train_Loss 0.6888 |  total_loss_consistency1 0.0068 | Loss 0.6936 | Val_Loss 0.7183| Train Time(s) 0.2187| Val Time(s) 0.0504 | Time(s) 0.2690
+2024-11-21 05:25:49,250:INFO::EarlyStopping counter: 27 out of 30
+2024-11-21 05:25:49,519:INFO::Epoch_batch_00105 | lr 0.0005 |Train_Loss 0.6879 |  total_loss_consistency1 0.0067 | Loss 0.6927 | Val_Loss 0.7176| Train Time(s) 0.2182| Val Time(s) 0.0502 | Time(s) 0.2684
+2024-11-21 05:25:49,519:INFO::EarlyStopping counter: 28 out of 30
+2024-11-21 05:25:49,788:INFO::Epoch_batch_00106 | lr 0.0005 |Train_Loss 0.6913 |  total_loss_consistency1 0.0068 | Loss 0.6960 | Val_Loss 0.7180| Train Time(s) 0.2180| Val Time(s) 0.0503 | Time(s) 0.2683
+2024-11-21 05:25:49,788:INFO::EarlyStopping counter: 29 out of 30
+2024-11-21 05:25:50,056:INFO::Epoch_batch_00107 | lr 0.0005 |Train_Loss 0.6888 |  total_loss_consistency1 0.0064 | Loss 0.6933 | Val_Loss 0.7183| Train Time(s) 0.2176| Val Time(s) 0.0504 | Time(s) 0.2679
+2024-11-21 05:25:50,057:INFO::EarlyStopping counter: 30 out of 30
+2024-11-21 05:25:50,057:INFO::Eearly stopping!
+2024-11-21 05:25:50,133:INFO::
+testing...
+2024-11-21 05:25:50,183:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:25:50,183:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:25:50,183:INFO::submit dir: submit/submit_simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:25:50,232:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:25:50,240:INFO::{'micro-f1': 0.9580985915492958, 'macro-f1': 0.9550454984203108}
+2024-11-21 05:25:50,282:INFO::############### Experiments Stage Ends! ###############
+2024-11-21 05:25:50,282:INFO::=============== one experiment stage finish, use 132.71121335029602 time.
+2024-11-21 05:25:57,974:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:25:58,371:INFO::Epoch_batch_00000 | lr 0.0005 |Train_Loss 1.4627 |  total_loss_consistency1 0.0332 | Loss 1.4859 | Val_Loss 1.3532| Train Time(s) 0.2192| Val Time(s) 0.0498 | Time(s) 0.2690
+2024-11-21 05:25:58,757:INFO::Epoch_batch_00001 | lr 0.0005 |Train_Loss 1.4076 |  total_loss_consistency1 0.0353 | Loss 1.4324 | Val_Loss 1.3187| Train Time(s) 0.2172| Val Time(s) 0.0503 | Time(s) 0.2676
+2024-11-21 05:25:58,758:INFO::Validation loss decreased (inf --> 1.318675).  Saving model ...
+2024-11-21 05:25:59,145:INFO::Epoch_batch_00002 | lr 0.0005 |Train_Loss 1.3681 |  total_loss_consistency1 0.0353 | Loss 1.3928 | Val_Loss 1.2624| Train Time(s) 0.2189| Val Time(s) 0.0502 | Time(s) 0.2691
+2024-11-21 05:25:59,145:INFO::Validation loss decreased (1.318675 --> 1.262350).  Saving model ...
+2024-11-21 05:25:59,532:INFO::Epoch_batch_00003 | lr 0.0005 |Train_Loss 1.3229 |  total_loss_consistency1 0.0342 | Loss 1.3468 | Val_Loss 1.1832| Train Time(s) 0.2191| Val Time(s) 0.0503 | Time(s) 0.2694
+2024-11-21 05:25:59,533:INFO::Validation loss decreased (1.262350 --> 1.183186).  Saving model ...
+2024-11-21 05:25:59,926:INFO::Epoch_batch_00004 | lr 0.0005 |Train_Loss 1.2879 |  total_loss_consistency1 0.0340 | Loss 1.3117 | Val_Loss 1.0608| Train Time(s) 0.2196| Val Time(s) 0.0503 | Time(s) 0.2699
+2024-11-21 05:25:59,927:INFO::Validation loss decreased (1.183186 --> 1.060813).  Saving model ...
+2024-11-21 05:26:00,314:INFO::Epoch_batch_00005 | lr 0.0005 |Train_Loss 1.2337 |  total_loss_consistency1 0.0342 | Loss 1.2576 | Val_Loss 0.9427| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2689
+2024-11-21 05:26:00,314:INFO::Validation loss decreased (1.060813 --> 0.942715).  Saving model ...
+2024-11-21 05:26:00,701:INFO::Epoch_batch_00006 | lr 0.0005 |Train_Loss 1.1401 |  total_loss_consistency1 0.0367 | Loss 1.1658 | Val_Loss 0.9044| Train Time(s) 0.2188| Val Time(s) 0.0504 | Time(s) 0.2691
+2024-11-21 05:26:00,702:INFO::Validation loss decreased (0.942715 --> 0.904402).  Saving model ...
+2024-11-21 05:26:01,088:INFO::Epoch_batch_00007 | lr 0.0005 |Train_Loss 1.0926 |  total_loss_consistency1 0.0391 | Loss 1.1200 | Val_Loss 0.8946| Train Time(s) 0.2190| Val Time(s) 0.0501 | Time(s) 0.2691
+2024-11-21 05:26:01,089:INFO::Validation loss decreased (0.904402 --> 0.894622).  Saving model ...
+2024-11-21 05:26:01,478:INFO::Epoch_batch_00008 | lr 0.0005 |Train_Loss 1.0621 |  total_loss_consistency1 0.0404 | Loss 1.0904 | Val_Loss 0.8639| Train Time(s) 0.2191| Val Time(s) 0.0503 | Time(s) 0.2695
+2024-11-21 05:26:01,478:INFO::Validation loss decreased (0.894622 --> 0.863932).  Saving model ...
+2024-11-21 05:26:01,867:INFO::Epoch_batch_00009 | lr 0.0005 |Train_Loss 1.0245 |  total_loss_consistency1 0.0457 | Loss 1.0566 | Val_Loss 0.8399| Train Time(s) 0.2190| Val Time(s) 0.0502 | Time(s) 0.2692
+2024-11-21 05:26:01,867:INFO::Validation loss decreased (0.863932 --> 0.839889).  Saving model ...
+2024-11-21 05:26:02,256:INFO::Epoch_batch_00010 | lr 0.0005 |Train_Loss 0.9767 |  total_loss_consistency1 0.0479 | Loss 1.0103 | Val_Loss 0.8346| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2691
+2024-11-21 05:26:02,256:INFO::Validation loss decreased (0.839889 --> 0.834629).  Saving model ...
+2024-11-21 05:26:02,525:INFO::Epoch_batch_00011 | lr 0.0005 |Train_Loss 0.9560 |  total_loss_consistency1 0.0501 | Loss 0.9911 | Val_Loss 0.8354| Train Time(s) 0.2186| Val Time(s) 0.0502 | Time(s) 0.2688
+2024-11-21 05:26:02,526:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:26:02,913:INFO::Epoch_batch_00012 | lr 0.0005 |Train_Loss 0.9448 |  total_loss_consistency1 0.0535 | Loss 0.9822 | Val_Loss 0.8340| Train Time(s) 0.2181| Val Time(s) 0.0504 | Time(s) 0.2685
+2024-11-21 05:26:02,913:INFO::Validation loss decreased (0.834629 --> 0.834015).  Saving model ...
+2024-11-21 05:26:03,300:INFO::Epoch_batch_00013 | lr 0.0005 |Train_Loss 0.9258 |  total_loss_consistency1 0.0543 | Loss 0.9638 | Val_Loss 0.8264| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2690
+2024-11-21 05:26:03,301:INFO::Validation loss decreased (0.834015 --> 0.826425).  Saving model ...
+2024-11-21 05:26:03,688:INFO::Epoch_batch_00014 | lr 0.0005 |Train_Loss 0.9112 |  total_loss_consistency1 0.0538 | Loss 0.9489 | Val_Loss 0.8192| Train Time(s) 0.2187| Val Time(s) 0.0502 | Time(s) 0.2689
+2024-11-21 05:26:03,688:INFO::Validation loss decreased (0.826425 --> 0.819250).  Saving model ...
+2024-11-21 05:26:04,075:INFO::Epoch_batch_00015 | lr 0.0005 |Train_Loss 0.8888 |  total_loss_consistency1 0.0520 | Loss 0.9252 | Val_Loss 0.8141| Train Time(s) 0.2191| Val Time(s) 0.0503 | Time(s) 0.2694
+2024-11-21 05:26:04,076:INFO::Validation loss decreased (0.819250 --> 0.814061).  Saving model ...
+2024-11-21 05:26:04,463:INFO::Epoch_batch_00016 | lr 0.0005 |Train_Loss 0.8802 |  total_loss_consistency1 0.0487 | Loss 0.9142 | Val_Loss 0.8126| Train Time(s) 0.2194| Val Time(s) 0.0502 | Time(s) 0.2696
+2024-11-21 05:26:04,463:INFO::Validation loss decreased (0.814061 --> 0.812578).  Saving model ...
+2024-11-21 05:26:04,850:INFO::Epoch_batch_00017 | lr 0.0005 |Train_Loss 0.8816 |  total_loss_consistency1 0.0471 | Loss 0.9146 | Val_Loss 0.8099| Train Time(s) 0.2195| Val Time(s) 0.0504 | Time(s) 0.2699
+2024-11-21 05:26:04,851:INFO::Validation loss decreased (0.812578 --> 0.809895).  Saving model ...
+2024-11-21 05:26:05,238:INFO::Epoch_batch_00018 | lr 0.0005 |Train_Loss 0.8644 |  total_loss_consistency1 0.0439 | Loss 0.8951 | Val_Loss 0.8053| Train Time(s) 0.2191| Val Time(s) 0.0504 | Time(s) 0.2695
+2024-11-21 05:26:05,238:INFO::Validation loss decreased (0.809895 --> 0.805325).  Saving model ...
+2024-11-21 05:26:05,625:INFO::Epoch_batch_00019 | lr 0.0005 |Train_Loss 0.8549 |  total_loss_consistency1 0.0438 | Loss 0.8856 | Val_Loss 0.8000| Train Time(s) 0.2192| Val Time(s) 0.0503 | Time(s) 0.2695
+2024-11-21 05:26:05,626:INFO::Validation loss decreased (0.805325 --> 0.800002).  Saving model ...
+2024-11-21 05:26:06,018:INFO::Epoch_batch_00020 | lr 0.0005 |Train_Loss 0.8503 |  total_loss_consistency1 0.0423 | Loss 0.8799 | Val_Loss 0.7950| Train Time(s) 0.2193| Val Time(s) 0.0501 | Time(s) 0.2694
+2024-11-21 05:26:06,018:INFO::Validation loss decreased (0.800002 --> 0.795001).  Saving model ...
+2024-11-21 05:26:06,408:INFO::Epoch_batch_00021 | lr 0.0005 |Train_Loss 0.8492 |  total_loss_consistency1 0.0399 | Loss 0.8772 | Val_Loss 0.7889| Train Time(s) 0.2195| Val Time(s) 0.0504 | Time(s) 0.2699
+2024-11-21 05:26:06,409:INFO::Validation loss decreased (0.795001 --> 0.788856).  Saving model ...
+2024-11-21 05:26:06,800:INFO::Epoch_batch_00022 | lr 0.0005 |Train_Loss 0.8406 |  total_loss_consistency1 0.0386 | Loss 0.8676 | Val_Loss 0.7825| Train Time(s) 0.2186| Val Time(s) 0.0502 | Time(s) 0.2688
+2024-11-21 05:26:06,800:INFO::Validation loss decreased (0.788856 --> 0.782457).  Saving model ...
+2024-11-21 05:26:07,187:INFO::Epoch_batch_00023 | lr 0.0005 |Train_Loss 0.8254 |  total_loss_consistency1 0.0378 | Loss 0.8518 | Val_Loss 0.7753| Train Time(s) 0.2191| Val Time(s) 0.0503 | Time(s) 0.2693
+2024-11-21 05:26:07,188:INFO::Validation loss decreased (0.782457 --> 0.775282).  Saving model ...
+2024-11-21 05:26:07,577:INFO::Epoch_batch_00024 | lr 0.0005 |Train_Loss 0.8195 |  total_loss_consistency1 0.0359 | Loss 0.8447 | Val_Loss 0.7698| Train Time(s) 0.2197| Val Time(s) 0.0502 | Time(s) 0.2699
+2024-11-21 05:26:07,577:INFO::Validation loss decreased (0.775282 --> 0.769820).  Saving model ...
+2024-11-21 05:26:07,969:INFO::Epoch_batch_00025 | lr 0.0005 |Train_Loss 0.8112 |  total_loss_consistency1 0.0338 | Loss 0.8349 | Val_Loss 0.7645| Train Time(s) 0.2192| Val Time(s) 0.0504 | Time(s) 0.2696
+2024-11-21 05:26:07,970:INFO::Validation loss decreased (0.769820 --> 0.764541).  Saving model ...
+2024-11-21 05:26:08,358:INFO::Epoch_batch_00026 | lr 0.0005 |Train_Loss 0.8069 |  total_loss_consistency1 0.0326 | Loss 0.8297 | Val_Loss 0.7595| Train Time(s) 0.2190| Val Time(s) 0.0502 | Time(s) 0.2692
+2024-11-21 05:26:08,359:INFO::Validation loss decreased (0.764541 --> 0.759493).  Saving model ...
+2024-11-21 05:26:08,745:INFO::Epoch_batch_00027 | lr 0.0005 |Train_Loss 0.7901 |  total_loss_consistency1 0.0316 | Loss 0.8122 | Val_Loss 0.7548| Train Time(s) 0.2193| Val Time(s) 0.0503 | Time(s) 0.2696
+2024-11-21 05:26:08,746:INFO::Validation loss decreased (0.759493 --> 0.754827).  Saving model ...
+2024-11-21 05:26:09,135:INFO::Epoch_batch_00028 | lr 0.0005 |Train_Loss 0.7837 |  total_loss_consistency1 0.0307 | Loss 0.8051 | Val_Loss 0.7504| Train Time(s) 0.2196| Val Time(s) 0.0503 | Time(s) 0.2700
+2024-11-21 05:26:09,135:INFO::Validation loss decreased (0.754827 --> 0.750380).  Saving model ...
+2024-11-21 05:26:09,524:INFO::Epoch_batch_00029 | lr 0.0005 |Train_Loss 0.7741 |  total_loss_consistency1 0.0288 | Loss 0.7943 | Val_Loss 0.7465| Train Time(s) 0.2191| Val Time(s) 0.0502 | Time(s) 0.2693
+2024-11-21 05:26:09,525:INFO::Validation loss decreased (0.750380 --> 0.746459).  Saving model ...
+2024-11-21 05:26:09,912:INFO::Epoch_batch_00030 | lr 0.0005 |Train_Loss 0.7737 |  total_loss_consistency1 0.0287 | Loss 0.7938 | Val_Loss 0.7431| Train Time(s) 0.2179| Val Time(s) 0.0504 | Time(s) 0.2683
+2024-11-21 05:26:09,913:INFO::Validation loss decreased (0.746459 --> 0.743122).  Saving model ...
+2024-11-21 05:26:10,304:INFO::Epoch_batch_00031 | lr 0.0005 |Train_Loss 0.7690 |  total_loss_consistency1 0.0278 | Loss 0.7884 | Val_Loss 0.7405| Train Time(s) 0.2207| Val Time(s) 0.0501 | Time(s) 0.2708
+2024-11-21 05:26:10,305:INFO::Validation loss decreased (0.743122 --> 0.740509).  Saving model ...
+2024-11-21 05:26:10,693:INFO::Epoch_batch_00032 | lr 0.0005 |Train_Loss 0.7609 |  total_loss_consistency1 0.0278 | Loss 0.7804 | Val_Loss 0.7388| Train Time(s) 0.2193| Val Time(s) 0.0503 | Time(s) 0.2696
+2024-11-21 05:26:10,694:INFO::Validation loss decreased (0.740509 --> 0.738841).  Saving model ...
+2024-11-21 05:26:11,083:INFO::Epoch_batch_00033 | lr 0.0005 |Train_Loss 0.7584 |  total_loss_consistency1 0.0276 | Loss 0.7777 | Val_Loss 0.7381| Train Time(s) 0.2198| Val Time(s) 0.0502 | Time(s) 0.2700
+2024-11-21 05:26:11,084:INFO::Validation loss decreased (0.738841 --> 0.738077).  Saving model ...
+2024-11-21 05:26:11,472:INFO::Epoch_batch_00034 | lr 0.0005 |Train_Loss 0.7603 |  total_loss_consistency1 0.0273 | Loss 0.7794 | Val_Loss 0.7375| Train Time(s) 0.2191| Val Time(s) 0.0502 | Time(s) 0.2693
+2024-11-21 05:26:11,473:INFO::Validation loss decreased (0.738077 --> 0.737476).  Saving model ...
+2024-11-21 05:26:11,860:INFO::Epoch_batch_00035 | lr 0.0005 |Train_Loss 0.7566 |  total_loss_consistency1 0.0267 | Loss 0.7754 | Val_Loss 0.7366| Train Time(s) 0.2196| Val Time(s) 0.0502 | Time(s) 0.2698
+2024-11-21 05:26:11,861:INFO::Validation loss decreased (0.737476 --> 0.736613).  Saving model ...
+2024-11-21 05:26:12,251:INFO::Epoch_batch_00036 | lr 0.0005 |Train_Loss 0.7541 |  total_loss_consistency1 0.0273 | Loss 0.7732 | Val_Loss 0.7358| Train Time(s) 0.2194| Val Time(s) 0.0502 | Time(s) 0.2696
+2024-11-21 05:26:12,252:INFO::Validation loss decreased (0.736613 --> 0.735824).  Saving model ...
+2024-11-21 05:26:12,643:INFO::Epoch_batch_00037 | lr 0.0005 |Train_Loss 0.7467 |  total_loss_consistency1 0.0272 | Loss 0.7658 | Val_Loss 0.7352| Train Time(s) 0.2185| Val Time(s) 0.0503 | Time(s) 0.2689
+2024-11-21 05:26:12,644:INFO::Validation loss decreased (0.735824 --> 0.735227).  Saving model ...
+2024-11-21 05:26:13,033:INFO::Epoch_batch_00038 | lr 0.0005 |Train_Loss 0.7500 |  total_loss_consistency1 0.0273 | Loss 0.7691 | Val_Loss 0.7346| Train Time(s) 0.2193| Val Time(s) 0.0504 | Time(s) 0.2697
+2024-11-21 05:26:13,034:INFO::Validation loss decreased (0.735227 --> 0.734594).  Saving model ...
+2024-11-21 05:26:13,421:INFO::Epoch_batch_00039 | lr 0.0005 |Train_Loss 0.7460 |  total_loss_consistency1 0.0266 | Loss 0.7647 | Val_Loss 0.7340| Train Time(s) 0.2193| Val Time(s) 0.0503 | Time(s) 0.2696
+2024-11-21 05:26:13,421:INFO::Validation loss decreased (0.734594 --> 0.733992).  Saving model ...
+2024-11-21 05:26:13,808:INFO::Epoch_batch_00040 | lr 0.0005 |Train_Loss 0.7449 |  total_loss_consistency1 0.0257 | Loss 0.7630 | Val_Loss 0.7329| Train Time(s) 0.2186| Val Time(s) 0.0504 | Time(s) 0.2690
+2024-11-21 05:26:13,808:INFO::Validation loss decreased (0.733992 --> 0.732930).  Saving model ...
+2024-11-21 05:26:14,197:INFO::Epoch_batch_00041 | lr 0.0005 |Train_Loss 0.7428 |  total_loss_consistency1 0.0248 | Loss 0.7601 | Val_Loss 0.7315| Train Time(s) 0.2189| Val Time(s) 0.0503 | Time(s) 0.2692
+2024-11-21 05:26:14,198:INFO::Validation loss decreased (0.732930 --> 0.731521).  Saving model ...
+2024-11-21 05:26:14,586:INFO::Epoch_batch_00042 | lr 0.0005 |Train_Loss 0.7400 |  total_loss_consistency1 0.0237 | Loss 0.7566 | Val_Loss 0.7302| Train Time(s) 0.2195| Val Time(s) 0.0502 | Time(s) 0.2696
+2024-11-21 05:26:14,587:INFO::Validation loss decreased (0.731521 --> 0.730163).  Saving model ...
+2024-11-21 05:26:14,976:INFO::Epoch_batch_00043 | lr 0.0005 |Train_Loss 0.7377 |  total_loss_consistency1 0.0228 | Loss 0.7537 | Val_Loss 0.7290| Train Time(s) 0.2191| Val Time(s) 0.0503 | Time(s) 0.2693
+2024-11-21 05:26:14,976:INFO::Validation loss decreased (0.730163 --> 0.729026).  Saving model ...
+2024-11-21 05:26:15,364:INFO::Epoch_batch_00044 | lr 0.0005 |Train_Loss 0.7359 |  total_loss_consistency1 0.0222 | Loss 0.7515 | Val_Loss 0.7284| Train Time(s) 0.2186| Val Time(s) 0.0502 | Time(s) 0.2688
+2024-11-21 05:26:15,365:INFO::Validation loss decreased (0.729026 --> 0.728436).  Saving model ...
+2024-11-21 05:26:15,635:INFO::Epoch_batch_00045 | lr 0.0005 |Train_Loss 0.7362 |  total_loss_consistency1 0.0217 | Loss 0.7514 | Val_Loss 0.7289| Train Time(s) 0.2190| Val Time(s) 0.0503 | Time(s) 0.2693
+2024-11-21 05:26:15,635:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:26:15,904:INFO::Epoch_batch_00046 | lr 0.0005 |Train_Loss 0.7344 |  total_loss_consistency1 0.0206 | Loss 0.7489 | Val_Loss 0.7299| Train Time(s) 0.2181| Val Time(s) 0.0503 | Time(s) 0.2684
+2024-11-21 05:26:15,904:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:26:16,173:INFO::Epoch_batch_00047 | lr 0.0005 |Train_Loss 0.7316 |  total_loss_consistency1 0.0201 | Loss 0.7457 | Val_Loss 0.7311| Train Time(s) 0.2183| Val Time(s) 0.0503 | Time(s) 0.2686
+2024-11-21 05:26:16,173:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:26:16,441:INFO::Epoch_batch_00048 | lr 0.0005 |Train_Loss 0.7302 |  total_loss_consistency1 0.0195 | Loss 0.7438 | Val_Loss 0.7323| Train Time(s) 0.2180| Val Time(s) 0.0502 | Time(s) 0.2682
+2024-11-21 05:26:16,442:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:26:16,710:INFO::Epoch_batch_00049 | lr 0.0005 |Train_Loss 0.7325 |  total_loss_consistency1 0.0187 | Loss 0.7456 | Val_Loss 0.7326| Train Time(s) 0.2180| Val Time(s) 0.0503 | Time(s) 0.2683
+2024-11-21 05:26:16,711:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:26:16,979:INFO::Epoch_batch_00050 | lr 0.0005 |Train_Loss 0.7292 |  total_loss_consistency1 0.0180 | Loss 0.7418 | Val_Loss 0.7321| Train Time(s) 0.2179| Val Time(s) 0.0507 | Time(s) 0.2686
+2024-11-21 05:26:16,980:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:26:17,249:INFO::Epoch_batch_00051 | lr 0.0005 |Train_Loss 0.7279 |  total_loss_consistency1 0.0176 | Loss 0.7402 | Val_Loss 0.7311| Train Time(s) 0.2186| Val Time(s) 0.0502 | Time(s) 0.2688
+2024-11-21 05:26:17,249:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:26:17,520:INFO::Epoch_batch_00052 | lr 0.0005 |Train_Loss 0.7286 |  total_loss_consistency1 0.0169 | Loss 0.7404 | Val_Loss 0.7298| Train Time(s) 0.2184| Val Time(s) 0.0519 | Time(s) 0.2703
+2024-11-21 05:26:17,520:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:26:17,789:INFO::Epoch_batch_00053 | lr 0.0005 |Train_Loss 0.7228 |  total_loss_consistency1 0.0166 | Loss 0.7344 | Val_Loss 0.7284| Train Time(s) 0.2179| Val Time(s) 0.0506 | Time(s) 0.2685
+2024-11-21 05:26:17,789:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:26:18,184:INFO::Epoch_batch_00054 | lr 0.0005 |Train_Loss 0.7219 |  total_loss_consistency1 0.0163 | Loss 0.7333 | Val_Loss 0.7276| Train Time(s) 0.2180| Val Time(s) 0.0504 | Time(s) 0.2684
+2024-11-21 05:26:18,185:INFO::Validation loss decreased (0.728436 --> 0.727551).  Saving model ...
+2024-11-21 05:26:18,573:INFO::Epoch_batch_00055 | lr 0.0005 |Train_Loss 0.7218 |  total_loss_consistency1 0.0159 | Loss 0.7329 | Val_Loss 0.7269| Train Time(s) 0.2185| Val Time(s) 0.0503 | Time(s) 0.2688
+2024-11-21 05:26:18,574:INFO::Validation loss decreased (0.727551 --> 0.726947).  Saving model ...
+2024-11-21 05:26:18,843:INFO::Epoch_batch_00056 | lr 0.0005 |Train_Loss 0.7233 |  total_loss_consistency1 0.0155 | Loss 0.7341 | Val_Loss 0.7270| Train Time(s) 0.2188| Val Time(s) 0.0502 | Time(s) 0.2690
+2024-11-21 05:26:18,843:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:26:19,113:INFO::Epoch_batch_00057 | lr 0.0005 |Train_Loss 0.7218 |  total_loss_consistency1 0.0153 | Loss 0.7325 | Val_Loss 0.7271| Train Time(s) 0.2189| Val Time(s) 0.0502 | Time(s) 0.2692
+2024-11-21 05:26:19,113:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:26:19,382:INFO::Epoch_batch_00058 | lr 0.0005 |Train_Loss 0.7184 |  total_loss_consistency1 0.0148 | Loss 0.7287 | Val_Loss 0.7273| Train Time(s) 0.2184| Val Time(s) 0.0503 | Time(s) 0.2688
+2024-11-21 05:26:19,382:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:26:19,650:INFO::Epoch_batch_00059 | lr 0.0005 |Train_Loss 0.7205 |  total_loss_consistency1 0.0144 | Loss 0.7306 | Val_Loss 0.7273| Train Time(s) 0.2176| Val Time(s) 0.0501 | Time(s) 0.2677
+2024-11-21 05:26:19,650:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:26:19,919:INFO::Epoch_batch_00060 | lr 0.0005 |Train_Loss 0.7175 |  total_loss_consistency1 0.0139 | Loss 0.7273 | Val_Loss 0.7270| Train Time(s) 0.2185| Val Time(s) 0.0502 | Time(s) 0.2686
+2024-11-21 05:26:19,920:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:26:20,314:INFO::Epoch_batch_00061 | lr 0.0005 |Train_Loss 0.7175 |  total_loss_consistency1 0.0137 | Loss 0.7271 | Val_Loss 0.7268| Train Time(s) 0.2183| Val Time(s) 0.0503 | Time(s) 0.2687
+2024-11-21 05:26:20,314:INFO::Validation loss decreased (0.726947 --> 0.726813).  Saving model ...
+2024-11-21 05:26:20,701:INFO::Epoch_batch_00062 | lr 0.0005 |Train_Loss 0.7172 |  total_loss_consistency1 0.0137 | Loss 0.7268 | Val_Loss 0.7267| Train Time(s) 0.2190| Val Time(s) 0.0503 | Time(s) 0.2693
+2024-11-21 05:26:20,702:INFO::Validation loss decreased (0.726813 --> 0.726696).  Saving model ...
+2024-11-21 05:26:20,972:INFO::Epoch_batch_00063 | lr 0.0005 |Train_Loss 0.7157 |  total_loss_consistency1 0.0133 | Loss 0.7251 | Val_Loss 0.7273| Train Time(s) 0.2201| Val Time(s) 0.0502 | Time(s) 0.2703
+2024-11-21 05:26:20,973:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:26:21,241:INFO::Epoch_batch_00064 | lr 0.0005 |Train_Loss 0.7184 |  total_loss_consistency1 0.0132 | Loss 0.7277 | Val_Loss 0.7281| Train Time(s) 0.2181| Val Time(s) 0.0501 | Time(s) 0.2682
+2024-11-21 05:26:21,242:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:26:21,510:INFO::Epoch_batch_00065 | lr 0.0005 |Train_Loss 0.7140 |  total_loss_consistency1 0.0130 | Loss 0.7231 | Val_Loss 0.7291| Train Time(s) 0.2176| Val Time(s) 0.0502 | Time(s) 0.2679
+2024-11-21 05:26:21,510:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:26:21,779:INFO::Epoch_batch_00066 | lr 0.0005 |Train_Loss 0.7156 |  total_loss_consistency1 0.0126 | Loss 0.7244 | Val_Loss 0.7294| Train Time(s) 0.2188| Val Time(s) 0.0503 | Time(s) 0.2691
+2024-11-21 05:26:21,780:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:26:22,048:INFO::Epoch_batch_00067 | lr 0.0005 |Train_Loss 0.7121 |  total_loss_consistency1 0.0123 | Loss 0.7207 | Val_Loss 0.7285| Train Time(s) 0.2179| Val Time(s) 0.0503 | Time(s) 0.2682
+2024-11-21 05:26:22,048:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:26:22,316:INFO::Epoch_batch_00068 | lr 0.0005 |Train_Loss 0.7110 |  total_loss_consistency1 0.0122 | Loss 0.7195 | Val_Loss 0.7269| Train Time(s) 0.2176| Val Time(s) 0.0503 | Time(s) 0.2679
+2024-11-21 05:26:22,317:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:26:22,713:INFO::Epoch_batch_00069 | lr 0.0005 |Train_Loss 0.7121 |  total_loss_consistency1 0.0117 | Loss 0.7203 | Val_Loss 0.7252| Train Time(s) 0.2188| Val Time(s) 0.0502 | Time(s) 0.2689
+2024-11-21 05:26:22,713:INFO::Validation loss decreased (0.726696 --> 0.725185).  Saving model ...
+2024-11-21 05:26:23,101:INFO::Epoch_batch_00070 | lr 0.0005 |Train_Loss 0.7103 |  total_loss_consistency1 0.0117 | Loss 0.7185 | Val_Loss 0.7239| Train Time(s) 0.2179| Val Time(s) 0.0503 | Time(s) 0.2682
+2024-11-21 05:26:23,102:INFO::Validation loss decreased (0.725185 --> 0.723854).  Saving model ...
+2024-11-21 05:26:23,490:INFO::Epoch_batch_00071 | lr 0.0005 |Train_Loss 0.7107 |  total_loss_consistency1 0.0117 | Loss 0.7189 | Val_Loss 0.7234| Train Time(s) 0.2198| Val Time(s) 0.0502 | Time(s) 0.2700
+2024-11-21 05:26:23,491:INFO::Validation loss decreased (0.723854 --> 0.723401).  Saving model ...
+2024-11-21 05:26:23,760:INFO::Epoch_batch_00072 | lr 0.0005 |Train_Loss 0.7073 |  total_loss_consistency1 0.0113 | Loss 0.7152 | Val_Loss 0.7241| Train Time(s) 0.2184| Val Time(s) 0.0503 | Time(s) 0.2687
+2024-11-21 05:26:23,760:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:26:24,029:INFO::Epoch_batch_00073 | lr 0.0005 |Train_Loss 0.7062 |  total_loss_consistency1 0.0113 | Loss 0.7142 | Val_Loss 0.7258| Train Time(s) 0.2178| Val Time(s) 0.0503 | Time(s) 0.2682
+2024-11-21 05:26:24,029:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:26:24,297:INFO::Epoch_batch_00074 | lr 0.0005 |Train_Loss 0.7078 |  total_loss_consistency1 0.0111 | Loss 0.7156 | Val_Loss 0.7274| Train Time(s) 0.2179| Val Time(s) 0.0502 | Time(s) 0.2681
+2024-11-21 05:26:24,297:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:26:24,566:INFO::Epoch_batch_00075 | lr 0.0005 |Train_Loss 0.7075 |  total_loss_consistency1 0.0106 | Loss 0.7150 | Val_Loss 0.7283| Train Time(s) 0.2182| Val Time(s) 0.0503 | Time(s) 0.2686
+2024-11-21 05:26:24,567:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:26:24,835:INFO::Epoch_batch_00076 | lr 0.0005 |Train_Loss 0.7042 |  total_loss_consistency1 0.0108 | Loss 0.7118 | Val_Loss 0.7287| Train Time(s) 0.2181| Val Time(s) 0.0504 | Time(s) 0.2684
+2024-11-21 05:26:24,835:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:26:25,104:INFO::Epoch_batch_00077 | lr 0.0005 |Train_Loss 0.7048 |  total_loss_consistency1 0.0104 | Loss 0.7120 | Val_Loss 0.7284| Train Time(s) 0.2182| Val Time(s) 0.0503 | Time(s) 0.2685
+2024-11-21 05:26:25,105:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:26:25,374:INFO::Epoch_batch_00078 | lr 0.0005 |Train_Loss 0.7045 |  total_loss_consistency1 0.0101 | Loss 0.7116 | Val_Loss 0.7273| Train Time(s) 0.2188| Val Time(s) 0.0504 | Time(s) 0.2692
+2024-11-21 05:26:25,374:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:26:25,643:INFO::Epoch_batch_00079 | lr 0.0005 |Train_Loss 0.7042 |  total_loss_consistency1 0.0100 | Loss 0.7112 | Val_Loss 0.7258| Train Time(s) 0.2184| Val Time(s) 0.0502 | Time(s) 0.2686
+2024-11-21 05:26:25,644:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:26:25,912:INFO::Epoch_batch_00080 | lr 0.0005 |Train_Loss 0.7017 |  total_loss_consistency1 0.0099 | Loss 0.7086 | Val_Loss 0.7242| Train Time(s) 0.2180| Val Time(s) 0.0503 | Time(s) 0.2684
+2024-11-21 05:26:25,912:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:26:26,309:INFO::Epoch_batch_00081 | lr 0.0005 |Train_Loss 0.7026 |  total_loss_consistency1 0.0098 | Loss 0.7095 | Val_Loss 0.7227| Train Time(s) 0.2188| Val Time(s) 0.0502 | Time(s) 0.2690
+2024-11-21 05:26:26,309:INFO::Validation loss decreased (0.723401 --> 0.722651).  Saving model ...
+2024-11-21 05:26:26,697:INFO::Epoch_batch_00082 | lr 0.0005 |Train_Loss 0.7056 |  total_loss_consistency1 0.0099 | Loss 0.7125 | Val_Loss 0.7213| Train Time(s) 0.2177| Val Time(s) 0.0503 | Time(s) 0.2680
+2024-11-21 05:26:26,697:INFO::Validation loss decreased (0.722651 --> 0.721304).  Saving model ...
+2024-11-21 05:26:26,968:INFO::Epoch_batch_00083 | lr 0.0005 |Train_Loss 0.7004 |  total_loss_consistency1 0.0097 | Loss 0.7072 | Val_Loss 0.7215| Train Time(s) 0.2198| Val Time(s) 0.0503 | Time(s) 0.2701
+2024-11-21 05:26:26,968:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:26:27,237:INFO::Epoch_batch_00084 | lr 0.0005 |Train_Loss 0.7022 |  total_loss_consistency1 0.0095 | Loss 0.7088 | Val_Loss 0.7231| Train Time(s) 0.2183| Val Time(s) 0.0503 | Time(s) 0.2686
+2024-11-21 05:26:27,237:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:26:27,506:INFO::Epoch_batch_00085 | lr 0.0005 |Train_Loss 0.6998 |  total_loss_consistency1 0.0095 | Loss 0.7064 | Val_Loss 0.7254| Train Time(s) 0.2178| Val Time(s) 0.0502 | Time(s) 0.2680
+2024-11-21 05:26:27,506:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:26:27,775:INFO::Epoch_batch_00086 | lr 0.0005 |Train_Loss 0.7012 |  total_loss_consistency1 0.0091 | Loss 0.7076 | Val_Loss 0.7266| Train Time(s) 0.2188| Val Time(s) 0.0503 | Time(s) 0.2691
+2024-11-21 05:26:27,775:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:26:28,044:INFO::Epoch_batch_00087 | lr 0.0005 |Train_Loss 0.7001 |  total_loss_consistency1 0.0090 | Loss 0.7064 | Val_Loss 0.7271| Train Time(s) 0.2183| Val Time(s) 0.0504 | Time(s) 0.2687
+2024-11-21 05:26:28,045:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:26:28,313:INFO::Epoch_batch_00088 | lr 0.0005 |Train_Loss 0.7011 |  total_loss_consistency1 0.0089 | Loss 0.7073 | Val_Loss 0.7269| Train Time(s) 0.2177| Val Time(s) 0.0502 | Time(s) 0.2679
+2024-11-21 05:26:28,313:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:26:28,583:INFO::Epoch_batch_00089 | lr 0.0005 |Train_Loss 0.6977 |  total_loss_consistency1 0.0087 | Loss 0.7038 | Val_Loss 0.7263| Train Time(s) 0.2186| Val Time(s) 0.0503 | Time(s) 0.2689
+2024-11-21 05:26:28,583:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:26:28,852:INFO::Epoch_batch_00090 | lr 0.0005 |Train_Loss 0.6993 |  total_loss_consistency1 0.0087 | Loss 0.7054 | Val_Loss 0.7260| Train Time(s) 0.2189| Val Time(s) 0.0504 | Time(s) 0.2692
+2024-11-21 05:26:28,853:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:26:29,121:INFO::Epoch_batch_00091 | lr 0.0005 |Train_Loss 0.6965 |  total_loss_consistency1 0.0086 | Loss 0.7026 | Val_Loss 0.7258| Train Time(s) 0.2176| Val Time(s) 0.0501 | Time(s) 0.2678
+2024-11-21 05:26:29,121:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:26:29,390:INFO::Epoch_batch_00092 | lr 0.0005 |Train_Loss 0.6983 |  total_loss_consistency1 0.0084 | Loss 0.7042 | Val_Loss 0.7259| Train Time(s) 0.2187| Val Time(s) 0.0504 | Time(s) 0.2690
+2024-11-21 05:26:29,391:INFO::EarlyStopping counter: 10 out of 30
+2024-11-21 05:26:29,660:INFO::Epoch_batch_00093 | lr 0.0005 |Train_Loss 0.6980 |  total_loss_consistency1 0.0083 | Loss 0.7038 | Val_Loss 0.7261| Train Time(s) 0.2188| Val Time(s) 0.0504 | Time(s) 0.2692
+2024-11-21 05:26:29,660:INFO::EarlyStopping counter: 11 out of 30
+2024-11-21 05:26:29,928:INFO::Epoch_batch_00094 | lr 0.0005 |Train_Loss 0.6958 |  total_loss_consistency1 0.0084 | Loss 0.7016 | Val_Loss 0.7260| Train Time(s) 0.2177| Val Time(s) 0.0501 | Time(s) 0.2678
+2024-11-21 05:26:29,929:INFO::EarlyStopping counter: 12 out of 30
+2024-11-21 05:26:30,198:INFO::Epoch_batch_00095 | lr 0.0005 |Train_Loss 0.6935 |  total_loss_consistency1 0.0084 | Loss 0.6993 | Val_Loss 0.7255| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2691
+2024-11-21 05:26:30,198:INFO::EarlyStopping counter: 13 out of 30
+2024-11-21 05:26:30,467:INFO::Epoch_batch_00096 | lr 0.0005 |Train_Loss 0.6953 |  total_loss_consistency1 0.0083 | Loss 0.7011 | Val_Loss 0.7248| Train Time(s) 0.2186| Val Time(s) 0.0501 | Time(s) 0.2687
+2024-11-21 05:26:30,467:INFO::EarlyStopping counter: 14 out of 30
+2024-11-21 05:26:30,735:INFO::Epoch_batch_00097 | lr 0.0005 |Train_Loss 0.6915 |  total_loss_consistency1 0.0081 | Loss 0.6972 | Val_Loss 0.7247| Train Time(s) 0.2176| Val Time(s) 0.0503 | Time(s) 0.2679
+2024-11-21 05:26:30,736:INFO::EarlyStopping counter: 15 out of 30
+2024-11-21 05:26:31,005:INFO::Epoch_batch_00098 | lr 0.0005 |Train_Loss 0.6965 |  total_loss_consistency1 0.0081 | Loss 0.7022 | Val_Loss 0.7251| Train Time(s) 0.2189| Val Time(s) 0.0501 | Time(s) 0.2690
+2024-11-21 05:26:31,005:INFO::EarlyStopping counter: 16 out of 30
+2024-11-21 05:26:31,274:INFO::Epoch_batch_00099 | lr 0.0005 |Train_Loss 0.6935 |  total_loss_consistency1 0.0080 | Loss 0.6991 | Val_Loss 0.7253| Train Time(s) 0.2186| Val Time(s) 0.0503 | Time(s) 0.2689
+2024-11-21 05:26:31,275:INFO::EarlyStopping counter: 17 out of 30
+2024-11-21 05:26:31,543:INFO::Epoch_batch_00100 | lr 0.0005 |Train_Loss 0.6910 |  total_loss_consistency1 0.0080 | Loss 0.6966 | Val_Loss 0.7252| Train Time(s) 0.2177| Val Time(s) 0.0503 | Time(s) 0.2680
+2024-11-21 05:26:31,543:INFO::EarlyStopping counter: 18 out of 30
+2024-11-21 05:26:31,813:INFO::Epoch_batch_00101 | lr 0.0005 |Train_Loss 0.6935 |  total_loss_consistency1 0.0078 | Loss 0.6989 | Val_Loss 0.7249| Train Time(s) 0.2189| Val Time(s) 0.0501 | Time(s) 0.2690
+2024-11-21 05:26:31,813:INFO::EarlyStopping counter: 19 out of 30
+2024-11-21 05:26:32,083:INFO::Epoch_batch_00102 | lr 0.0005 |Train_Loss 0.6913 |  total_loss_consistency1 0.0077 | Loss 0.6966 | Val_Loss 0.7248| Train Time(s) 0.2193| Val Time(s) 0.0504 | Time(s) 0.2698
+2024-11-21 05:26:32,083:INFO::EarlyStopping counter: 20 out of 30
+2024-11-21 05:26:32,352:INFO::Epoch_batch_00103 | lr 0.0005 |Train_Loss 0.6895 |  total_loss_consistency1 0.0075 | Loss 0.6947 | Val_Loss 0.7250| Train Time(s) 0.2178| Val Time(s) 0.0502 | Time(s) 0.2680
+2024-11-21 05:26:32,352:INFO::EarlyStopping counter: 21 out of 30
+2024-11-21 05:26:32,621:INFO::Epoch_batch_00104 | lr 0.0005 |Train_Loss 0.6940 |  total_loss_consistency1 0.0076 | Loss 0.6994 | Val_Loss 0.7257| Train Time(s) 0.2185| Val Time(s) 0.0504 | Time(s) 0.2689
+2024-11-21 05:26:32,621:INFO::EarlyStopping counter: 22 out of 30
+2024-11-21 05:26:32,890:INFO::Epoch_batch_00105 | lr 0.0005 |Train_Loss 0.6890 |  total_loss_consistency1 0.0074 | Loss 0.6942 | Val_Loss 0.7268| Train Time(s) 0.2183| Val Time(s) 0.0503 | Time(s) 0.2686
+2024-11-21 05:26:32,890:INFO::EarlyStopping counter: 23 out of 30
+2024-11-21 05:26:33,158:INFO::Epoch_batch_00106 | lr 0.0005 |Train_Loss 0.6921 |  total_loss_consistency1 0.0073 | Loss 0.6972 | Val_Loss 0.7279| Train Time(s) 0.2175| Val Time(s) 0.0501 | Time(s) 0.2677
+2024-11-21 05:26:33,159:INFO::EarlyStopping counter: 24 out of 30
+2024-11-21 05:26:33,428:INFO::Epoch_batch_00107 | lr 0.0005 |Train_Loss 0.6917 |  total_loss_consistency1 0.0072 | Loss 0.6968 | Val_Loss 0.7289| Train Time(s) 0.2189| Val Time(s) 0.0503 | Time(s) 0.2692
+2024-11-21 05:26:33,428:INFO::EarlyStopping counter: 25 out of 30
+2024-11-21 05:26:33,698:INFO::Epoch_batch_00108 | lr 0.0005 |Train_Loss 0.6908 |  total_loss_consistency1 0.0072 | Loss 0.6958 | Val_Loss 0.7294| Train Time(s) 0.2190| Val Time(s) 0.0503 | Time(s) 0.2693
+2024-11-21 05:26:33,698:INFO::EarlyStopping counter: 26 out of 30
+2024-11-21 05:26:33,966:INFO::Epoch_batch_00109 | lr 0.0005 |Train_Loss 0.6856 |  total_loss_consistency1 0.0070 | Loss 0.6905 | Val_Loss 0.7290| Train Time(s) 0.2175| Val Time(s) 0.0503 | Time(s) 0.2678
+2024-11-21 05:26:33,967:INFO::EarlyStopping counter: 27 out of 30
+2024-11-21 05:26:34,236:INFO::Epoch_batch_00110 | lr 0.0005 |Train_Loss 0.6893 |  total_loss_consistency1 0.0069 | Loss 0.6941 | Val_Loss 0.7272| Train Time(s) 0.2188| Val Time(s) 0.0504 | Time(s) 0.2692
+2024-11-21 05:26:34,236:INFO::EarlyStopping counter: 28 out of 30
+2024-11-21 05:26:34,506:INFO::Epoch_batch_00111 | lr 0.0005 |Train_Loss 0.6902 |  total_loss_consistency1 0.0069 | Loss 0.6950 | Val_Loss 0.7254| Train Time(s) 0.2191| Val Time(s) 0.0501 | Time(s) 0.2693
+2024-11-21 05:26:34,506:INFO::EarlyStopping counter: 29 out of 30
+2024-11-21 05:26:34,774:INFO::Epoch_batch_00112 | lr 0.0005 |Train_Loss 0.6891 |  total_loss_consistency1 0.0069 | Loss 0.6939 | Val_Loss 0.7241| Train Time(s) 0.2177| Val Time(s) 0.0503 | Time(s) 0.2680
+2024-11-21 05:26:34,775:INFO::EarlyStopping counter: 30 out of 30
+2024-11-21 05:26:34,775:INFO::Eearly stopping!
+2024-11-21 05:26:34,844:INFO::
+testing...
+2024-11-21 05:26:34,894:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:26:34,894:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:26:34,894:INFO::submit dir: submit/submit_simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:26:34,943:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:26:34,952:INFO::{'micro-f1': 0.954225352112676, 'macro-f1': 0.9511172718337952}
+2024-11-21 05:26:34,992:INFO::############### Experiments Stage Ends! ###############
+2024-11-21 05:26:34,992:INFO::=============== one experiment stage finish, use 177.42073345184326 time.
+2024-11-21 05:26:42,699:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:26:43,097:INFO::Epoch_batch_00000 | lr 0.0005 |Train_Loss 1.4823 |  total_loss_consistency1 0.0324 | Loss 1.5050 | Val_Loss 1.3566| Train Time(s) 0.2191| Val Time(s) 0.0496 | Time(s) 0.2687
+2024-11-21 05:26:43,366:INFO::Epoch_batch_00001 | lr 0.0005 |Train_Loss 1.4252 |  total_loss_consistency1 0.0331 | Loss 1.4484 | Val_Loss 1.3612| Train Time(s) 0.2177| Val Time(s) 0.0503 | Time(s) 0.2680
+2024-11-21 05:26:43,366:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:26:43,766:INFO::Epoch_batch_00002 | lr 0.0005 |Train_Loss 1.3892 |  total_loss_consistency1 0.0344 | Loss 1.4133 | Val_Loss 1.3412| Train Time(s) 0.2187| Val Time(s) 0.0504 | Time(s) 0.2691
+2024-11-21 05:26:43,766:INFO::Validation loss decreased (inf --> 1.341162).  Saving model ...
+2024-11-21 05:26:44,153:INFO::Epoch_batch_00003 | lr 0.0005 |Train_Loss 1.3575 |  total_loss_consistency1 0.0345 | Loss 1.3816 | Val_Loss 1.3103| Train Time(s) 0.2191| Val Time(s) 0.0502 | Time(s) 0.2692
+2024-11-21 05:26:44,154:INFO::Validation loss decreased (1.341162 --> 1.310281).  Saving model ...
+2024-11-21 05:26:44,551:INFO::Epoch_batch_00004 | lr 0.0005 |Train_Loss 1.3515 |  total_loss_consistency1 0.0344 | Loss 1.3756 | Val_Loss 1.2734| Train Time(s) 0.2206| Val Time(s) 0.0504 | Time(s) 0.2710
+2024-11-21 05:26:44,552:INFO::Validation loss decreased (1.310281 --> 1.273408).  Saving model ...
+2024-11-21 05:26:44,941:INFO::Epoch_batch_00005 | lr 0.0005 |Train_Loss 1.3148 |  total_loss_consistency1 0.0341 | Loss 1.3387 | Val_Loss 1.2273| Train Time(s) 0.2196| Val Time(s) 0.0503 | Time(s) 0.2699
+2024-11-21 05:26:44,941:INFO::Validation loss decreased (1.273408 --> 1.227311).  Saving model ...
+2024-11-21 05:26:45,334:INFO::Epoch_batch_00006 | lr 0.0005 |Train_Loss 1.3068 |  total_loss_consistency1 0.0343 | Loss 1.3308 | Val_Loss 1.1742| Train Time(s) 0.2200| Val Time(s) 0.0503 | Time(s) 0.2703
+2024-11-21 05:26:45,335:INFO::Validation loss decreased (1.227311 --> 1.174157).  Saving model ...
+2024-11-21 05:26:45,725:INFO::Epoch_batch_00007 | lr 0.0005 |Train_Loss 1.2541 |  total_loss_consistency1 0.0359 | Loss 1.2792 | Val_Loss 1.1082| Train Time(s) 0.2192| Val Time(s) 0.0503 | Time(s) 0.2694
+2024-11-21 05:26:45,725:INFO::Validation loss decreased (1.174157 --> 1.108187).  Saving model ...
+2024-11-21 05:26:46,115:INFO::Epoch_batch_00008 | lr 0.0005 |Train_Loss 1.2411 |  total_loss_consistency1 0.0369 | Loss 1.2669 | Val_Loss 1.0367| Train Time(s) 0.2199| Val Time(s) 0.0503 | Time(s) 0.2702
+2024-11-21 05:26:46,116:INFO::Validation loss decreased (1.108187 --> 1.036697).  Saving model ...
+2024-11-21 05:26:46,503:INFO::Epoch_batch_00009 | lr 0.0005 |Train_Loss 1.1815 |  total_loss_consistency1 0.0407 | Loss 1.2100 | Val_Loss 0.9619| Train Time(s) 0.2197| Val Time(s) 0.0502 | Time(s) 0.2699
+2024-11-21 05:26:46,504:INFO::Validation loss decreased (1.036697 --> 0.961889).  Saving model ...
+2024-11-21 05:26:46,892:INFO::Epoch_batch_00010 | lr 0.0005 |Train_Loss 1.1095 |  total_loss_consistency1 0.0458 | Loss 1.1416 | Val_Loss 0.8982| Train Time(s) 0.2194| Val Time(s) 0.0503 | Time(s) 0.2697
+2024-11-21 05:26:46,893:INFO::Validation loss decreased (0.961889 --> 0.898167).  Saving model ...
+2024-11-21 05:26:47,283:INFO::Epoch_batch_00011 | lr 0.0005 |Train_Loss 1.0621 |  total_loss_consistency1 0.0481 | Loss 1.0958 | Val_Loss 0.8506| Train Time(s) 0.2201| Val Time(s) 0.0503 | Time(s) 0.2705
+2024-11-21 05:26:47,284:INFO::Validation loss decreased (0.898167 --> 0.850628).  Saving model ...
+2024-11-21 05:26:47,671:INFO::Epoch_batch_00012 | lr 0.0005 |Train_Loss 1.0046 |  total_loss_consistency1 0.0524 | Loss 1.0413 | Val_Loss 0.8313| Train Time(s) 0.2201| Val Time(s) 0.0503 | Time(s) 0.2705
+2024-11-21 05:26:47,672:INFO::Validation loss decreased (0.850628 --> 0.831295).  Saving model ...
+2024-11-21 05:26:47,941:INFO::Epoch_batch_00013 | lr 0.0005 |Train_Loss 0.9577 |  total_loss_consistency1 0.0543 | Loss 0.9957 | Val_Loss 0.8327| Train Time(s) 0.2189| Val Time(s) 0.0502 | Time(s) 0.2691
+2024-11-21 05:26:47,942:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:26:48,211:INFO::Epoch_batch_00014 | lr 0.0005 |Train_Loss 0.9476 |  total_loss_consistency1 0.0557 | Loss 0.9866 | Val_Loss 0.8317| Train Time(s) 0.2185| Val Time(s) 0.0503 | Time(s) 0.2688
+2024-11-21 05:26:48,211:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:26:48,599:INFO::Epoch_batch_00015 | lr 0.0005 |Train_Loss 0.9435 |  total_loss_consistency1 0.0571 | Loss 0.9834 | Val_Loss 0.8243| Train Time(s) 0.2188| Val Time(s) 0.0503 | Time(s) 0.2691
+2024-11-21 05:26:48,599:INFO::Validation loss decreased (0.831295 --> 0.824255).  Saving model ...
+2024-11-21 05:26:48,989:INFO::Epoch_batch_00016 | lr 0.0005 |Train_Loss 0.9251 |  total_loss_consistency1 0.0587 | Loss 0.9662 | Val_Loss 0.8143| Train Time(s) 0.2196| Val Time(s) 0.0502 | Time(s) 0.2698
+2024-11-21 05:26:48,989:INFO::Validation loss decreased (0.824255 --> 0.814306).  Saving model ...
+2024-11-21 05:26:49,378:INFO::Epoch_batch_00017 | lr 0.0005 |Train_Loss 0.8901 |  total_loss_consistency1 0.0571 | Loss 0.9301 | Val_Loss 0.8047| Train Time(s) 0.2194| Val Time(s) 0.0501 | Time(s) 0.2695
+2024-11-21 05:26:49,379:INFO::Validation loss decreased (0.814306 --> 0.804684).  Saving model ...
+2024-11-21 05:26:49,767:INFO::Epoch_batch_00018 | lr 0.0005 |Train_Loss 0.8901 |  total_loss_consistency1 0.0572 | Loss 0.9302 | Val_Loss 0.7956| Train Time(s) 0.2199| Val Time(s) 0.0504 | Time(s) 0.2703
+2024-11-21 05:26:49,767:INFO::Validation loss decreased (0.804684 --> 0.795597).  Saving model ...
+2024-11-21 05:26:50,156:INFO::Epoch_batch_00019 | lr 0.0005 |Train_Loss 0.8701 |  total_loss_consistency1 0.0575 | Loss 0.9103 | Val_Loss 0.7866| Train Time(s) 0.2197| Val Time(s) 0.0504 | Time(s) 0.2700
+2024-11-21 05:26:50,157:INFO::Validation loss decreased (0.795597 --> 0.786581).  Saving model ...
+2024-11-21 05:26:50,546:INFO::Epoch_batch_00020 | lr 0.0005 |Train_Loss 0.8508 |  total_loss_consistency1 0.0542 | Loss 0.8888 | Val_Loss 0.7765| Train Time(s) 0.2194| Val Time(s) 0.0503 | Time(s) 0.2696
+2024-11-21 05:26:50,547:INFO::Validation loss decreased (0.786581 --> 0.776522).  Saving model ...
+2024-11-21 05:26:50,940:INFO::Epoch_batch_00021 | lr 0.0005 |Train_Loss 0.8408 |  total_loss_consistency1 0.0538 | Loss 0.8785 | Val_Loss 0.7669| Train Time(s) 0.2200| Val Time(s) 0.0514 | Time(s) 0.2713
+2024-11-21 05:26:50,940:INFO::Validation loss decreased (0.776522 --> 0.766909).  Saving model ...
+2024-11-21 05:26:51,331:INFO::Epoch_batch_00022 | lr 0.0005 |Train_Loss 0.8246 |  total_loss_consistency1 0.0478 | Loss 0.8581 | Val_Loss 0.7574| Train Time(s) 0.2205| Val Time(s) 0.0503 | Time(s) 0.2708
+2024-11-21 05:26:51,331:INFO::Validation loss decreased (0.766909 --> 0.757406).  Saving model ...
+2024-11-21 05:26:51,722:INFO::Epoch_batch_00023 | lr 0.0005 |Train_Loss 0.8079 |  total_loss_consistency1 0.0472 | Loss 0.8410 | Val_Loss 0.7480| Train Time(s) 0.2199| Val Time(s) 0.0502 | Time(s) 0.2701
+2024-11-21 05:26:51,722:INFO::Validation loss decreased (0.757406 --> 0.747996).  Saving model ...
+2024-11-21 05:26:52,112:INFO::Epoch_batch_00024 | lr 0.0005 |Train_Loss 0.8008 |  total_loss_consistency1 0.0442 | Loss 0.8318 | Val_Loss 0.7404| Train Time(s) 0.2200| Val Time(s) 0.0504 | Time(s) 0.2705
+2024-11-21 05:26:52,113:INFO::Validation loss decreased (0.747996 --> 0.740424).  Saving model ...
+2024-11-21 05:26:52,502:INFO::Epoch_batch_00025 | lr 0.0005 |Train_Loss 0.8037 |  total_loss_consistency1 0.0408 | Loss 0.8323 | Val_Loss 0.7377| Train Time(s) 0.2194| Val Time(s) 0.0502 | Time(s) 0.2696
+2024-11-21 05:26:52,503:INFO::Validation loss decreased (0.740424 --> 0.737724).  Saving model ...
+2024-11-21 05:26:52,892:INFO::Epoch_batch_00026 | lr 0.0005 |Train_Loss 0.7823 |  total_loss_consistency1 0.0401 | Loss 0.8104 | Val_Loss 0.7365| Train Time(s) 0.2191| Val Time(s) 0.0504 | Time(s) 0.2695
+2024-11-21 05:26:52,892:INFO::Validation loss decreased (0.737724 --> 0.736512).  Saving model ...
+2024-11-21 05:26:53,282:INFO::Epoch_batch_00027 | lr 0.0005 |Train_Loss 0.7853 |  total_loss_consistency1 0.0388 | Loss 0.8124 | Val_Loss 0.7358| Train Time(s) 0.2200| Val Time(s) 0.0504 | Time(s) 0.2704
+2024-11-21 05:26:53,282:INFO::Validation loss decreased (0.736512 --> 0.735848).  Saving model ...
+2024-11-21 05:26:53,672:INFO::Epoch_batch_00028 | lr 0.0005 |Train_Loss 0.7705 |  total_loss_consistency1 0.0383 | Loss 0.7974 | Val_Loss 0.7351| Train Time(s) 0.2200| Val Time(s) 0.0502 | Time(s) 0.2702
+2024-11-21 05:26:53,673:INFO::Validation loss decreased (0.735848 --> 0.735121).  Saving model ...
+2024-11-21 05:26:54,061:INFO::Epoch_batch_00029 | lr 0.0005 |Train_Loss 0.7616 |  total_loss_consistency1 0.0370 | Loss 0.7875 | Val_Loss 0.7340| Train Time(s) 0.2192| Val Time(s) 0.0504 | Time(s) 0.2695
+2024-11-21 05:26:54,062:INFO::Validation loss decreased (0.735121 --> 0.733991).  Saving model ...
+2024-11-21 05:26:54,449:INFO::Epoch_batch_00030 | lr 0.0005 |Train_Loss 0.7602 |  total_loss_consistency1 0.0360 | Loss 0.7854 | Val_Loss 0.7336| Train Time(s) 0.2203| Val Time(s) 0.0502 | Time(s) 0.2705
+2024-11-21 05:26:54,450:INFO::Validation loss decreased (0.733991 --> 0.733621).  Saving model ...
+2024-11-21 05:26:54,721:INFO::Epoch_batch_00031 | lr 0.0005 |Train_Loss 0.7559 |  total_loss_consistency1 0.0350 | Loss 0.7804 | Val_Loss 0.7341| Train Time(s) 0.2197| Val Time(s) 0.0504 | Time(s) 0.2701
+2024-11-21 05:26:54,721:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:26:54,990:INFO::Epoch_batch_00032 | lr 0.0005 |Train_Loss 0.7581 |  total_loss_consistency1 0.0330 | Loss 0.7812 | Val_Loss 0.7349| Train Time(s) 0.2187| Val Time(s) 0.0502 | Time(s) 0.2689
+2024-11-21 05:26:54,990:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:26:55,379:INFO::Epoch_batch_00033 | lr 0.0005 |Train_Loss 0.7567 |  total_loss_consistency1 0.0318 | Loss 0.7790 | Val_Loss 0.7333| Train Time(s) 0.2184| Val Time(s) 0.0502 | Time(s) 0.2686
+2024-11-21 05:26:55,380:INFO::Validation loss decreased (0.733621 --> 0.733252).  Saving model ...
+2024-11-21 05:26:55,770:INFO::Epoch_batch_00034 | lr 0.0005 |Train_Loss 0.7571 |  total_loss_consistency1 0.0298 | Loss 0.7779 | Val_Loss 0.7314| Train Time(s) 0.2201| Val Time(s) 0.0503 | Time(s) 0.2704
+2024-11-21 05:26:55,770:INFO::Validation loss decreased (0.733252 --> 0.731443).  Saving model ...
+2024-11-21 05:26:56,159:INFO::Epoch_batch_00035 | lr 0.0005 |Train_Loss 0.7486 |  total_loss_consistency1 0.0288 | Loss 0.7688 | Val_Loss 0.7291| Train Time(s) 0.2193| Val Time(s) 0.0503 | Time(s) 0.2696
+2024-11-21 05:26:56,160:INFO::Validation loss decreased (0.731443 --> 0.729123).  Saving model ...
+2024-11-21 05:26:56,553:INFO::Epoch_batch_00036 | lr 0.0005 |Train_Loss 0.7443 |  total_loss_consistency1 0.0277 | Loss 0.7637 | Val_Loss 0.7269| Train Time(s) 0.2202| Val Time(s) 0.0504 | Time(s) 0.2705
+2024-11-21 05:26:56,553:INFO::Validation loss decreased (0.729123 --> 0.726907).  Saving model ...
+2024-11-21 05:26:56,942:INFO::Epoch_batch_00037 | lr 0.0005 |Train_Loss 0.7458 |  total_loss_consistency1 0.0266 | Loss 0.7644 | Val_Loss 0.7267| Train Time(s) 0.2194| Val Time(s) 0.0502 | Time(s) 0.2696
+2024-11-21 05:26:56,943:INFO::Validation loss decreased (0.726907 --> 0.726654).  Saving model ...
+2024-11-21 05:26:57,332:INFO::Epoch_batch_00038 | lr 0.0005 |Train_Loss 0.7404 |  total_loss_consistency1 0.0262 | Loss 0.7587 | Val_Loss 0.7264| Train Time(s) 0.2203| Val Time(s) 0.0501 | Time(s) 0.2703
+2024-11-21 05:26:57,333:INFO::Validation loss decreased (0.726654 --> 0.726376).  Saving model ...
+2024-11-21 05:26:57,725:INFO::Epoch_batch_00039 | lr 0.0005 |Train_Loss 0.7352 |  total_loss_consistency1 0.0247 | Loss 0.7525 | Val_Loss 0.7252| Train Time(s) 0.2203| Val Time(s) 0.0502 | Time(s) 0.2704
+2024-11-21 05:26:57,726:INFO::Validation loss decreased (0.726376 --> 0.725226).  Saving model ...
+2024-11-21 05:26:58,114:INFO::Epoch_batch_00040 | lr 0.0005 |Train_Loss 0.7419 |  total_loss_consistency1 0.0240 | Loss 0.7587 | Val_Loss 0.7241| Train Time(s) 0.2188| Val Time(s) 0.0502 | Time(s) 0.2689
+2024-11-21 05:26:58,115:INFO::Validation loss decreased (0.725226 --> 0.724087).  Saving model ...
+2024-11-21 05:26:58,386:INFO::Epoch_batch_00041 | lr 0.0005 |Train_Loss 0.7391 |  total_loss_consistency1 0.0228 | Loss 0.7550 | Val_Loss 0.7241| Train Time(s) 0.2201| Val Time(s) 0.0504 | Time(s) 0.2704
+2024-11-21 05:26:58,386:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:26:58,655:INFO::Epoch_batch_00042 | lr 0.0005 |Train_Loss 0.7330 |  total_loss_consistency1 0.0224 | Loss 0.7487 | Val_Loss 0.7247| Train Time(s) 0.2182| Val Time(s) 0.0504 | Time(s) 0.2686
+2024-11-21 05:26:58,655:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:26:58,924:INFO::Epoch_batch_00043 | lr 0.0005 |Train_Loss 0.7337 |  total_loss_consistency1 0.0216 | Loss 0.7488 | Val_Loss 0.7251| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2690
+2024-11-21 05:26:58,925:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:26:59,194:INFO::Epoch_batch_00044 | lr 0.0005 |Train_Loss 0.7325 |  total_loss_consistency1 0.0209 | Loss 0.7471 | Val_Loss 0.7253| Train Time(s) 0.2187| Val Time(s) 0.0504 | Time(s) 0.2691
+2024-11-21 05:26:59,194:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:26:59,463:INFO::Epoch_batch_00045 | lr 0.0005 |Train_Loss 0.7320 |  total_loss_consistency1 0.0199 | Loss 0.7460 | Val_Loss 0.7256| Train Time(s) 0.2187| Val Time(s) 0.0502 | Time(s) 0.2688
+2024-11-21 05:26:59,464:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:26:59,732:INFO::Epoch_batch_00046 | lr 0.0005 |Train_Loss 0.7297 |  total_loss_consistency1 0.0194 | Loss 0.7432 | Val_Loss 0.7256| Train Time(s) 0.2181| Val Time(s) 0.0503 | Time(s) 0.2684
+2024-11-21 05:26:59,733:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:27:00,002:INFO::Epoch_batch_00047 | lr 0.0005 |Train_Loss 0.7293 |  total_loss_consistency1 0.0184 | Loss 0.7422 | Val_Loss 0.7252| Train Time(s) 0.2190| Val Time(s) 0.0504 | Time(s) 0.2694
+2024-11-21 05:27:00,003:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:27:00,271:INFO::Epoch_batch_00048 | lr 0.0005 |Train_Loss 0.7228 |  total_loss_consistency1 0.0180 | Loss 0.7355 | Val_Loss 0.7244| Train Time(s) 0.2185| Val Time(s) 0.0502 | Time(s) 0.2687
+2024-11-21 05:27:00,272:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:27:00,668:INFO::Epoch_batch_00049 | lr 0.0005 |Train_Loss 0.7272 |  total_loss_consistency1 0.0176 | Loss 0.7395 | Val_Loss 0.7231| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2690
+2024-11-21 05:27:00,668:INFO::Validation loss decreased (0.724087 --> 0.723074).  Saving model ...
+2024-11-21 05:27:01,055:INFO::Epoch_batch_00050 | lr 0.0005 |Train_Loss 0.7276 |  total_loss_consistency1 0.0170 | Loss 0.7394 | Val_Loss 0.7221| Train Time(s) 0.2186| Val Time(s) 0.0504 | Time(s) 0.2690
+2024-11-21 05:27:01,056:INFO::Validation loss decreased (0.723074 --> 0.722053).  Saving model ...
+2024-11-21 05:27:01,445:INFO::Epoch_batch_00051 | lr 0.0005 |Train_Loss 0.7200 |  total_loss_consistency1 0.0166 | Loss 0.7316 | Val_Loss 0.7217| Train Time(s) 0.2194| Val Time(s) 0.0503 | Time(s) 0.2697
+2024-11-21 05:27:01,445:INFO::Validation loss decreased (0.722053 --> 0.721671).  Saving model ...
+2024-11-21 05:27:01,716:INFO::Epoch_batch_00052 | lr 0.0005 |Train_Loss 0.7232 |  total_loss_consistency1 0.0164 | Loss 0.7347 | Val_Loss 0.7220| Train Time(s) 0.2200| Val Time(s) 0.0504 | Time(s) 0.2703
+2024-11-21 05:27:01,716:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:27:01,986:INFO::Epoch_batch_00053 | lr 0.0005 |Train_Loss 0.7211 |  total_loss_consistency1 0.0157 | Loss 0.7321 | Val_Loss 0.7223| Train Time(s) 0.2192| Val Time(s) 0.0502 | Time(s) 0.2694
+2024-11-21 05:27:01,986:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:27:02,255:INFO::Epoch_batch_00054 | lr 0.0005 |Train_Loss 0.7210 |  total_loss_consistency1 0.0158 | Loss 0.7320 | Val_Loss 0.7229| Train Time(s) 0.2180| Val Time(s) 0.0503 | Time(s) 0.2683
+2024-11-21 05:27:02,255:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:27:02,525:INFO::Epoch_batch_00055 | lr 0.0005 |Train_Loss 0.7189 |  total_loss_consistency1 0.0151 | Loss 0.7294 | Val_Loss 0.7236| Train Time(s) 0.2190| Val Time(s) 0.0504 | Time(s) 0.2694
+2024-11-21 05:27:02,525:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:27:02,794:INFO::Epoch_batch_00056 | lr 0.0005 |Train_Loss 0.7203 |  total_loss_consistency1 0.0145 | Loss 0.7305 | Val_Loss 0.7243| Train Time(s) 0.2188| Val Time(s) 0.0501 | Time(s) 0.2689
+2024-11-21 05:27:02,794:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:27:03,062:INFO::Epoch_batch_00057 | lr 0.0005 |Train_Loss 0.7179 |  total_loss_consistency1 0.0141 | Loss 0.7277 | Val_Loss 0.7248| Train Time(s) 0.2174| Val Time(s) 0.0503 | Time(s) 0.2677
+2024-11-21 05:27:03,063:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:27:03,333:INFO::Epoch_batch_00058 | lr 0.0005 |Train_Loss 0.7149 |  total_loss_consistency1 0.0140 | Loss 0.7247 | Val_Loss 0.7247| Train Time(s) 0.2193| Val Time(s) 0.0504 | Time(s) 0.2697
+2024-11-21 05:27:03,333:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:27:03,602:INFO::Epoch_batch_00059 | lr 0.0005 |Train_Loss 0.7156 |  total_loss_consistency1 0.0136 | Loss 0.7251 | Val_Loss 0.7239| Train Time(s) 0.2189| Val Time(s) 0.0503 | Time(s) 0.2692
+2024-11-21 05:27:03,603:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:27:03,871:INFO::Epoch_batch_00060 | lr 0.0005 |Train_Loss 0.7147 |  total_loss_consistency1 0.0130 | Loss 0.7238 | Val_Loss 0.7231| Train Time(s) 0.2179| Val Time(s) 0.0503 | Time(s) 0.2682
+2024-11-21 05:27:03,871:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:27:04,141:INFO::Epoch_batch_00061 | lr 0.0005 |Train_Loss 0.7127 |  total_loss_consistency1 0.0128 | Loss 0.7217 | Val_Loss 0.7219| Train Time(s) 0.2188| Val Time(s) 0.0504 | Time(s) 0.2691
+2024-11-21 05:27:04,141:INFO::EarlyStopping counter: 10 out of 30
+2024-11-21 05:27:04,538:INFO::Epoch_batch_00062 | lr 0.0005 |Train_Loss 0.7128 |  total_loss_consistency1 0.0125 | Loss 0.7216 | Val_Loss 0.7212| Train Time(s) 0.2192| Val Time(s) 0.0503 | Time(s) 0.2695
+2024-11-21 05:27:04,538:INFO::Validation loss decreased (0.721671 --> 0.721176).  Saving model ...
+2024-11-21 05:27:04,926:INFO::Epoch_batch_00063 | lr 0.0005 |Train_Loss 0.7077 |  total_loss_consistency1 0.0124 | Loss 0.7164 | Val_Loss 0.7209| Train Time(s) 0.2189| Val Time(s) 0.0503 | Time(s) 0.2692
+2024-11-21 05:27:04,927:INFO::Validation loss decreased (0.721176 --> 0.720877).  Saving model ...
+2024-11-21 05:27:05,198:INFO::Epoch_batch_00064 | lr 0.0005 |Train_Loss 0.7092 |  total_loss_consistency1 0.0122 | Loss 0.7178 | Val_Loss 0.7209| Train Time(s) 0.2200| Val Time(s) 0.0504 | Time(s) 0.2704
+2024-11-21 05:27:05,198:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:27:05,467:INFO::Epoch_batch_00065 | lr 0.0005 |Train_Loss 0.7088 |  total_loss_consistency1 0.0115 | Loss 0.7169 | Val_Loss 0.7213| Train Time(s) 0.2187| Val Time(s) 0.0502 | Time(s) 0.2689
+2024-11-21 05:27:05,468:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:27:05,737:INFO::Epoch_batch_00066 | lr 0.0005 |Train_Loss 0.7114 |  total_loss_consistency1 0.0115 | Loss 0.7195 | Val_Loss 0.7220| Train Time(s) 0.2187| Val Time(s) 0.0504 | Time(s) 0.2691
+2024-11-21 05:27:05,737:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:27:06,007:INFO::Epoch_batch_00067 | lr 0.0005 |Train_Loss 0.7082 |  total_loss_consistency1 0.0112 | Loss 0.7160 | Val_Loss 0.7225| Train Time(s) 0.2193| Val Time(s) 0.0503 | Time(s) 0.2696
+2024-11-21 05:27:06,007:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:27:06,276:INFO::Epoch_batch_00068 | lr 0.0005 |Train_Loss 0.7088 |  total_loss_consistency1 0.0109 | Loss 0.7164 | Val_Loss 0.7229| Train Time(s) 0.2182| Val Time(s) 0.0503 | Time(s) 0.2685
+2024-11-21 05:27:06,276:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:27:06,546:INFO::Epoch_batch_00069 | lr 0.0005 |Train_Loss 0.7087 |  total_loss_consistency1 0.0108 | Loss 0.7163 | Val_Loss 0.7229| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2690
+2024-11-21 05:27:06,546:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:27:06,814:INFO::Epoch_batch_00070 | lr 0.0005 |Train_Loss 0.7079 |  total_loss_consistency1 0.0105 | Loss 0.7153 | Val_Loss 0.7223| Train Time(s) 0.2181| Val Time(s) 0.0503 | Time(s) 0.2684
+2024-11-21 05:27:06,815:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:27:07,084:INFO::Epoch_batch_00071 | lr 0.0005 |Train_Loss 0.7049 |  total_loss_consistency1 0.0104 | Loss 0.7122 | Val_Loss 0.7218| Train Time(s) 0.2188| Val Time(s) 0.0503 | Time(s) 0.2692
+2024-11-21 05:27:07,084:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:27:07,354:INFO::Epoch_batch_00072 | lr 0.0005 |Train_Loss 0.7048 |  total_loss_consistency1 0.0101 | Loss 0.7118 | Val_Loss 0.7209| Train Time(s) 0.2191| Val Time(s) 0.0504 | Time(s) 0.2694
+2024-11-21 05:27:07,354:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:27:07,750:INFO::Epoch_batch_00073 | lr 0.0005 |Train_Loss 0.7037 |  total_loss_consistency1 0.0100 | Loss 0.7108 | Val_Loss 0.7205| Train Time(s) 0.2184| Val Time(s) 0.0503 | Time(s) 0.2687
+2024-11-21 05:27:07,750:INFO::Validation loss decreased (0.720877 --> 0.720479).  Saving model ...
+2024-11-21 05:27:08,138:INFO::Epoch_batch_00074 | lr 0.0005 |Train_Loss 0.7025 |  total_loss_consistency1 0.0099 | Loss 0.7095 | Val_Loss 0.7198| Train Time(s) 0.2186| Val Time(s) 0.0502 | Time(s) 0.2687
+2024-11-21 05:27:08,139:INFO::Validation loss decreased (0.720479 --> 0.719769).  Saving model ...
+2024-11-21 05:27:08,528:INFO::Epoch_batch_00075 | lr 0.0005 |Train_Loss 0.7026 |  total_loss_consistency1 0.0098 | Loss 0.7095 | Val_Loss 0.7191| Train Time(s) 0.2195| Val Time(s) 0.0503 | Time(s) 0.2697
+2024-11-21 05:27:08,529:INFO::Validation loss decreased (0.719769 --> 0.719099).  Saving model ...
+2024-11-21 05:27:08,918:INFO::Epoch_batch_00076 | lr 0.0005 |Train_Loss 0.7060 |  total_loss_consistency1 0.0098 | Loss 0.7128 | Val_Loss 0.7190| Train Time(s) 0.2203| Val Time(s) 0.0503 | Time(s) 0.2705
+2024-11-21 05:27:08,919:INFO::Validation loss decreased (0.719099 --> 0.719041).  Saving model ...
+2024-11-21 05:27:09,189:INFO::Epoch_batch_00077 | lr 0.0005 |Train_Loss 0.7036 |  total_loss_consistency1 0.0096 | Loss 0.7103 | Val_Loss 0.7192| Train Time(s) 0.2198| Val Time(s) 0.0502 | Time(s) 0.2701
+2024-11-21 05:27:09,190:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:27:09,458:INFO::Epoch_batch_00078 | lr 0.0005 |Train_Loss 0.6999 |  total_loss_consistency1 0.0094 | Loss 0.7065 | Val_Loss 0.7199| Train Time(s) 0.2181| Val Time(s) 0.0503 | Time(s) 0.2684
+2024-11-21 05:27:09,459:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:27:09,728:INFO::Epoch_batch_00079 | lr 0.0005 |Train_Loss 0.7021 |  total_loss_consistency1 0.0093 | Loss 0.7086 | Val_Loss 0.7214| Train Time(s) 0.2189| Val Time(s) 0.0504 | Time(s) 0.2693
+2024-11-21 05:27:09,728:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:27:09,998:INFO::Epoch_batch_00080 | lr 0.0005 |Train_Loss 0.6993 |  total_loss_consistency1 0.0089 | Loss 0.7055 | Val_Loss 0.7230| Train Time(s) 0.2189| Val Time(s) 0.0503 | Time(s) 0.2692
+2024-11-21 05:27:09,998:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:27:10,267:INFO::Epoch_batch_00081 | lr 0.0005 |Train_Loss 0.7002 |  total_loss_consistency1 0.0090 | Loss 0.7064 | Val_Loss 0.7234| Train Time(s) 0.2182| Val Time(s) 0.0501 | Time(s) 0.2682
+2024-11-21 05:27:10,267:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:27:10,536:INFO::Epoch_batch_00082 | lr 0.0005 |Train_Loss 0.7001 |  total_loss_consistency1 0.0089 | Loss 0.7063 | Val_Loss 0.7226| Train Time(s) 0.2188| Val Time(s) 0.0504 | Time(s) 0.2692
+2024-11-21 05:27:10,537:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:27:10,806:INFO::Epoch_batch_00083 | lr 0.0005 |Train_Loss 0.6982 |  total_loss_consistency1 0.0086 | Loss 0.7042 | Val_Loss 0.7209| Train Time(s) 0.2190| Val Time(s) 0.0502 | Time(s) 0.2692
+2024-11-21 05:27:10,806:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:27:11,075:INFO::Epoch_batch_00084 | lr 0.0005 |Train_Loss 0.6957 |  total_loss_consistency1 0.0085 | Loss 0.7016 | Val_Loss 0.7193| Train Time(s) 0.2185| Val Time(s) 0.0504 | Time(s) 0.2690
+2024-11-21 05:27:11,076:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:27:11,474:INFO::Epoch_batch_00085 | lr 0.0005 |Train_Loss 0.6982 |  total_loss_consistency1 0.0082 | Loss 0.7040 | Val_Loss 0.7187| Train Time(s) 0.2197| Val Time(s) 0.0501 | Time(s) 0.2698
+2024-11-21 05:27:11,475:INFO::Validation loss decreased (0.719041 --> 0.718698).  Saving model ...
+2024-11-21 05:27:11,863:INFO::Epoch_batch_00086 | lr 0.0005 |Train_Loss 0.6958 |  total_loss_consistency1 0.0082 | Loss 0.7016 | Val_Loss 0.7186| Train Time(s) 0.2185| Val Time(s) 0.0504 | Time(s) 0.2689
+2024-11-21 05:27:11,863:INFO::Validation loss decreased (0.718698 --> 0.718575).  Saving model ...
+2024-11-21 05:27:12,134:INFO::Epoch_batch_00087 | lr 0.0005 |Train_Loss 0.6959 |  total_loss_consistency1 0.0083 | Loss 0.7017 | Val_Loss 0.7191| Train Time(s) 0.2204| Val Time(s) 0.0503 | Time(s) 0.2707
+2024-11-21 05:27:12,135:INFO::EarlyStopping counter: 1 out of 30
+2024-11-21 05:27:12,404:INFO::Epoch_batch_00088 | lr 0.0005 |Train_Loss 0.6948 |  total_loss_consistency1 0.0082 | Loss 0.7005 | Val_Loss 0.7201| Train Time(s) 0.2188| Val Time(s) 0.0503 | Time(s) 0.2691
+2024-11-21 05:27:12,404:INFO::EarlyStopping counter: 2 out of 30
+2024-11-21 05:27:12,673:INFO::Epoch_batch_00089 | lr 0.0005 |Train_Loss 0.6981 |  total_loss_consistency1 0.0081 | Loss 0.7038 | Val_Loss 0.7211| Train Time(s) 0.2183| Val Time(s) 0.0504 | Time(s) 0.2687
+2024-11-21 05:27:12,673:INFO::EarlyStopping counter: 3 out of 30
+2024-11-21 05:27:12,943:INFO::Epoch_batch_00090 | lr 0.0005 |Train_Loss 0.6920 |  total_loss_consistency1 0.0080 | Loss 0.6976 | Val_Loss 0.7213| Train Time(s) 0.2193| Val Time(s) 0.0504 | Time(s) 0.2697
+2024-11-21 05:27:12,944:INFO::EarlyStopping counter: 4 out of 30
+2024-11-21 05:27:13,214:INFO::Epoch_batch_00091 | lr 0.0005 |Train_Loss 0.6939 |  total_loss_consistency1 0.0077 | Loss 0.6993 | Val_Loss 0.7219| Train Time(s) 0.2194| Val Time(s) 0.0503 | Time(s) 0.2697
+2024-11-21 05:27:13,214:INFO::EarlyStopping counter: 5 out of 30
+2024-11-21 05:27:13,483:INFO::Epoch_batch_00092 | lr 0.0005 |Train_Loss 0.6900 |  total_loss_consistency1 0.0077 | Loss 0.6954 | Val_Loss 0.7221| Train Time(s) 0.2186| Val Time(s) 0.0503 | Time(s) 0.2689
+2024-11-21 05:27:13,483:INFO::EarlyStopping counter: 6 out of 30
+2024-11-21 05:27:13,753:INFO::Epoch_batch_00093 | lr 0.0005 |Train_Loss 0.6954 |  total_loss_consistency1 0.0075 | Loss 0.7007 | Val_Loss 0.7222| Train Time(s) 0.2194| Val Time(s) 0.0503 | Time(s) 0.2698
+2024-11-21 05:27:13,754:INFO::EarlyStopping counter: 7 out of 30
+2024-11-21 05:27:14,023:INFO::Epoch_batch_00094 | lr 0.0005 |Train_Loss 0.6931 |  total_loss_consistency1 0.0076 | Loss 0.6985 | Val_Loss 0.7222| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2690
+2024-11-21 05:27:14,023:INFO::EarlyStopping counter: 8 out of 30
+2024-11-21 05:27:14,292:INFO::Epoch_batch_00095 | lr 0.0005 |Train_Loss 0.6941 |  total_loss_consistency1 0.0074 | Loss 0.6993 | Val_Loss 0.7215| Train Time(s) 0.2183| Val Time(s) 0.0502 | Time(s) 0.2685
+2024-11-21 05:27:14,292:INFO::EarlyStopping counter: 9 out of 30
+2024-11-21 05:27:14,562:INFO::Epoch_batch_00096 | lr 0.0005 |Train_Loss 0.6902 |  total_loss_consistency1 0.0073 | Loss 0.6952 | Val_Loss 0.7210| Train Time(s) 0.2191| Val Time(s) 0.0502 | Time(s) 0.2693
+2024-11-21 05:27:14,562:INFO::EarlyStopping counter: 10 out of 30
+2024-11-21 05:27:14,832:INFO::Epoch_batch_00097 | lr 0.0005 |Train_Loss 0.6924 |  total_loss_consistency1 0.0072 | Loss 0.6974 | Val_Loss 0.7207| Train Time(s) 0.2187| Val Time(s) 0.0504 | Time(s) 0.2691
+2024-11-21 05:27:14,832:INFO::EarlyStopping counter: 11 out of 30
+2024-11-21 05:27:15,101:INFO::Epoch_batch_00098 | lr 0.0005 |Train_Loss 0.6898 |  total_loss_consistency1 0.0072 | Loss 0.6948 | Val_Loss 0.7210| Train Time(s) 0.2187| Val Time(s) 0.0504 | Time(s) 0.2691
+2024-11-21 05:27:15,101:INFO::EarlyStopping counter: 12 out of 30
+2024-11-21 05:27:15,371:INFO::Epoch_batch_00099 | lr 0.0005 |Train_Loss 0.6917 |  total_loss_consistency1 0.0071 | Loss 0.6966 | Val_Loss 0.7219| Train Time(s) 0.2194| Val Time(s) 0.0503 | Time(s) 0.2697
+2024-11-21 05:27:15,372:INFO::EarlyStopping counter: 13 out of 30
+2024-11-21 05:27:15,641:INFO::Epoch_batch_00100 | lr 0.0005 |Train_Loss 0.6909 |  total_loss_consistency1 0.0069 | Loss 0.6957 | Val_Loss 0.7228| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2691
+2024-11-21 05:27:15,641:INFO::EarlyStopping counter: 14 out of 30
+2024-11-21 05:27:15,910:INFO::Epoch_batch_00101 | lr 0.0005 |Train_Loss 0.6868 |  total_loss_consistency1 0.0068 | Loss 0.6916 | Val_Loss 0.7230| Train Time(s) 0.2186| Val Time(s) 0.0503 | Time(s) 0.2689
+2024-11-21 05:27:15,910:INFO::EarlyStopping counter: 15 out of 30
+2024-11-21 05:27:16,180:INFO::Epoch_batch_00102 | lr 0.0005 |Train_Loss 0.6930 |  total_loss_consistency1 0.0068 | Loss 0.6977 | Val_Loss 0.7236| Train Time(s) 0.2191| Val Time(s) 0.0503 | Time(s) 0.2695
+2024-11-21 05:27:16,180:INFO::EarlyStopping counter: 16 out of 30
+2024-11-21 05:27:16,450:INFO::Epoch_batch_00103 | lr 0.0005 |Train_Loss 0.6867 |  total_loss_consistency1 0.0067 | Loss 0.6913 | Val_Loss 0.7244| Train Time(s) 0.2190| Val Time(s) 0.0503 | Time(s) 0.2693
+2024-11-21 05:27:16,450:INFO::EarlyStopping counter: 17 out of 30
+2024-11-21 05:27:16,719:INFO::Epoch_batch_00104 | lr 0.0005 |Train_Loss 0.6903 |  total_loss_consistency1 0.0066 | Loss 0.6949 | Val_Loss 0.7248| Train Time(s) 0.2183| Val Time(s) 0.0504 | Time(s) 0.2686
+2024-11-21 05:27:16,719:INFO::EarlyStopping counter: 18 out of 30
+2024-11-21 05:27:16,989:INFO::Epoch_batch_00105 | lr 0.0005 |Train_Loss 0.6865 |  total_loss_consistency1 0.0065 | Loss 0.6911 | Val_Loss 0.7244| Train Time(s) 0.2195| Val Time(s) 0.0502 | Time(s) 0.2697
+2024-11-21 05:27:16,990:INFO::EarlyStopping counter: 19 out of 30
+2024-11-21 05:27:17,259:INFO::Epoch_batch_00106 | lr 0.0005 |Train_Loss 0.6868 |  total_loss_consistency1 0.0063 | Loss 0.6912 | Val_Loss 0.7245| Train Time(s) 0.2188| Val Time(s) 0.0504 | Time(s) 0.2692
+2024-11-21 05:27:17,259:INFO::EarlyStopping counter: 20 out of 30
+2024-11-21 05:27:17,528:INFO::Epoch_batch_00107 | lr 0.0005 |Train_Loss 0.6869 |  total_loss_consistency1 0.0063 | Loss 0.6914 | Val_Loss 0.7238| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2689
+2024-11-21 05:27:17,529:INFO::EarlyStopping counter: 21 out of 30
+2024-11-21 05:27:17,798:INFO::Epoch_batch_00108 | lr 0.0005 |Train_Loss 0.6903 |  total_loss_consistency1 0.0063 | Loss 0.6947 | Val_Loss 0.7231| Train Time(s) 0.2190| Val Time(s) 0.0503 | Time(s) 0.2693
+2024-11-21 05:27:17,799:INFO::EarlyStopping counter: 22 out of 30
+2024-11-21 05:27:18,068:INFO::Epoch_batch_00109 | lr 0.0005 |Train_Loss 0.6853 |  total_loss_consistency1 0.0062 | Loss 0.6896 | Val_Loss 0.7226| Train Time(s) 0.2188| Val Time(s) 0.0504 | Time(s) 0.2692
+2024-11-21 05:27:18,068:INFO::EarlyStopping counter: 23 out of 30
+2024-11-21 05:27:18,337:INFO::Epoch_batch_00110 | lr 0.0005 |Train_Loss 0.6874 |  total_loss_consistency1 0.0063 | Loss 0.6918 | Val_Loss 0.7218| Train Time(s) 0.2186| Val Time(s) 0.0501 | Time(s) 0.2687
+2024-11-21 05:27:18,337:INFO::EarlyStopping counter: 24 out of 30
+2024-11-21 05:27:18,607:INFO::Epoch_batch_00111 | lr 0.0005 |Train_Loss 0.6877 |  total_loss_consistency1 0.0062 | Loss 0.6920 | Val_Loss 0.7215| Train Time(s) 0.2191| Val Time(s) 0.0502 | Time(s) 0.2693
+2024-11-21 05:27:18,607:INFO::EarlyStopping counter: 25 out of 30
+2024-11-21 05:27:18,877:INFO::Epoch_batch_00112 | lr 0.0005 |Train_Loss 0.6834 |  total_loss_consistency1 0.0060 | Loss 0.6876 | Val_Loss 0.7215| Train Time(s) 0.2189| Val Time(s) 0.0504 | Time(s) 0.2693
+2024-11-21 05:27:18,877:INFO::EarlyStopping counter: 26 out of 30
+2024-11-21 05:27:19,146:INFO::Epoch_batch_00113 | lr 0.0005 |Train_Loss 0.6886 |  total_loss_consistency1 0.0060 | Loss 0.6928 | Val_Loss 0.7223| Train Time(s) 0.2181| Val Time(s) 0.0503 | Time(s) 0.2684
+2024-11-21 05:27:19,146:INFO::EarlyStopping counter: 27 out of 30
+2024-11-21 05:27:19,416:INFO::Epoch_batch_00114 | lr 0.0005 |Train_Loss 0.6873 |  total_loss_consistency1 0.0059 | Loss 0.6914 | Val_Loss 0.7239| Train Time(s) 0.2189| Val Time(s) 0.0502 | Time(s) 0.2691
+2024-11-21 05:27:19,416:INFO::EarlyStopping counter: 28 out of 30
+2024-11-21 05:27:19,686:INFO::Epoch_batch_00115 | lr 0.0005 |Train_Loss 0.6831 |  total_loss_consistency1 0.0059 | Loss 0.6873 | Val_Loss 0.7263| Train Time(s) 0.2193| Val Time(s) 0.0504 | Time(s) 0.2697
+2024-11-21 05:27:19,686:INFO::EarlyStopping counter: 29 out of 30
+2024-11-21 05:27:19,955:INFO::Epoch_batch_00116 | lr 0.0005 |Train_Loss 0.6864 |  total_loss_consistency1 0.0059 | Loss 0.6905 | Val_Loss 0.7280| Train Time(s) 0.2187| Val Time(s) 0.0503 | Time(s) 0.2690
+2024-11-21 05:27:19,956:INFO::EarlyStopping counter: 30 out of 30
+2024-11-21 05:27:19,956:INFO::Eearly stopping!
+2024-11-21 05:27:20,009:INFO::
+testing...
+2024-11-21 05:27:20,058:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:27:20,058:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:27:20,058:INFO::submit dir: submit/submit_simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:27:20,109:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-11-21 05:27:20,117:INFO::{'micro-f1': 0.9535211267605633, 'macro-f1': 0.9502585870294495}
+2024-11-21 05:27:20,156:INFO::############### Experiments Stage Ends! ###############
+2024-11-21 05:27:20,156:INFO::=============== one experiment stage finish, use 222.585218667984 time.
+/home/yyj/MDNN-AC/AutoAC-main/data/DBLP
+/home/yyj/MDNN-AC/AutoAC-main/data/DBLP
+(2840,) (2840,)
+/home/yyj/MDNN-AC/AutoAC-main/submit/submit_simpleHGN_lr0.0005_wd0.0001/DBLP_1.txt
+[93mWarning: If you want to obtain test score, please submit online on biendata.[0m
+(2840,) (2840,)
+/home/yyj/MDNN-AC/AutoAC-main/submit/submit_simpleHGN_lr0.0005_wd0.0001/DBLP_1.txt
+[93mWarning: If you want to obtain test score, please submit online on biendata.[0m
+(2840,) (2840,)
+/home/yyj/MDNN-AC/AutoAC-main/submit/submit_simpleHGN_lr0.0005_wd0.0001/DBLP_1.txt
+[93mWarning: If you want to obtain test score, please submit online on biendata.[0m
+(2840,) (2840,)
+/home/yyj/MDNN-AC/AutoAC-main/submit/submit_simpleHGN_lr0.0005_wd0.0001/DBLP_1.txt
+[93mWarning: If you want to obtain test score, please submit online on biendata.[0m
+(2840,) (2840,)
+/home/yyj/MDNN-AC/AutoAC-main/submit/submit_simpleHGN_lr0.0005_wd0.0001/DBLP_1.txt
+[93mWarning: If you want to obtain test score, please submit online on biendata.[0m

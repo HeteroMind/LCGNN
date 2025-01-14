@@ -1,0 +1,69 @@
+2023-10-27 20:15:12,245:INFO::=============== Search Args:
+Namespace(dataset='DBLP', feats_type=6, gnn_model='gat', valid_attributed_type=1, cluster_num=10, cluster_eps=1e-05, att_comp_dim=64, hidden_dim=64, num_heads=8, attn_vec_dim=128, search_epoch=350, retrain_epoch=500, inner_epoch=1, patience_search=30, patience_retrain=30, batch_size=8, batch_size_test=32, momentum=0.9, lr=0.0005, lr_rate_min=3e-05, num_layers=2, dropout=0.5, weight_decay=0.0001, slope=0.05, grad_clip=5, network_momentum=0.9, arch_learning_rate=0.005, arch_weight_decay=1e-05, repeat=5, cluster_epoch=20, save_postfix='DBLP', feats_opt='1011', cuda=False, unrolled=False, useSGD=False, useTypeLinear=False, l2norm=False, cluster_norm=False, usedropout=False, is_unrolled='False', is_use_type_linear='False', is_use_SGD='False', is_use_dropout='False', time_line='2023-10-27-20-15-12', edge_feats=64, warmup_epoch=0, clusterupdate_round=1, searcher_name='nasp', rnn_type='RotatE0', neighbor_samples=100, use_minibatch=False, shared_ops=False, e_greedy=0, usebn=False, seed=123, use_5seeds=False, no_use_fixseeds=False, use_dmon=False, collapse_regularization=0.1, dmon_loss_alpha=0.3, tau=1.0, schedule_step=350, schedule_step_retrain=500, use_norm=False, use_adamw=False, use_skip=False, cur_repeat=None, last_hidden_dim=512, logger=<Logger log_output (INFO)>)
+2023-10-27 20:15:32,262:INFO::node_type_num: 4
+2023-10-27 20:15:42,726:INFO::=============== Prepare basic data stage finish, use 30.458289861679077 time.
+2023-10-27 22:11:47,891:INFO::save_dir_name: gat_nasp_egreedy0_C10_useEM_coef0.3_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_0120_64_no_shared_ops_lr0.0005_wd0.0001_useSeed123_use_adam_patience-30_30_not_use_skip
+2023-10-27 22:11:58,214:INFO::Epoch: 0
+tensor([[0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000]], device='cuda:0', requires_grad=True)
+2023-10-27 22:11:58,432:INFO::its now!!!!!!!!5
+2023-10-27 22:12:15,942:INFO::its now!!!!!!!!0
+2023-10-27 22:12:16,010:INFO::its now!!!!!!!!3
+2023-10-27 22:12:22,137:INFO::its now!!!!!!!!5
+2023-10-27 22:12:22,576:INFO::its now!!!!!!!!5
+2023-10-27 22:12:27,925:INFO::save_dir_name: gat_nasp_egreedy0_C10_useEM_coef0.3_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_0120_64_no_shared_ops_lr0.0005_wd0.0001_useSeed123_use_adam_patience-30_30_not_use_skip
+2023-10-27 22:12:27,926:INFO::save_dir_name: gat_nasp_egreedy0_C10_useEM_coef0.3_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_0120_64_no_shared_ops_lr0.0005_wd0.0001_useSeed123_use_adam_patience-30_30_not_use_skip
+2023-10-27 22:13:08,391:INFO::save_dir_name: gat_nasp_egreedy0_C10_useEM_coef0.3_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_0120_64_no_shared_ops_lr0.0005_wd0.0001_useSeed123_use_adam_patience-30_30_not_use_skip
+2023-10-27 22:13:08,463:INFO::Epoch 00000 | lr 0.00050 | Train_Loss 1.4326 | Val_Loss 1.3829 | Search Time(s) 25.2113 | Infer Time(s) 0.2379 | Time(s) 25.4493 
+2023-10-27 22:13:14,370:INFO::Epoch: 0 Cluster_epoch: 1 gap_avg: 0.1502986301799438
+2023-10-27 22:13:15,490:INFO::Epoch: 0 Cluster_epoch: 2 gap_avg: 0.03367232556595069
+2023-10-27 22:13:16,726:INFO::Epoch: 0 Cluster_epoch: 3 gap_avg: 0.011607531050428464
+2023-10-27 22:13:17,786:INFO::Epoch: 0 Cluster_epoch: 4 gap_avg: 0.005138124468399379
+2023-10-27 22:13:20,446:INFO::Epoch: 0 Cluster_epoch: 5 gap_avg: 0.003591485825920073
+2023-10-27 22:13:21,495:INFO::Epoch: 0 Cluster_epoch: 6 gap_avg: 0.0027305578601287466
+2023-10-27 22:13:22,537:INFO::Epoch: 0 Cluster_epoch: 7 gap_avg: 0.002600282500616615
+2023-10-27 22:13:23,604:INFO::Epoch: 0 Cluster_epoch: 8 gap_avg: 0.0019229754995395785
+2023-10-27 22:13:24,629:INFO::Epoch: 0 Cluster_epoch: 9 gap_avg: 0.0011789793145075438
+2023-10-27 22:13:25,643:INFO::Epoch: 0 Cluster_epoch: 10 gap_avg: 0.0007554753932590152
+2023-10-27 22:13:26,858:INFO::Epoch: 0 Cluster_epoch: 11 gap_avg: 0.0004935864759914869
+2023-10-27 22:13:27,912:INFO::Epoch: 0 Cluster_epoch: 12 gap_avg: 0.0003872497703299335
+2023-10-27 22:13:28,978:INFO::Epoch: 0 Cluster_epoch: 13 gap_avg: 0.00034049193219579235
+2023-10-27 22:13:29,977:INFO::Epoch: 0 Cluster_epoch: 14 gap_avg: 0.0004311217215564921
+2023-10-27 22:13:31,004:INFO::Epoch: 0 Cluster_epoch: 15 gap_avg: 0.0006077543702155203
+2023-10-27 22:13:31,991:INFO::Epoch: 0 Cluster_epoch: 16 gap_avg: 0.0006322787965429339
+2023-10-27 22:13:33,018:INFO::Epoch: 0 Cluster_epoch: 17 gap_avg: 0.00097547177969765
+2023-10-27 22:13:34,003:INFO::Epoch: 0 Cluster_epoch: 18 gap_avg: 0.001903912011399491
+2023-10-27 22:13:35,007:INFO::Epoch: 0 Cluster_epoch: 19 gap_avg: 0.00199513509045108
+2023-10-27 22:13:35,477:INFO::cluster info:
+0: 4;	1: 9;	2: 0;	3: 9;	4: 8;	5: 9;	6: 4;	7: 9;	8: 0;	9: 0;	10: 0;	11: 0;	12: 0;	13: 8;	14: 9;	15: 1;	16: 8;	17: 1;	18: 0;	19: 4;	20: 0;	21: 2;	22: 4;	23: 0;	24: 8;	25: 0;	26: 0;	27: 8;	28: 0;	29: 4;	30: 0;	31: 4;	32: 0;	33: 0;	34: 0;	35: 2;	36: 0;	37: 7;	38: 1;	39: 9;	40: 1;	41: 1;	42: 8;	43: 3;	44
+26098: 0;	26099: 2;	26100: 0;	26101: 0;	26102: 9;	26103: 9;	26104: 0;	26105: 7;	26106: 0;	26107: 0;	26108: 3;	26109: 1;	26110: 9;	26111: 2;	26112: 9;	26113: 4;	26114: 1;	26115: 9;	26116: 8;	26117: 4;	26118: 8;	26119: 9;	26120: 9;	26121: 0;	26122: 8;	26123: 2;	26124: 5;	26125: 1;	26126: 0;	26127: 0;	
+2023-10-27 22:13:36,835:INFO::Epoch: 1
+tensor([[0.5050, 0.4950, 0.4950, 0.4950],
+        [0.5050, 0.4950, 0.4950, 0.4950],
+        [0.4950, 0.4950, 0.4950, 0.4950],
+        [0.4950, 0.4950, 0.4950, 0.4950],
+        [0.4950, 0.4950, 0.4950, 0.4950],
+        [0.4950, 0.4950, 0.4950, 0.4950],
+        [0.4950, 0.4950, 0.4950, 0.4950],
+        [0.4950, 0.4950, 0.4950, 0.4950],
+        [0.4950, 0.4950, 0.4950, 0.4950],
+        [0.4950, 0.4950, 0.4950, 0.4950]], device='cuda:0', requires_grad=True)
+2023-10-27 22:13:37,132:INFO::its now!!!!!!!!5
+2023-10-27 22:13:39,295:INFO::its now!!!!!!!!0
+2023-10-27 22:13:39,348:INFO::its now!!!!!!!!3
+2023-10-27 22:13:39,907:INFO::its now!!!!!!!!5
+2023-10-27 22:13:40,586:INFO::its now!!!!!!!!5
+2023-10-27 22:13:45,596:INFO::save_dir_name: gat_nasp_egreedy0_C10_useEM_coef0.3_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_0120_64_no_shared_ops_lr0.0005_wd0.0001_useSeed123_use_adam_patience-30_30_not_use_skip
+2023-10-27 22:13:45,596:INFO::save_dir_name: gat_nasp_egreedy0_C10_useEM_coef0.3_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_0120_64_no_shared_ops_lr0.0005_wd0.0001_useSeed123_use_adam_patience-30_30_not_use_skip
+2023-10-27 22:14:05,592:INFO::save_dir_name: gat_nasp_egreedy0_C10_useEM_coef0.3_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_0120_64_no_shared_ops_lr0.0005_wd0.0001_useSeed123_use_adam_patience-30_30_not_use_skip
+2023-10-27 22:14:05,593:INFO::save_dir_name: gat_nasp_egreedy0_C10_useEM_coef0.3_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_0120_64_no_shared_ops_lr0.0005_wd0.0001_useSeed123_use_adam_patience-30_30_not_use_skip
+2023-10-27 22:14:09,983:INFO::save_dir_name: gat_nasp_egreedy0_C10_useEM_coef0.3_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_0120_64_no_shared_ops_lr0.0005_wd0.0001_useSeed123_use_adam_patience-30_30_not_use_skip
+2023-10-27 22:14:09,983:INFO::save_dir_name: gat_nasp_egreedy0_C10_useEM_coef0.3_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_0120_64_no_shared_ops_lr0.0005_wd0.0001_useSeed123_use_adam_patience-30_30_not_use_skip

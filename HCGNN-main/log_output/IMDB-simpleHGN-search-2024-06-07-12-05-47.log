@@ -1,0 +1,62 @@
+2024-06-07 12:05:47,473:INFO::=============== Search Args:
+Namespace(dataset='IMDB', feats_type=6, gnn_model='simpleHGN', valid_attributed_type=0, hidden_dim=64, num_heads=8, attn_vec_dim=128, patience=5, batch_size=16, batch_size_test=2, lr=0.0005, lr_rate_min=3e-05, num_layers=6, dropout=0.5, weight_decay=0.0001, slope=0.1, grad_clip=5, repeat=5, save_postfix='IMDB', feats_opt='0111', cuda=True, l2norm=False, time_line='2024-06-07-12-05-47', edge_feats=64, rnn_type='RotatE0', seed=123, use_adamw=False, num_epochs=1, complete_epochs=1, retrain_epoch=2, samples=100, att_comp_dim=64, use_norm=False, max_features_len=64, max_num_views=2, alpha_0=1.5, beta_1=2, schedule_step_retrain=7, patience_retrain=7, is_use_type_linear='False', is_use_SGD='False', is_use_dropout='False', momentum=0.9, inner_epoch=1, use_minibatch=False, useSGD=False, useTypeLinear=False, usedropout=False, usebn=False, use_5seeds=False, cur_repeat=False, no_use_fixseeds=False, last_hidden_dim=512, logger=<Logger log_output (INFO)>)
+2024-06-07 12:06:03,562:INFO::node_type_num: 4
+2024-06-07 13:38:42,064:INFO::=============== Prepare basic data stage finish, use 5574.5900893211365 time.
+2024-06-07 15:33:06,882:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:33:41,761:INFO::############### Search Stage Ends! ###############
+2024-06-07 15:33:41,959:INFO::=============== Retrain Stage Starts:
+2024-06-07 15:33:53,919:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7283 | Val_Loss 0.6525 | Time(s) 11.9022
+2024-06-07 15:34:05,555:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.7080 | Val_Loss 0.6458 | Time(s) 11.5810
+2024-06-07 15:34:05,594:INFO::Validation loss decreased (inf --> 0.645751).  Saving model ...
+2024-06-07 15:34:05,609:INFO::
+testing...
+2024-06-07 15:34:05,729:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:34:05,768:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:34:05,769:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:34:08,298:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:34:08,567:INFO::{'micro-f1': 0.5096725567372917, 'macro-f1': 0.25645146523890056, 'roc_auc': 0.5, 'MRR score': 0.6528732042473459}
+2024-06-07 15:34:09,310:INFO::############### Retrain Stage Ends! #################
+2024-06-07 15:34:09,311:INFO::=============== Retrain Stage Starts:
+2024-06-07 15:34:21,185:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7166 | Val_Loss 0.6745 | Time(s) 11.8214
+2024-06-07 15:34:33,204:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6981 | Val_Loss 0.6442 | Time(s) 11.9829
+2024-06-07 15:34:33,243:INFO::Validation loss decreased (inf --> 0.644211).  Saving model ...
+2024-06-07 15:34:33,258:INFO::
+testing...
+2024-06-07 15:34:33,300:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:34:33,300:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:34:35,731:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:34:35,969:INFO::{'micro-f1': 0.0, 'macro-f1': 0.0, 'roc_auc': 0.5, 'MRR score': 0.5048823651884244}
+2024-06-07 15:34:36,712:INFO::############### Retrain Stage Ends! #################
+2024-06-07 15:34:36,713:INFO::=============== Retrain Stage Starts:
+2024-06-07 15:34:48,191:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7005 | Val_Loss 0.6483 | Time(s) 11.4115
+2024-06-07 15:34:59,631:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6757 | Val_Loss 0.6452 | Time(s) 11.3985
+2024-06-07 15:34:59,669:INFO::Validation loss decreased (inf --> 0.645178).  Saving model ...
+2024-06-07 15:34:59,685:INFO::
+testing...
+2024-06-07 15:34:59,728:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:34:59,729:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:35:02,196:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:35:02,398:INFO::{'micro-f1': 0.39981691269023917, 'macro-f1': 0.1412002424732269, 'roc_auc': 0.5, 'MRR score': 0.6882937747241296}
+2024-06-07 15:35:03,139:INFO::############### Retrain Stage Ends! #################
+2024-06-07 15:35:03,140:INFO::=============== Retrain Stage Starts:
+2024-06-07 15:35:14,820:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7143 | Val_Loss 0.6499 | Time(s) 11.6179
+2024-06-07 15:35:26,449:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6976 | Val_Loss 0.6433 | Time(s) 11.5900
+2024-06-07 15:35:26,489:INFO::Validation loss decreased (inf --> 0.643274).  Saving model ...
+2024-06-07 15:35:26,505:INFO::
+testing...
+2024-06-07 15:35:26,547:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:35:26,547:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:35:29,080:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:35:29,294:INFO::{'micro-f1': 0.39981691269023917, 'macro-f1': 0.1412002424732269, 'roc_auc': 0.5, 'MRR score': 0.6882937747241296}
+2024-06-07 15:35:30,030:INFO::############### Retrain Stage Ends! #################
+2024-06-07 15:35:30,031:INFO::=============== Retrain Stage Starts:
+2024-06-07 15:35:41,716:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7366 | Val_Loss 0.6465 | Time(s) 11.6259
+2024-06-07 15:35:53,642:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.7099 | Val_Loss 0.6443 | Time(s) 11.8872
+2024-06-07 15:35:53,680:INFO::Validation loss decreased (inf --> 0.644347).  Saving model ...
+2024-06-07 15:35:53,696:INFO::
+testing...
+2024-06-07 15:35:53,746:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:35:53,746:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:35:56,267:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-07 15:35:56,475:INFO::{'micro-f1': 0.39981691269023917, 'macro-f1': 0.1412002424732269, 'roc_auc': 0.5, 'MRR score': 0.6882937747241296}
+2024-06-07 15:35:57,211:INFO::############### Retrain Stage Ends! #################

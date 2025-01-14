@@ -1,0 +1,372 @@
+2024-06-10 00:22:08,275:INFO::=============== Search Args:
+Namespace(dataset='IMDB', feats_type=6, gnn_model='simpleHGN', valid_attributed_type=0, hidden_dim=64, num_heads=8, attn_vec_dim=128, patience=5, batch_size=16, batch_size_test=2, lr=0.0005, lr_rate_min=3e-05, num_layers=6, dropout=0.5, weight_decay=0.0001, slope=0.1, grad_clip=5, repeat=5, save_postfix='IMDB', feats_opt='0111', cuda=True, l2norm=False, time_line='2024-06-10-00-22-08', edge_feats=64, rnn_type='RotatE0', seed=123, use_adamw=False, num_epochs=2, complete_epochs=1, retrain_epoch=500, samples=100, att_comp_dim=64, use_norm=False, max_features_len=64, max_num_views=3, alpha_0=2, beta_1=2, schedule_step_retrain=500, patience_retrain=15, is_use_type_linear='False', is_use_SGD='False', is_use_dropout='False', momentum=0.9, inner_epoch=1, use_minibatch=False, useSGD=False, useTypeLinear=False, usedropout=False, usebn=False, use_5seeds=False, cur_repeat=False, no_use_fixseeds=False, last_hidden_dim=512, logger=<Logger log_output (INFO)>)
+2024-06-10 00:22:19,665:INFO::node_type_num: 4
+2024-06-10 01:50:05,744:INFO::=============== Prepare basic data stage finish, use 5277.467032909393 time.
+2024-06-10 02:04:34,959:INFO::Epoch_batch_00000 | lr 0.0005 |Train_Loss 0.6832| | total_loss_completion 0.0496 | total_loss_consistency 0.4989 | Loss 1.7801 | Time(s) 868.5549
+2024-06-10 02:18:02,147:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 1.7801 | Val_Loss 0.6571 | Time(s) 807.1881
+2024-06-10 02:18:02,147:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 02:33:05,618:INFO::Epoch_batch_00001 | lr 0.0005 |Train_Loss 0.6634| | total_loss_completion 0.0495 | total_loss_consistency 0.0119 | Loss 0.7862 | Time(s) 899.9032
+2024-06-10 02:48:51,701:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.7862 | Val_Loss 0.6483 | Time(s) 946.0832
+2024-06-10 02:48:51,701:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 02:48:52,120:INFO::Validation loss decreased (inf --> 0.648273).  Saving model ...
+2024-06-10 02:48:52,583:INFO::############### Search Stage Ends! ###############
+2024-06-10 02:48:52,670:INFO::=============== Retrain Stage Starts:
+2024-06-10 02:49:02,456:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7340 | Val_Loss 0.6770 | Time(s) 9.7419
+2024-06-10 02:49:12,291:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.7078 | Val_Loss 0.6587 | Time(s) 9.7200
+2024-06-10 02:49:12,320:INFO::Validation loss decreased (inf --> 0.658738).  Saving model ...
+2024-06-10 02:49:22,098:INFO::Epoch 00002 | lr 0.00050 |Train_Loss 0.6880 | Val_Loss 0.6526 | Time(s) 9.7778
+2024-06-10 02:49:22,125:INFO::Validation loss decreased (0.658738 --> 0.652602).  Saving model ...
+2024-06-10 02:49:31,999:INFO::Epoch 00003 | lr 0.00050 |Train_Loss 0.6778 | Val_Loss 0.6493 | Time(s) 9.8746
+2024-06-10 02:49:32,494:INFO::Validation loss decreased (0.652602 --> 0.649271).  Saving model ...
+2024-06-10 02:49:42,263:INFO::Epoch 00004 | lr 0.00050 |Train_Loss 0.6659 | Val_Loss 0.6468 | Time(s) 9.7688
+2024-06-10 02:49:42,292:INFO::Validation loss decreased (0.649271 --> 0.646780).  Saving model ...
+2024-06-10 02:49:52,029:INFO::Epoch 00005 | lr 0.00050 |Train_Loss 0.6532 | Val_Loss 0.6453 | Time(s) 9.7370
+2024-06-10 02:49:52,057:INFO::Validation loss decreased (0.646780 --> 0.645278).  Saving model ...
+2024-06-10 02:50:01,959:INFO::Epoch 00006 | lr 0.00050 |Train_Loss 0.6483 | Val_Loss 0.6442 | Time(s) 9.9015
+2024-06-10 02:50:01,986:INFO::Validation loss decreased (0.645278 --> 0.644177).  Saving model ...
+2024-06-10 02:50:11,825:INFO::Epoch 00007 | lr 0.00050 |Train_Loss 0.6470 | Val_Loss 0.6434 | Time(s) 9.8387
+2024-06-10 02:50:11,858:INFO::Validation loss decreased (0.644177 --> 0.643362).  Saving model ...
+2024-06-10 02:50:21,738:INFO::Epoch 00008 | lr 0.00050 |Train_Loss 0.6429 | Val_Loss 0.6428 | Time(s) 9.8796
+2024-06-10 02:50:21,765:INFO::Validation loss decreased (0.643362 --> 0.642752).  Saving model ...
+2024-06-10 02:50:31,788:INFO::Epoch 00009 | lr 0.00050 |Train_Loss 0.6425 | Val_Loss 0.6423 | Time(s) 10.0222
+2024-06-10 02:50:31,815:INFO::Validation loss decreased (0.642752 --> 0.642265).  Saving model ...
+2024-06-10 02:50:41,809:INFO::Epoch 00010 | lr 0.00050 |Train_Loss 0.6402 | Val_Loss 0.6418 | Time(s) 9.9943
+2024-06-10 02:50:41,837:INFO::Validation loss decreased (0.642265 --> 0.641838).  Saving model ...
+2024-06-10 02:50:51,804:INFO::Epoch 00011 | lr 0.00050 |Train_Loss 0.6411 | Val_Loss 0.6414 | Time(s) 9.9624
+2024-06-10 02:50:51,831:INFO::Validation loss decreased (0.641838 --> 0.641428).  Saving model ...
+2024-06-10 02:51:01,804:INFO::Epoch 00012 | lr 0.00050 |Train_Loss 0.6359 | Val_Loss 0.6411 | Time(s) 9.9733
+2024-06-10 02:51:01,832:INFO::Validation loss decreased (0.641428 --> 0.641070).  Saving model ...
+2024-06-10 02:51:11,778:INFO::Epoch 00013 | lr 0.00050 |Train_Loss 0.6368 | Val_Loss 0.6408 | Time(s) 9.9454
+2024-06-10 02:51:11,805:INFO::Validation loss decreased (0.641070 --> 0.640756).  Saving model ...
+2024-06-10 02:51:21,685:INFO::Epoch 00014 | lr 0.00050 |Train_Loss 0.6360 | Val_Loss 0.6405 | Time(s) 9.8796
+2024-06-10 02:51:21,715:INFO::Validation loss decreased (0.640756 --> 0.640516).  Saving model ...
+2024-06-10 02:51:31,738:INFO::Epoch 00015 | lr 0.00050 |Train_Loss 0.6356 | Val_Loss 0.6403 | Time(s) 10.0222
+2024-06-10 02:51:31,768:INFO::Validation loss decreased (0.640516 --> 0.640338).  Saving model ...
+2024-06-10 02:51:41,589:INFO::Epoch 00016 | lr 0.00050 |Train_Loss 0.6352 | Val_Loss 0.6402 | Time(s) 9.8217
+2024-06-10 02:51:41,617:INFO::Validation loss decreased (0.640338 --> 0.640195).  Saving model ...
+2024-06-10 02:51:51,457:INFO::Epoch 00017 | lr 0.00050 |Train_Loss 0.6365 | Val_Loss 0.6401 | Time(s) 9.8397
+2024-06-10 02:51:51,484:INFO::Validation loss decreased (0.640195 --> 0.640082).  Saving model ...
+2024-06-10 02:52:01,495:INFO::Epoch 00018 | lr 0.00050 |Train_Loss 0.6344 | Val_Loss 0.6400 | Time(s) 10.0112
+2024-06-10 02:52:01,522:INFO::Validation loss decreased (0.640082 --> 0.640017).  Saving model ...
+2024-06-10 02:52:11,438:INFO::Epoch 00019 | lr 0.00050 |Train_Loss 0.6365 | Val_Loss 0.6400 | Time(s) 9.9145
+2024-06-10 02:52:11,464:INFO::Validation loss decreased (0.640017 --> 0.639957).  Saving model ...
+2024-06-10 02:52:21,442:INFO::Epoch 00020 | lr 0.00050 |Train_Loss 0.6354 | Val_Loss 0.6399 | Time(s) 9.9783
+2024-06-10 02:52:21,484:INFO::Validation loss decreased (0.639957 --> 0.639885).  Saving model ...
+2024-06-10 02:52:31,414:INFO::Epoch 00021 | lr 0.00050 |Train_Loss 0.6367 | Val_Loss 0.6398 | Time(s) 9.9304
+2024-06-10 02:52:31,442:INFO::Validation loss decreased (0.639885 --> 0.639832).  Saving model ...
+2024-06-10 02:52:41,324:INFO::Epoch 00022 | lr 0.00050 |Train_Loss 0.6370 | Val_Loss 0.6398 | Time(s) 9.8816
+2024-06-10 02:52:41,353:INFO::Validation loss decreased (0.639832 --> 0.639790).  Saving model ...
+2024-06-10 02:52:51,324:INFO::Epoch 00023 | lr 0.00050 |Train_Loss 0.6347 | Val_Loss 0.6398 | Time(s) 9.9713
+2024-06-10 02:52:51,352:INFO::Validation loss decreased (0.639790 --> 0.639756).  Saving model ...
+2024-06-10 02:53:01,363:INFO::Epoch 00024 | lr 0.00050 |Train_Loss 0.6359 | Val_Loss 0.6397 | Time(s) 10.0112
+2024-06-10 02:53:01,393:INFO::Validation loss decreased (0.639756 --> 0.639727).  Saving model ...
+2024-06-10 02:53:11,286:INFO::Epoch 00025 | lr 0.00050 |Train_Loss 0.6340 | Val_Loss 0.6397 | Time(s) 9.8925
+2024-06-10 02:53:11,312:INFO::Validation loss decreased (0.639727 --> 0.639700).  Saving model ...
+2024-06-10 02:53:21,201:INFO::Epoch 00026 | lr 0.00050 |Train_Loss 0.6345 | Val_Loss 0.6397 | Time(s) 9.8886
+2024-06-10 02:53:21,230:INFO::Validation loss decreased (0.639700 --> 0.639693).  Saving model ...
+2024-06-10 02:53:31,251:INFO::Epoch 00027 | lr 0.00050 |Train_Loss 0.6346 | Val_Loss 0.6397 | Time(s) 10.0212
+2024-06-10 02:53:31,279:INFO::Validation loss decreased (0.639693 --> 0.639665).  Saving model ...
+2024-06-10 02:53:41,302:INFO::Epoch 00028 | lr 0.00050 |Train_Loss 0.6355 | Val_Loss 0.6396 | Time(s) 10.0232
+2024-06-10 02:53:41,330:INFO::Validation loss decreased (0.639665 --> 0.639633).  Saving model ...
+2024-06-10 02:53:51,351:INFO::Epoch 00029 | lr 0.00050 |Train_Loss 0.6346 | Val_Loss 0.6396 | Time(s) 10.0212
+2024-06-10 02:53:51,379:INFO::Validation loss decreased (0.639633 --> 0.639611).  Saving model ...
+2024-06-10 02:54:01,444:INFO::Epoch 00030 | lr 0.00050 |Train_Loss 0.6348 | Val_Loss 0.6396 | Time(s) 10.0651
+2024-06-10 02:54:01,473:INFO::Validation loss decreased (0.639611 --> 0.639605).  Saving model ...
+2024-06-10 02:54:11,530:INFO::Epoch 00031 | lr 0.00050 |Train_Loss 0.6356 | Val_Loss 0.6396 | Time(s) 10.0561
+2024-06-10 02:54:11,530:INFO::EarlyStopping counter: 1 out of 15
+2024-06-10 02:54:21,547:INFO::Epoch 00032 | lr 0.00050 |Train_Loss 0.6346 | Val_Loss 0.6396 | Time(s) 10.0152
+2024-06-10 02:54:21,548:INFO::EarlyStopping counter: 2 out of 15
+2024-06-10 02:54:31,694:INFO::Epoch 00033 | lr 0.00050 |Train_Loss 0.6348 | Val_Loss 0.6397 | Time(s) 10.1469
+2024-06-10 02:54:31,695:INFO::EarlyStopping counter: 3 out of 15
+2024-06-10 02:54:41,671:INFO::Epoch 00034 | lr 0.00050 |Train_Loss 0.6353 | Val_Loss 0.6397 | Time(s) 9.9753
+2024-06-10 02:54:41,672:INFO::EarlyStopping counter: 4 out of 15
+2024-06-10 02:54:51,763:INFO::Epoch 00035 | lr 0.00050 |Train_Loss 0.6343 | Val_Loss 0.6397 | Time(s) 10.0910
+2024-06-10 02:54:51,764:INFO::EarlyStopping counter: 5 out of 15
+2024-06-10 02:55:01,767:INFO::Epoch 00036 | lr 0.00050 |Train_Loss 0.6342 | Val_Loss 0.6398 | Time(s) 10.0032
+2024-06-10 02:55:01,767:INFO::EarlyStopping counter: 6 out of 15
+2024-06-10 02:55:11,659:INFO::Epoch 00037 | lr 0.00050 |Train_Loss 0.6341 | Val_Loss 0.6398 | Time(s) 9.8905
+2024-06-10 02:55:11,660:INFO::EarlyStopping counter: 7 out of 15
+2024-06-10 02:55:21,601:INFO::Epoch 00038 | lr 0.00050 |Train_Loss 0.6334 | Val_Loss 0.6398 | Time(s) 9.9414
+2024-06-10 02:55:21,602:INFO::EarlyStopping counter: 8 out of 15
+2024-06-10 02:55:31,754:INFO::Epoch 00039 | lr 0.00050 |Train_Loss 0.6342 | Val_Loss 0.6399 | Time(s) 10.1518
+2024-06-10 02:55:31,755:INFO::EarlyStopping counter: 9 out of 15
+2024-06-10 02:55:41,734:INFO::Epoch 00040 | lr 0.00050 |Train_Loss 0.6341 | Val_Loss 0.6399 | Time(s) 9.9793
+2024-06-10 02:55:41,735:INFO::EarlyStopping counter: 10 out of 15
+2024-06-10 02:55:51,651:INFO::Epoch 00041 | lr 0.00050 |Train_Loss 0.6340 | Val_Loss 0.6399 | Time(s) 9.9155
+2024-06-10 02:55:51,652:INFO::EarlyStopping counter: 11 out of 15
+2024-06-10 02:56:01,632:INFO::Epoch 00042 | lr 0.00050 |Train_Loss 0.6339 | Val_Loss 0.6400 | Time(s) 9.9803
+2024-06-10 02:56:01,633:INFO::EarlyStopping counter: 12 out of 15
+2024-06-10 02:56:11,657:INFO::Epoch 00043 | lr 0.00050 |Train_Loss 0.6345 | Val_Loss 0.6400 | Time(s) 10.0242
+2024-06-10 02:56:11,657:INFO::EarlyStopping counter: 13 out of 15
+2024-06-10 02:56:21,710:INFO::Epoch 00044 | lr 0.00050 |Train_Loss 0.6342 | Val_Loss 0.6400 | Time(s) 10.0521
+2024-06-10 02:56:21,711:INFO::EarlyStopping counter: 14 out of 15
+2024-06-10 02:56:31,641:INFO::Epoch 00045 | lr 0.00050 |Train_Loss 0.6337 | Val_Loss 0.6401 | Time(s) 9.9294
+2024-06-10 02:56:31,642:INFO::EarlyStopping counter: 15 out of 15
+2024-06-10 02:56:31,642:INFO::Early stopping!
+2024-06-10 02:56:31,651:INFO::
+testing...
+2024-06-10 02:56:31,701:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 02:56:31,701:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 02:56:34,370:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 02:56:34,421:INFO::{'micro-f1': 0.39981691269023917, 'macro-f1': 0.1412002424732269}
+2024-06-10 02:56:34,669:INFO::############### Retrain Stage Ends! #################
+2024-06-10 02:56:34,670:INFO::=============== Retrain Stage Starts:
+2024-06-10 02:56:44,872:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7041 | Val_Loss 0.6571 | Time(s) 10.1469
+2024-06-10 02:56:54,833:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6800 | Val_Loss 0.6467 | Time(s) 9.9304
+2024-06-10 02:56:54,859:INFO::Validation loss decreased (inf --> 0.646667).  Saving model ...
+2024-06-10 02:57:04,850:INFO::Epoch 00002 | lr 0.00050 |Train_Loss 0.6628 | Val_Loss 0.6442 | Time(s) 9.9913
+2024-06-10 02:57:04,886:INFO::Validation loss decreased (0.646667 --> 0.644176).  Saving model ...
+2024-06-10 02:57:14,937:INFO::Epoch 00003 | lr 0.00050 |Train_Loss 0.6548 | Val_Loss 0.6430 | Time(s) 10.0511
+2024-06-10 02:57:14,965:INFO::Validation loss decreased (0.644176 --> 0.642996).  Saving model ...
+2024-06-10 02:57:25,033:INFO::Epoch 00004 | lr 0.00050 |Train_Loss 0.6470 | Val_Loss 0.6423 | Time(s) 10.0671
+2024-06-10 02:57:25,062:INFO::Validation loss decreased (0.642996 --> 0.642251).  Saving model ...
+2024-06-10 02:57:35,006:INFO::Epoch 00005 | lr 0.00050 |Train_Loss 0.6430 | Val_Loss 0.6416 | Time(s) 9.9444
+2024-06-10 02:57:35,037:INFO::Validation loss decreased (0.642251 --> 0.641576).  Saving model ...
+2024-06-10 02:57:45,180:INFO::Epoch 00006 | lr 0.00050 |Train_Loss 0.6424 | Val_Loss 0.6412 | Time(s) 10.1429
+2024-06-10 02:57:45,213:INFO::Validation loss decreased (0.641576 --> 0.641202).  Saving model ...
+2024-06-10 02:57:55,348:INFO::Epoch 00007 | lr 0.00050 |Train_Loss 0.6395 | Val_Loss 0.6409 | Time(s) 10.1349
+2024-06-10 02:57:55,376:INFO::Validation loss decreased (0.641202 --> 0.640907).  Saving model ...
+2024-06-10 02:58:05,358:INFO::Epoch 00008 | lr 0.00050 |Train_Loss 0.6386 | Val_Loss 0.6407 | Time(s) 9.9813
+2024-06-10 02:58:05,387:INFO::Validation loss decreased (0.640907 --> 0.640677).  Saving model ...
+2024-06-10 02:58:15,379:INFO::Epoch 00009 | lr 0.00050 |Train_Loss 0.6379 | Val_Loss 0.6405 | Time(s) 9.9923
+2024-06-10 02:58:15,408:INFO::Validation loss decreased (0.640677 --> 0.640483).  Saving model ...
+2024-06-10 02:58:25,378:INFO::Epoch 00010 | lr 0.00050 |Train_Loss 0.6377 | Val_Loss 0.6403 | Time(s) 9.9703
+2024-06-10 02:58:25,405:INFO::Validation loss decreased (0.640483 --> 0.640325).  Saving model ...
+2024-06-10 02:58:35,392:INFO::Epoch 00011 | lr 0.00050 |Train_Loss 0.6368 | Val_Loss 0.6402 | Time(s) 9.9853
+2024-06-10 02:58:35,421:INFO::Validation loss decreased (0.640325 --> 0.640209).  Saving model ...
+2024-06-10 02:58:45,407:INFO::Epoch 00012 | lr 0.00050 |Train_Loss 0.6358 | Val_Loss 0.6401 | Time(s) 9.9863
+2024-06-10 02:58:45,436:INFO::Validation loss decreased (0.640209 --> 0.640144).  Saving model ...
+2024-06-10 02:58:55,392:INFO::Epoch 00013 | lr 0.00050 |Train_Loss 0.6354 | Val_Loss 0.6401 | Time(s) 9.9564
+2024-06-10 02:58:55,421:INFO::Validation loss decreased (0.640144 --> 0.640084).  Saving model ...
+2024-06-10 02:59:05,462:INFO::Epoch 00014 | lr 0.00050 |Train_Loss 0.6363 | Val_Loss 0.6400 | Time(s) 10.0411
+2024-06-10 02:59:05,493:INFO::Validation loss decreased (0.640084 --> 0.640036).  Saving model ...
+2024-06-10 02:59:15,601:INFO::Epoch 00015 | lr 0.00050 |Train_Loss 0.6353 | Val_Loss 0.6400 | Time(s) 10.1070
+2024-06-10 02:59:15,629:INFO::Validation loss decreased (0.640036 --> 0.640023).  Saving model ...
+2024-06-10 02:59:25,742:INFO::Epoch 00016 | lr 0.00050 |Train_Loss 0.6349 | Val_Loss 0.6400 | Time(s) 10.1120
+2024-06-10 02:59:25,772:INFO::Validation loss decreased (0.640023 --> 0.639997).  Saving model ...
+2024-06-10 02:59:35,808:INFO::Epoch 00017 | lr 0.00050 |Train_Loss 0.6352 | Val_Loss 0.6400 | Time(s) 10.0362
+2024-06-10 02:59:35,836:INFO::Validation loss decreased (0.639997 --> 0.639972).  Saving model ...
+2024-06-10 02:59:45,960:INFO::Epoch 00018 | lr 0.00050 |Train_Loss 0.6365 | Val_Loss 0.6399 | Time(s) 10.1239
+2024-06-10 02:59:45,988:INFO::Validation loss decreased (0.639972 --> 0.639944).  Saving model ...
+2024-06-10 02:59:56,119:INFO::Epoch 00019 | lr 0.00050 |Train_Loss 0.6342 | Val_Loss 0.6399 | Time(s) 10.1309
+2024-06-10 02:59:56,148:INFO::Validation loss decreased (0.639944 --> 0.639908).  Saving model ...
+2024-06-10 03:00:06,106:INFO::Epoch 00020 | lr 0.00050 |Train_Loss 0.6359 | Val_Loss 0.6399 | Time(s) 9.9584
+2024-06-10 03:00:06,137:INFO::Validation loss decreased (0.639908 --> 0.639878).  Saving model ...
+2024-06-10 03:00:16,186:INFO::Epoch 00021 | lr 0.00050 |Train_Loss 0.6355 | Val_Loss 0.6398 | Time(s) 10.0491
+2024-06-10 03:00:16,216:INFO::Validation loss decreased (0.639878 --> 0.639842).  Saving model ...
+2024-06-10 03:00:26,238:INFO::Epoch 00022 | lr 0.00050 |Train_Loss 0.6352 | Val_Loss 0.6398 | Time(s) 10.0202
+2024-06-10 03:00:26,267:INFO::Validation loss decreased (0.639842 --> 0.639810).  Saving model ...
+2024-06-10 03:00:36,345:INFO::Epoch 00023 | lr 0.00050 |Train_Loss 0.6355 | Val_Loss 0.6398 | Time(s) 10.0770
+2024-06-10 03:00:36,374:INFO::Validation loss decreased (0.639810 --> 0.639777).  Saving model ...
+2024-06-10 03:00:46,291:INFO::Epoch 00024 | lr 0.00050 |Train_Loss 0.6344 | Val_Loss 0.6397 | Time(s) 9.9165
+2024-06-10 03:00:46,319:INFO::Validation loss decreased (0.639777 --> 0.639728).  Saving model ...
+2024-06-10 03:00:56,392:INFO::Epoch 00025 | lr 0.00050 |Train_Loss 0.6351 | Val_Loss 0.6397 | Time(s) 10.0731
+2024-06-10 03:00:56,422:INFO::Validation loss decreased (0.639728 --> 0.639692).  Saving model ...
+2024-06-10 03:01:06,502:INFO::Epoch 00026 | lr 0.00050 |Train_Loss 0.6349 | Val_Loss 0.6397 | Time(s) 10.0800
+2024-06-10 03:01:06,532:INFO::Validation loss decreased (0.639692 --> 0.639665).  Saving model ...
+2024-06-10 03:01:16,600:INFO::Epoch 00027 | lr 0.00050 |Train_Loss 0.6348 | Val_Loss 0.6397 | Time(s) 10.0671
+2024-06-10 03:01:16,601:INFO::EarlyStopping counter: 1 out of 15
+2024-06-10 03:01:26,691:INFO::Epoch 00028 | lr 0.00050 |Train_Loss 0.6353 | Val_Loss 0.6397 | Time(s) 10.0890
+2024-06-10 03:01:26,691:INFO::EarlyStopping counter: 2 out of 15
+2024-06-10 03:01:36,750:INFO::Epoch 00029 | lr 0.00050 |Train_Loss 0.6348 | Val_Loss 0.6397 | Time(s) 10.0581
+2024-06-10 03:01:36,750:INFO::EarlyStopping counter: 3 out of 15
+2024-06-10 03:01:46,899:INFO::Epoch 00030 | lr 0.00050 |Train_Loss 0.6354 | Val_Loss 0.6397 | Time(s) 10.1489
+2024-06-10 03:01:46,900:INFO::EarlyStopping counter: 4 out of 15
+2024-06-10 03:01:56,917:INFO::Epoch 00031 | lr 0.00050 |Train_Loss 0.6351 | Val_Loss 0.6397 | Time(s) 10.0162
+2024-06-10 03:01:56,918:INFO::EarlyStopping counter: 5 out of 15
+2024-06-10 03:02:06,988:INFO::Epoch 00032 | lr 0.00050 |Train_Loss 0.6352 | Val_Loss 0.6398 | Time(s) 10.0701
+2024-06-10 03:02:06,989:INFO::EarlyStopping counter: 6 out of 15
+2024-06-10 03:02:17,157:INFO::Epoch 00033 | lr 0.00050 |Train_Loss 0.6342 | Val_Loss 0.6398 | Time(s) 10.1688
+2024-06-10 03:02:17,158:INFO::EarlyStopping counter: 7 out of 15
+2024-06-10 03:02:27,302:INFO::Epoch 00034 | lr 0.00050 |Train_Loss 0.6341 | Val_Loss 0.6398 | Time(s) 10.1439
+2024-06-10 03:02:27,303:INFO::EarlyStopping counter: 8 out of 15
+2024-06-10 03:02:37,303:INFO::Epoch 00035 | lr 0.00050 |Train_Loss 0.6346 | Val_Loss 0.6398 | Time(s) 9.9993
+2024-06-10 03:02:37,303:INFO::EarlyStopping counter: 9 out of 15
+2024-06-10 03:02:47,362:INFO::Epoch 00036 | lr 0.00050 |Train_Loss 0.6346 | Val_Loss 0.6398 | Time(s) 10.0581
+2024-06-10 03:02:47,363:INFO::EarlyStopping counter: 10 out of 15
+2024-06-10 03:02:57,498:INFO::Epoch 00037 | lr 0.00050 |Train_Loss 0.6334 | Val_Loss 0.6398 | Time(s) 10.1349
+2024-06-10 03:02:57,499:INFO::EarlyStopping counter: 11 out of 15
+2024-06-10 03:03:07,656:INFO::Epoch 00038 | lr 0.00050 |Train_Loss 0.6350 | Val_Loss 0.6398 | Time(s) 10.1578
+2024-06-10 03:03:07,657:INFO::EarlyStopping counter: 12 out of 15
+2024-06-10 03:03:17,855:INFO::Epoch 00039 | lr 0.00050 |Train_Loss 0.6343 | Val_Loss 0.6398 | Time(s) 10.1977
+2024-06-10 03:03:17,856:INFO::EarlyStopping counter: 13 out of 15
+2024-06-10 03:03:27,933:INFO::Epoch 00040 | lr 0.00050 |Train_Loss 0.6335 | Val_Loss 0.6398 | Time(s) 10.0770
+2024-06-10 03:03:27,934:INFO::EarlyStopping counter: 14 out of 15
+2024-06-10 03:03:38,076:INFO::Epoch 00041 | lr 0.00050 |Train_Loss 0.6348 | Val_Loss 0.6398 | Time(s) 10.1419
+2024-06-10 03:03:38,077:INFO::EarlyStopping counter: 15 out of 15
+2024-06-10 03:03:38,077:INFO::Early stopping!
+2024-06-10 03:03:38,087:INFO::
+testing...
+2024-06-10 03:03:38,128:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:03:38,128:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:03:40,843:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:03:40,895:INFO::{'micro-f1': 0.39981691269023917, 'macro-f1': 0.1412002424732269}
+2024-06-10 03:03:41,126:INFO::############### Retrain Stage Ends! #################
+2024-06-10 03:03:41,127:INFO::=============== Retrain Stage Starts:
+2024-06-10 03:03:51,360:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7119 | Val_Loss 0.7038 | Time(s) 10.1758
+2024-06-10 03:04:01,779:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6966 | Val_Loss 0.6650 | Time(s) 10.3872
+2024-06-10 03:04:01,807:INFO::Validation loss decreased (inf --> 0.665029).  Saving model ...
+2024-06-10 03:04:12,251:INFO::Epoch 00002 | lr 0.00050 |Train_Loss 0.6871 | Val_Loss 0.6493 | Time(s) 10.4441
+2024-06-10 03:04:12,280:INFO::Validation loss decreased (0.665029 --> 0.649285).  Saving model ...
+2024-06-10 03:04:22,727:INFO::Epoch 00003 | lr 0.00050 |Train_Loss 0.6762 | Val_Loss 0.6434 | Time(s) 10.4471
+2024-06-10 03:04:22,756:INFO::Validation loss decreased (0.649285 --> 0.643377).  Saving model ...
+2024-06-10 03:04:33,203:INFO::Epoch 00004 | lr 0.00050 |Train_Loss 0.6674 | Val_Loss 0.6409 | Time(s) 10.4471
+2024-06-10 03:04:33,231:INFO::Validation loss decreased (0.643377 --> 0.640852).  Saving model ...
+2024-06-10 03:04:43,851:INFO::Epoch 00005 | lr 0.00050 |Train_Loss 0.6566 | Val_Loss 0.6396 | Time(s) 10.6186
+2024-06-10 03:04:43,880:INFO::Validation loss decreased (0.640852 --> 0.639565).  Saving model ...
+2024-06-10 03:04:55,060:INFO::Epoch 00006 | lr 0.00050 |Train_Loss 0.6512 | Val_Loss 0.6390 | Time(s) 11.1801
+2024-06-10 03:04:55,089:INFO::Validation loss decreased (0.639565 --> 0.639029).  Saving model ...
+2024-06-10 03:05:05,735:INFO::Epoch 00007 | lr 0.00050 |Train_Loss 0.6472 | Val_Loss 0.6388 | Time(s) 10.6455
+2024-06-10 03:05:05,762:INFO::Validation loss decreased (0.639029 --> 0.638786).  Saving model ...
+2024-06-10 03:05:16,396:INFO::Epoch 00008 | lr 0.00050 |Train_Loss 0.6459 | Val_Loss 0.6387 | Time(s) 10.6326
+2024-06-10 03:05:16,426:INFO::Validation loss decreased (0.638786 --> 0.638695).  Saving model ...
+2024-06-10 03:05:27,113:INFO::Epoch 00009 | lr 0.00050 |Train_Loss 0.6424 | Val_Loss 0.6387 | Time(s) 10.6874
+2024-06-10 03:05:27,141:INFO::Validation loss decreased (0.638695 --> 0.638679).  Saving model ...
+2024-06-10 03:05:37,795:INFO::Epoch 00010 | lr 0.00050 |Train_Loss 0.6408 | Val_Loss 0.6387 | Time(s) 10.6525
+2024-06-10 03:05:37,796:INFO::EarlyStopping counter: 1 out of 15
+2024-06-10 03:05:48,362:INFO::Epoch 00011 | lr 0.00050 |Train_Loss 0.6398 | Val_Loss 0.6388 | Time(s) 10.5657
+2024-06-10 03:05:48,363:INFO::EarlyStopping counter: 2 out of 15
+2024-06-10 03:05:58,942:INFO::Epoch 00012 | lr 0.00050 |Train_Loss 0.6381 | Val_Loss 0.6389 | Time(s) 10.5797
+2024-06-10 03:05:58,943:INFO::EarlyStopping counter: 3 out of 15
+2024-06-10 03:06:09,564:INFO::Epoch 00013 | lr 0.00050 |Train_Loss 0.6381 | Val_Loss 0.6390 | Time(s) 10.6206
+2024-06-10 03:06:09,564:INFO::EarlyStopping counter: 4 out of 15
+2024-06-10 03:06:20,174:INFO::Epoch 00014 | lr 0.00050 |Train_Loss 0.6374 | Val_Loss 0.6392 | Time(s) 10.6096
+2024-06-10 03:06:20,175:INFO::EarlyStopping counter: 5 out of 15
+2024-06-10 03:06:30,680:INFO::Epoch 00015 | lr 0.00050 |Train_Loss 0.6379 | Val_Loss 0.6393 | Time(s) 10.5049
+2024-06-10 03:06:30,681:INFO::EarlyStopping counter: 6 out of 15
+2024-06-10 03:06:41,153:INFO::Epoch 00016 | lr 0.00050 |Train_Loss 0.6361 | Val_Loss 0.6395 | Time(s) 10.4710
+2024-06-10 03:06:41,153:INFO::EarlyStopping counter: 7 out of 15
+2024-06-10 03:06:51,663:INFO::Epoch 00017 | lr 0.00050 |Train_Loss 0.6368 | Val_Loss 0.6396 | Time(s) 10.5089
+2024-06-10 03:06:51,664:INFO::EarlyStopping counter: 8 out of 15
+2024-06-10 03:07:02,178:INFO::Epoch 00018 | lr 0.00050 |Train_Loss 0.6365 | Val_Loss 0.6398 | Time(s) 10.5139
+2024-06-10 03:07:02,178:INFO::EarlyStopping counter: 9 out of 15
+2024-06-10 03:07:12,717:INFO::Epoch 00019 | lr 0.00050 |Train_Loss 0.6368 | Val_Loss 0.6399 | Time(s) 10.5378
+2024-06-10 03:07:12,718:INFO::EarlyStopping counter: 10 out of 15
+2024-06-10 03:07:23,223:INFO::Epoch 00020 | lr 0.00050 |Train_Loss 0.6356 | Val_Loss 0.6401 | Time(s) 10.5049
+2024-06-10 03:07:23,224:INFO::EarlyStopping counter: 11 out of 15
+2024-06-10 03:07:33,712:INFO::Epoch 00021 | lr 0.00050 |Train_Loss 0.6347 | Val_Loss 0.6402 | Time(s) 10.4879
+2024-06-10 03:07:33,713:INFO::EarlyStopping counter: 12 out of 15
+2024-06-10 03:07:44,172:INFO::Epoch 00022 | lr 0.00050 |Train_Loss 0.6342 | Val_Loss 0.6403 | Time(s) 10.4590
+2024-06-10 03:07:44,173:INFO::EarlyStopping counter: 13 out of 15
+2024-06-10 03:07:54,520:INFO::Epoch 00023 | lr 0.00050 |Train_Loss 0.6362 | Val_Loss 0.6404 | Time(s) 10.3463
+2024-06-10 03:07:54,520:INFO::EarlyStopping counter: 14 out of 15
+2024-06-10 03:08:04,862:INFO::Epoch 00024 | lr 0.00050 |Train_Loss 0.6355 | Val_Loss 0.6405 | Time(s) 10.3413
+2024-06-10 03:08:04,862:INFO::EarlyStopping counter: 15 out of 15
+2024-06-10 03:08:04,863:INFO::Early stopping!
+2024-06-10 03:08:04,872:INFO::
+testing...
+2024-06-10 03:08:04,909:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:08:04,909:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:08:07,608:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:08:07,659:INFO::{'micro-f1': 0.39981691269023917, 'macro-f1': 0.1412002424732269}
+2024-06-10 03:08:07,921:INFO::############### Retrain Stage Ends! #################
+2024-06-10 03:08:07,922:INFO::=============== Retrain Stage Starts:
+2024-06-10 03:08:18,128:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.6920 | Val_Loss 0.6425 | Time(s) 10.1628
+2024-06-10 03:08:28,454:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6741 | Val_Loss 0.6417 | Time(s) 10.2985
+2024-06-10 03:08:28,480:INFO::Validation loss decreased (inf --> 0.641683).  Saving model ...
+2024-06-10 03:08:38,620:INFO::Epoch 00002 | lr 0.00050 |Train_Loss 0.6631 | Val_Loss 0.6418 | Time(s) 10.1399
+2024-06-10 03:08:38,621:INFO::EarlyStopping counter: 1 out of 15
+2024-06-10 03:08:48,853:INFO::Epoch 00003 | lr 0.00050 |Train_Loss 0.6534 | Val_Loss 0.6423 | Time(s) 10.2316
+2024-06-10 03:08:48,854:INFO::EarlyStopping counter: 2 out of 15
+2024-06-10 03:08:58,914:INFO::Epoch 00004 | lr 0.00050 |Train_Loss 0.6515 | Val_Loss 0.6425 | Time(s) 10.0601
+2024-06-10 03:08:58,914:INFO::EarlyStopping counter: 3 out of 15
+2024-06-10 03:09:09,084:INFO::Epoch 00005 | lr 0.00050 |Train_Loss 0.6459 | Val_Loss 0.6427 | Time(s) 10.1688
+2024-06-10 03:09:09,085:INFO::EarlyStopping counter: 4 out of 15
+2024-06-10 03:09:19,128:INFO::Epoch 00006 | lr 0.00050 |Train_Loss 0.6413 | Val_Loss 0.6430 | Time(s) 10.0431
+2024-06-10 03:09:19,129:INFO::EarlyStopping counter: 5 out of 15
+2024-06-10 03:09:29,383:INFO::Epoch 00007 | lr 0.00050 |Train_Loss 0.6398 | Val_Loss 0.6431 | Time(s) 10.2546
+2024-06-10 03:09:29,384:INFO::EarlyStopping counter: 6 out of 15
+2024-06-10 03:09:39,476:INFO::Epoch 00008 | lr 0.00050 |Train_Loss 0.6433 | Val_Loss 0.6432 | Time(s) 10.0920
+2024-06-10 03:09:39,477:INFO::EarlyStopping counter: 7 out of 15
+2024-06-10 03:09:49,655:INFO::Epoch 00009 | lr 0.00050 |Train_Loss 0.6400 | Val_Loss 0.6432 | Time(s) 10.1778
+2024-06-10 03:09:49,656:INFO::EarlyStopping counter: 8 out of 15
+2024-06-10 03:09:59,771:INFO::Epoch 00010 | lr 0.00050 |Train_Loss 0.6397 | Val_Loss 0.6432 | Time(s) 10.1149
+2024-06-10 03:09:59,772:INFO::EarlyStopping counter: 9 out of 15
+2024-06-10 03:10:09,920:INFO::Epoch 00011 | lr 0.00050 |Train_Loss 0.6378 | Val_Loss 0.6432 | Time(s) 10.1469
+2024-06-10 03:10:09,920:INFO::EarlyStopping counter: 10 out of 15
+2024-06-10 03:10:20,003:INFO::Epoch 00012 | lr 0.00050 |Train_Loss 0.6363 | Val_Loss 0.6432 | Time(s) 10.0820
+2024-06-10 03:10:20,004:INFO::EarlyStopping counter: 11 out of 15
+2024-06-10 03:10:30,148:INFO::Epoch 00013 | lr 0.00050 |Train_Loss 0.6361 | Val_Loss 0.6431 | Time(s) 10.1439
+2024-06-10 03:10:30,149:INFO::EarlyStopping counter: 12 out of 15
+2024-06-10 03:10:40,778:INFO::Epoch 00014 | lr 0.00050 |Train_Loss 0.6360 | Val_Loss 0.6430 | Time(s) 10.6296
+2024-06-10 03:10:40,779:INFO::EarlyStopping counter: 13 out of 15
+2024-06-10 03:10:51,339:INFO::Epoch 00015 | lr 0.00050 |Train_Loss 0.6352 | Val_Loss 0.6429 | Time(s) 10.5598
+2024-06-10 03:10:51,340:INFO::EarlyStopping counter: 14 out of 15
+2024-06-10 03:11:02,134:INFO::Epoch 00016 | lr 0.00050 |Train_Loss 0.6366 | Val_Loss 0.6428 | Time(s) 10.7941
+2024-06-10 03:11:02,135:INFO::EarlyStopping counter: 15 out of 15
+2024-06-10 03:11:02,135:INFO::Early stopping!
+2024-06-10 03:11:02,146:INFO::
+testing...
+2024-06-10 03:11:02,189:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:11:02,189:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:11:05,030:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:11:05,083:INFO::{'micro-f1': 0.39981691269023917, 'macro-f1': 0.1412002424732269}
+2024-06-10 03:11:05,356:INFO::############### Retrain Stage Ends! #################
+2024-06-10 03:11:05,357:INFO::=============== Retrain Stage Starts:
+2024-06-10 03:11:16,444:INFO::Epoch 00000 | lr 0.00050 |Train_Loss 0.7054 | Val_Loss 0.6474 | Time(s) 11.0115
+2024-06-10 03:11:27,154:INFO::Epoch 00001 | lr 0.00050 |Train_Loss 0.6930 | Val_Loss 0.6447 | Time(s) 10.6834
+2024-06-10 03:11:27,182:INFO::Validation loss decreased (inf --> 0.644668).  Saving model ...
+2024-06-10 03:11:37,957:INFO::Epoch 00002 | lr 0.00050 |Train_Loss 0.6773 | Val_Loss 0.6433 | Time(s) 10.7752
+2024-06-10 03:11:37,983:INFO::Validation loss decreased (0.644668 --> 0.643349).  Saving model ...
+2024-06-10 03:11:48,990:INFO::Epoch 00003 | lr 0.00050 |Train_Loss 0.6667 | Val_Loss 0.6428 | Time(s) 11.0066
+2024-06-10 03:11:49,020:INFO::Validation loss decreased (0.643349 --> 0.642776).  Saving model ...
+2024-06-10 03:11:59,774:INFO::Epoch 00004 | lr 0.00050 |Train_Loss 0.6557 | Val_Loss 0.6423 | Time(s) 10.7542
+2024-06-10 03:11:59,804:INFO::Validation loss decreased (0.642776 --> 0.642267).  Saving model ...
+2024-06-10 03:12:10,413:INFO::Epoch 00005 | lr 0.00050 |Train_Loss 0.6540 | Val_Loss 0.6416 | Time(s) 10.6086
+2024-06-10 03:12:10,444:INFO::Validation loss decreased (0.642267 --> 0.641609).  Saving model ...
+2024-06-10 03:12:21,115:INFO::Epoch 00006 | lr 0.00050 |Train_Loss 0.6462 | Val_Loss 0.6411 | Time(s) 10.6705
+2024-06-10 03:12:21,143:INFO::Validation loss decreased (0.641609 --> 0.641120).  Saving model ...
+2024-06-10 03:12:31,777:INFO::Epoch 00007 | lr 0.00050 |Train_Loss 0.6437 | Val_Loss 0.6407 | Time(s) 10.6336
+2024-06-10 03:12:31,807:INFO::Validation loss decreased (0.641120 --> 0.640716).  Saving model ...
+2024-06-10 03:12:42,439:INFO::Epoch 00008 | lr 0.00050 |Train_Loss 0.6427 | Val_Loss 0.6404 | Time(s) 10.6306
+2024-06-10 03:12:42,468:INFO::Validation loss decreased (0.640716 --> 0.640442).  Saving model ...
+2024-06-10 03:12:52,980:INFO::Epoch 00009 | lr 0.00050 |Train_Loss 0.6425 | Val_Loss 0.6403 | Time(s) 10.5109
+2024-06-10 03:12:53,009:INFO::Validation loss decreased (0.640442 --> 0.640261).  Saving model ...
+2024-06-10 03:13:03,539:INFO::Epoch 00010 | lr 0.00050 |Train_Loss 0.6367 | Val_Loss 0.6401 | Time(s) 10.5298
+2024-06-10 03:13:03,566:INFO::Validation loss decreased (0.640261 --> 0.640137).  Saving model ...
+2024-06-10 03:13:14,118:INFO::Epoch 00011 | lr 0.00050 |Train_Loss 0.6398 | Val_Loss 0.6401 | Time(s) 10.5518
+2024-06-10 03:13:14,145:INFO::Validation loss decreased (0.640137 --> 0.640059).  Saving model ...
+2024-06-10 03:13:24,590:INFO::Epoch 00012 | lr 0.00050 |Train_Loss 0.6373 | Val_Loss 0.6400 | Time(s) 10.4451
+2024-06-10 03:13:24,617:INFO::Validation loss decreased (0.640059 --> 0.640032).  Saving model ...
+2024-06-10 03:13:35,061:INFO::Epoch 00013 | lr 0.00050 |Train_Loss 0.6383 | Val_Loss 0.6400 | Time(s) 10.4431
+2024-06-10 03:13:35,089:INFO::Validation loss decreased (0.640032 --> 0.640004).  Saving model ...
+2024-06-10 03:13:45,530:INFO::Epoch 00014 | lr 0.00050 |Train_Loss 0.6354 | Val_Loss 0.6400 | Time(s) 10.4411
+2024-06-10 03:13:45,558:INFO::Validation loss decreased (0.640004 --> 0.639982).  Saving model ...
+2024-06-10 03:13:55,957:INFO::Epoch 00015 | lr 0.00050 |Train_Loss 0.6365 | Val_Loss 0.6400 | Time(s) 10.3992
+2024-06-10 03:13:55,958:INFO::EarlyStopping counter: 1 out of 15
+2024-06-10 03:14:06,527:INFO::Epoch 00016 | lr 0.00050 |Train_Loss 0.6374 | Val_Loss 0.6400 | Time(s) 10.5687
+2024-06-10 03:14:06,528:INFO::EarlyStopping counter: 2 out of 15
+2024-06-10 03:14:16,839:INFO::Epoch 00017 | lr 0.00050 |Train_Loss 0.6371 | Val_Loss 0.6400 | Time(s) 10.3094
+2024-06-10 03:14:16,839:INFO::EarlyStopping counter: 3 out of 15
+2024-06-10 03:14:27,125:INFO::Epoch 00018 | lr 0.00050 |Train_Loss 0.6364 | Val_Loss 0.6401 | Time(s) 10.2845
+2024-06-10 03:14:27,126:INFO::EarlyStopping counter: 4 out of 15
+2024-06-10 03:14:37,474:INFO::Epoch 00019 | lr 0.00050 |Train_Loss 0.6345 | Val_Loss 0.6401 | Time(s) 10.3483
+2024-06-10 03:14:37,475:INFO::EarlyStopping counter: 5 out of 15
+2024-06-10 03:14:47,670:INFO::Epoch 00020 | lr 0.00050 |Train_Loss 0.6361 | Val_Loss 0.6401 | Time(s) 10.1947
+2024-06-10 03:14:47,671:INFO::EarlyStopping counter: 6 out of 15
+2024-06-10 03:14:57,894:INFO::Epoch 00021 | lr 0.00050 |Train_Loss 0.6363 | Val_Loss 0.6401 | Time(s) 10.2227
+2024-06-10 03:14:57,894:INFO::EarlyStopping counter: 7 out of 15
+2024-06-10 03:15:08,258:INFO::Epoch 00022 | lr 0.00050 |Train_Loss 0.6353 | Val_Loss 0.6401 | Time(s) 10.3633
+2024-06-10 03:15:08,259:INFO::EarlyStopping counter: 8 out of 15
+2024-06-10 03:15:18,504:INFO::Epoch 00023 | lr 0.00050 |Train_Loss 0.6355 | Val_Loss 0.6401 | Time(s) 10.2446
+2024-06-10 03:15:18,505:INFO::EarlyStopping counter: 9 out of 15
+2024-06-10 03:15:28,788:INFO::Epoch 00024 | lr 0.00050 |Train_Loss 0.6353 | Val_Loss 0.6401 | Time(s) 10.2825
+2024-06-10 03:15:28,788:INFO::EarlyStopping counter: 10 out of 15
+2024-06-10 03:15:39,048:INFO::Epoch 00025 | lr 0.00050 |Train_Loss 0.6349 | Val_Loss 0.6401 | Time(s) 10.2596
+2024-06-10 03:15:39,049:INFO::EarlyStopping counter: 11 out of 15
+2024-06-10 03:15:49,195:INFO::Epoch 00026 | lr 0.00050 |Train_Loss 0.6362 | Val_Loss 0.6401 | Time(s) 10.1469
+2024-06-10 03:15:49,196:INFO::EarlyStopping counter: 12 out of 15
+2024-06-10 03:15:59,499:INFO::Epoch 00027 | lr 0.00050 |Train_Loss 0.6349 | Val_Loss 0.6401 | Time(s) 10.3024
+2024-06-10 03:15:59,500:INFO::EarlyStopping counter: 13 out of 15
+2024-06-10 03:16:09,857:INFO::Epoch 00028 | lr 0.00050 |Train_Loss 0.6350 | Val_Loss 0.6401 | Time(s) 10.3573
+2024-06-10 03:16:09,858:INFO::EarlyStopping counter: 14 out of 15
+2024-06-10 03:16:20,145:INFO::Epoch 00029 | lr 0.00050 |Train_Loss 0.6362 | Val_Loss 0.6401 | Time(s) 10.2865
+2024-06-10 03:16:20,146:INFO::EarlyStopping counter: 15 out of 15
+2024-06-10 03:16:20,146:INFO::Early stopping!
+2024-06-10 03:16:20,156:INFO::
+testing...
+2024-06-10 03:16:20,198:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:16:20,199:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:16:22,847:INFO::save_dir_name: simpleHGN_lr0.0005_wd0.0001
+2024-06-10 03:16:22,897:INFO::{'micro-f1': 0.39981691269023917, 'macro-f1': 0.1412002424732269}
+2024-06-10 03:16:23,143:INFO::############### Retrain Stage Ends! #################

@@ -1,0 +1,8 @@
+2024-06-18 09:47:22,773:INFO::=============== Search Args:
+Namespace(dataset='IMDB', feats_type=6, gnn_model='simpleHGN', valid_attributed_type=0, hidden_dim=64, num_heads=8, attn_vec_dim=128, patience=30, batch_size=16, batch_size_test=2, lr=0.001, lr_rate_min=3e-05, num_layers=5, dropout=0.5, weight_decay=0.0001, slope=0.05, grad_clip=5, repeat=5, save_postfix='IMDB', feats_opt='0111', cuda=True, l2norm=False, time_line='2024-06-18-09-47-21', edge_feats=64, rnn_type='RotatE0', seed=123, use_adamw=False, num_epochs=1, complete_epochs=1, retrain_epoch=200, samples=100, att_comp_dim=64, use_norm=False, max_features_len=8, max_num_views=3, alpha_0=0.7, beta_1=0.5, schedule_step_retrain=500, patience_retrain=30, is_use_type_linear='False', is_use_SGD='False', is_use_dropout='False', momentum=0.9, inner_epoch=1, use_minibatch=False, useSGD=False, useTypeLinear=False, usedropout=False, usebn=False, use_5seeds=True, cur_repeat=False, no_use_fixseeds=False, res=False, num_layer_1=2, num_layer_2=1, last_hidden_dim=512, logger=<Logger log_output (INFO)>)
+2024-06-18 09:47:35,442:INFO::node_type_num: 4
+2024-06-18 09:47:53,121:INFO::=============== Prepare basic data stage finish, use 30.347098350524902 time.
+2024-06-18 09:48:07,216:INFO::Epoch_batch_00000 | lr 0.0010 |Train_Loss 0.7178| Time(s) 1.3592
+2024-06-18 09:48:07,461:INFO::Epoch 00000 | lr 0.00100 |Train_Loss 0.7178 | Val_Loss 0.6300 | Time(s) 0.2453
+2024-06-18 09:48:07,462:INFO::save_dir_name: simpleHGN_lr0.001_wd0.0001
+2024-06-18 09:48:13,459:INFO::=============== Retrain Stage Starts:

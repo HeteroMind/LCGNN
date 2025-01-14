@@ -1,0 +1,11 @@
+2023-12-01 19:52:53,340:INFO::=============== Search Args:
+Namespace(dataset='DBLP', feats_type=6, gnn_model='hgt', valid_attributed_type=1, cluster_num=4, cluster_eps=1e-05, att_comp_dim=64, hidden_dim=64, num_heads=8, attn_vec_dim=128, search_epoch=350, retrain_epoch=500, inner_epoch=1, patience_search=8, patience_retrain=8, batch_size=8, batch_size_test=32, momentum=0.9, lr=0.0005, lr_rate_min=3e-05, num_layers=2, dropout=0.5, weight_decay=0.0001, slope=0.05, grad_clip=5, network_momentum=0.9, arch_learning_rate=0.005, arch_weight_decay=1e-05, repeat=5, cluster_epoch=4, save_postfix='DBLP', feats_opt='1011', cuda=False, unrolled=False, useSGD=False, useTypeLinear=False, l2norm=False, cluster_norm=False, usedropout=False, is_unrolled='False', is_use_type_linear='False', is_use_SGD='False', is_use_dropout='False', time_line='2023-12-01-19-52-53', edge_feats=64, warmup_epoch=0, clusterupdate_round=1, searcher_name='nasp', rnn_type='RotatE0', neighbor_samples=100, use_minibatch=False, shared_ops=True, e_greedy=0.1, usebn=False, seed=123, use_5seeds=True, no_use_fixseeds=False, use_dmon=True, collapse_regularization=0.1, dmon_loss_alpha=0.5, tau=1.0, schedule_step=350, schedule_step_retrain=500, use_norm=False, use_adamw=False, use_skip=False, cur_repeat=0, last_hidden_dim=64, logger=<Logger log_output (INFO)>)
+2023-12-01 19:53:12,171:INFO::node_type_num: 4
+2023-12-01 19:53:16,389:INFO::=============== Prepare basic data stage finish, use 23.048400402069092 time.
+2023-12-01 19:53:34,019:INFO::save_dir_name: hgt_nasp_egreedy0.1_C4_useDmon_coef0.5_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_014_64_shared_ops_lr0.0005_wd0.0001_use5seeds_use_adam_patience-8_8_not_use_skip
+2023-12-01 19:54:00,548:INFO::Epoch: 0
+tensor([[0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000]], device='cuda:0', requires_grad=True)
+2023-12-01 19:54:00,667:INFO::its now!!!!!!!!5

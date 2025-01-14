@@ -1,0 +1,39 @@
+2023-12-07 16:17:17,948:INFO::=============== Search Args:
+Namespace(dataset='DBLP', feats_type=6, gnn_model='gat', valid_attributed_type=1, cluster_num=8, cluster_eps=1e-05, att_comp_dim=64, hidden_dim=64, num_heads=8, attn_vec_dim=128, search_epoch=350, retrain_epoch=500, inner_epoch=1, patience_search=8, patience_retrain=30, batch_size=2, batch_size_test=2, momentum=0.9, lr=0.0005, lr_rate_min=3e-05, num_layers=3, dropout=0.5, weight_decay=0.0001, slope=0.05, grad_clip=5, network_momentum=0.9, arch_learning_rate=0.005, arch_weight_decay=1e-05, repeat=5, cluster_epoch=4, save_postfix='DBLP', feats_opt='1011', cuda=True, unrolled=False, useSGD=False, useTypeLinear=False, l2norm=False, cluster_norm=False, usedropout=False, is_unrolled='False', is_use_type_linear='False', is_use_SGD='False', is_use_dropout='False', time_line='2023-12-07-16-17-15', edge_feats=64, warmup_epoch=0, clusterupdate_round=1, searcher_name='nasp', rnn_type='RotatE0', neighbor_samples=100, use_minibatch=False, shared_ops=True, e_greedy=0, usebn=False, seed=123, use_5seeds=True, no_use_fixseeds=False, use_dmon=True, collapse_regularization=0.1, dmon_loss_alpha=0.4, tau=1.0, schedule_step=350, schedule_step_retrain=500, use_norm=False, use_adamw=False, use_skip=False, cur_repeat=0, last_hidden_dim=512, logger=<Logger log_output (INFO)>)
+2023-12-07 16:17:52,761:INFO::node_type_num: 4
+2023-12-07 16:18:27,368:INFO::=============== Prepare basic data stage finish, use 69.41898274421692 time.
+2023-12-07 16:18:45,165:INFO::save_dir_name: gat_nasp_egreedy0_C8_useDmon_coef0.4_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_014_64_shared_ops_lr0.0005_wd0.0001_use5seeds_use_adam_patience-8_30_not_use_skip
+2023-12-07 16:19:27,917:INFO::Epoch: 0
+tensor([[0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000],
+        [0.5000, 0.5000, 0.5000, 0.5000]], device='cuda:0', requires_grad=True)
+2023-12-07 16:19:28,088:INFO::its now!!!!!!!!5
+2023-12-07 16:23:17,996:INFO::its now!!!!!!!!0
+2023-12-07 16:23:18,529:INFO::its now!!!!!!!!3
+2023-12-07 16:23:20,135:INFO::its now!!!!!!!!5
+2023-12-07 16:24:12,805:INFO::its now!!!!!!!!
+2023-12-07 16:24:12,806:INFO::its now!!!!!!!! on 
+2023-12-07 16:24:13,168:INFO::its now!!!!!!!!5
+2023-12-07 16:24:22,418:INFO::save_dir_name: gat_nasp_egreedy0_C8_useDmon_coef0.4_Adam_gcn.ppnp.mean.one-hot_noTypeLinear_014_64_shared_ops_lr0.0005_wd0.0001_use5seeds_use_adam_patience-8_30_not_use_skip
+2023-12-07 16:24:22,602:INFO::Epoch 00000 | lr 0.00050 | Train_Loss 1.4819 | Train_Classification_Loss 1.4942 | Dmon_Loss -0.0307 | Val_Loss 1.5767 | Search Time(s) 286.0011 | Infer Time(s) 9.2512 | Time(s) 295.2522 
+2023-12-07 16:24:22,764:INFO::cluster info:
+0: 7;	1: 3;	2: 2;	3: 1;	4: 6;	5: 3;	6: 1;	7: 6;	8: 1;	9: 1;	10: 6;	11: 6;	12: 3;	13: 1;	14: 2;	15: 2;	16: 1;	17: 5;	18: 4;	19: 0;	20: 6;	21: 3;	22: 1;	23: 1;	24: 4;	25: 4;	26: 3;	27: 0;	28: 6;	29: 0;	30: 1;	31: 1;	32: 3;	33: 0;	34: 6;	35: 7;	36: 1;	37: 7;	38: 2;	39: 0;	40: 2;	41: 2;	42: 1;	43: 0;	44
+26098: 6;	26099: 1;	26100: 1;	26101: 7;	26102: 6;	26103: 1;	26104: 1;	26105: 7;	26106: 1;	26107: 7;	26108: 1;	26109: 1;	26110: 1;	26111: 1;	26112: 1;	26113: 1;	26114: 1;	26115: 1;	26116: 1;	26117: 1;	26118: 1;	26119: 1;	26120: 1;	26121: 1;	26122: 1;	26123: 1;	26124: 1;	26125: 1;	26126: 1;	26127: 3;	
+2023-12-07 16:24:22,785:INFO::Epoch: 1
+tensor([[0.4950, 0.5050, 0.5050, 0.5050],
+        [0.4950, 0.5050, 0.5050, 0.5050],
+        [0.4950, 0.5050, 0.5050, 0.5050],
+        [0.4950, 0.5050, 0.5050, 0.5050],
+        [0.4950, 0.5050, 0.5050, 0.5050],
+        [0.4950, 0.5050, 0.5050, 0.5050],
+        [0.4950, 0.5050, 0.5050, 0.5050],
+        [0.4950, 0.5050, 0.5050, 0.5050]], device='cuda:0', requires_grad=True)
+2023-12-07 16:24:22,788:INFO::its now!!!!!!!!5
+2023-12-07 16:24:28,888:INFO::its now!!!!!!!!0
+2023-12-07 16:24:28,889:INFO::its now!!!!!!!!3
+2023-12-07 16:24:29,087:INFO::its now!!!!!!!!5
